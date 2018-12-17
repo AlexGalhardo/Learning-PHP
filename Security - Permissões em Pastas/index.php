@@ -1,0 +1,6 @@
+<?php
+/**
+ * SEMPRE SE ATENTAR COM AS PERMISSÕES DE EXECUÇÃO, LEITURA E ESCRITA EM DIRETÓRIOS E ARQUIVOS!
+ * 
+ * Nunca se esquecer isso.
+ */

@@ -1,0 +1,27 @@
+# comentários aqui
+
+User-agent: * -> regra aplicado a todos os robos 
+
+User-agent: Googlebot
+User-agent: Slurp -> Yahoo
+User-agent: Bindbot
+User-agent: Googlebot-images
+User-agent: Adsbot-Google
+
+Disallow: /admin -> informa ao motor de busca, eu não quero que a pasta admin seja indexado pela busca
+
+Disallow: /config.php
+Disallow: /admin/teste.php
+Disallow: /assets
+Disallow: /controllers
+Disallow: /models
+Disallow: /views
+Disallow: /environment.php
+
+Allow: /teste.php -> permito que o arquivo teste.php seja indexado pelo motor de busca
+
+EXEMPLO: https://www.facebook.com/robots.txt
+
+https://www.google.com.br/robots.txt
+
+seusite.com.br/robots.txt

@@ -1,0 +1,19 @@
+TOTAL = 54
+10 itens por página
+
+quantidade de páginas = 54 / 10 = 5.4
+
+Ou seja,
+
+5 págnas inteiras
+
+e mais 4 itens na última página
+
+ou seja, 6 páginas
+
+OFFSET = de onde eu começo?
+
+Na programação, sempre começamos pelo 0, mas aqui começaremos pelo 1
+
+OFFSET da página 2 = (10 * numero da página) = numero da página = (10*2) - 10 = 20 - 10 = 10
+

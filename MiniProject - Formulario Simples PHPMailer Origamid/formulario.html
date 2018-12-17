@@ -1,0 +1,41 @@
+<style>
+
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+	display: none !important;
+}
+
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-send {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+
+</style>
+
+<form action="enviar.php" method="post" name="form" class="formphp">
+	<label for="nome">Nome</label>
+	<input id="nome" name="nome" type="text">
+	<label for="email">E-mail</label>
+	<input id="email" name="email" type="text">
+	<label for="telefone">Telefone</label>
+	<input id="telefone" name="telefone" type="text">
+
+	<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+	<input type="text" class="nao-aparece" name="leaveblank">
+	<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+	<input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
+	<label for="mensagem">Mensagem</label>
+	<textarea name="mensagem" id="mensagem"></textarea>
+
+	<button id="enviar" name="enviar" type="submit">Enviar</button>
+</form>

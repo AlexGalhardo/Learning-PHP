@@ -1,0 +1,10 @@
+.foto_item {
+	width:150px;
+	height:200px;
+	text-align: center;
+	margin-right: 10px;
+	float:left;
+}
+.foto_item img {
+	width:150px;
+}
