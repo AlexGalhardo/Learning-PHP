@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>notebook1</name>
+        <x>5</x>
+        <y>10</y>
+        <width>563</width>
+        <height>351</height>
+        <pages>
+            <tpanel id="1" tab="Customer data">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>label1</name>
+                    <x>35</x>
+                    <y>15</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>ID: </value>
+                </tlabel>
+                <tlabel id="1">
+                    <class>TLabel</class>
+                    <name>label2</name>
+                    <x>35</x>
+                    <y>45</y>
+                    <color>#FF0000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Name:</value>
+                </tlabel>
+                <tframe id="2">
+                    <class>TFrame</class>
+                    <name>frame2</name>
+                    <title>Fashion</title>
+                    <x>360</x>
+                    <y>5</y>
+                    <width>175</width>
+                    <height>259</height>
+                    <child>
+                        <tpanel>
+                            <tcheckgroup id="0">
+                                <class>TCheckGroup</class>
+                                <name>fashion</name>
+                                <items>1:Alternative
+2:Casual
+3:Classic
+4:Contemporary
+5:Natural
+6:Trendy
+7:Urban
+8:Hippie
+9:Metal</items>
+                                <x>5</x>
+                                <y>5</y>
+                                <tip></tip>
+                            </tcheckgroup>
+                        </tpanel>
+                    </child>
+                </tframe>
+                <tentry id="3">
+                    <class>TEntry</class>
+                    <name>id</name>
+                    <x>135</x>
+                    <y>10</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>90</width>
+                    <maxlen>5</maxlen>
+                    <editable>1</editable>
+                    <tip>Type the ID here...</tip>
+                    <required></required>
+                </tentry>
+                <tentry id="4">
+                    <class>TEntry</class>
+                    <name>name</name>
+                    <x>135</x>
+                    <y>40</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>40</maxlen>
+                    <editable>1</editable>
+                    <tip>Type the name here...</tip>
+                    <required>1</required>
+                </tentry>
+                <tdate id="5">
+                    <class>TDate</class>
+                    <name>birthdate</name>
+                    <x>135</x>
+                    <y>75</y>
+                    <value></value>
+                    <mask>dd/mm/yyyy</mask>
+                    <width>130</width>
+                    <editable>1</editable>
+                    <tip></tip>
+                    <required>1</required>
+                </tdate>
+                <tlabel id="6">
+                    <class>TLabel</class>
+                    <name>label4</name>
+                    <x>35</x>
+                    <y>80</y>
+                    <color>#FF0000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Birth date:</value>
+                </tlabel>
+                <tlabel id="7">
+                    <class>TLabel</class>
+                    <name>label5</name>
+                    <x>35</x>
+                    <y>115</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Gender:</value>
+                </tlabel>
+                <tcombo id="8">
+                    <class>TCombo</class>
+                    <name>gender</name>
+                    <items>1:male
+2:female</items>
+                    <x>135</x>
+                    <y>110</y>
+                    <width>160</width>
+                    <tip></tip>
+                </tcombo>
+                <tbutton id="9">
+                    <class>TButton</class>
+                    <name>button3</name>
+                    <x>465</x>
+                    <y>275</y>
+                    <value>View</value>
+                    <icon>ico_view.png</icon>
+                    <action>onView</action>
+                    <template>save.php</template>
+                </tbutton>
+                <tradiogroup id="10">
+                    <class>TRadioGroup</class>
+                    <name>pets</name>
+                    <items>1:I like pets
+2:I do not like pets</items>
+                    <x>135</x>
+                    <y>145</y>
+                    <tip></tip>
+                    <value>1</value>
+                </tradiogroup>
+                <tlabel id="11">
+                    <class>TLabel</class>
+                    <name>label8</name>
+                    <x>35</x>
+                    <y>155</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Pets: </value>
+                </tlabel>
+                <tspinner id="12">
+                    <class>TSpinner</class>
+                    <name>income</name>
+                    <x>135</x>
+                    <y>205</y>
+                    <value>1000</value>
+                    <width>120</width>
+                    <editable>1</editable>
+                    <tip></tip>
+                    <step>1</step>
+                    <max>10000</max>
+                    <min>1</min>
+                </tspinner>
+                <tslider id="13">
+                    <class>TSlider</class>
+                    <name>weight</name>
+                    <x>135</x>
+                    <y>240</y>
+                    <value>70</value>
+                    <width>120</width>
+                    <editable>1</editable>
+                    <tip></tip>
+                    <step>1</step>
+                    <min>1</min>
+                    <max>200</max>
+                </tslider>
+                <tlabel id="14">
+                    <class>TLabel</class>
+                    <name>label9</name>
+                    <x>35</x>
+                    <y>210</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Income</value>
+                </tlabel>
+                <tlabel id="15">
+                    <class>TLabel</class>
+                    <name>label10</name>
+                    <x>35</x>
+                    <y>255</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Weight</value>
+                </tlabel>
+            </tpanel>
+        </pages>
+    </tnotebook>
+</form>

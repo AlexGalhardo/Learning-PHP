@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tdatagrid id="0">
+        <class>TDataGrid</class>
+        <name>datagrid1</name>
+        <x>5</x>
+        <y>25</y>
+        <loader>onReload</loader>
+        <template>reload.php</template>
+        <width>552</width>
+        <height>282</height>
+        <columns>
+            <tdatagridcolumn id="1">
+                <name>id</name>
+                <align>left</align>
+                <label>ID</label>
+                <width>41</width>
+            </tdatagridcolumn>
+            <tdatagridcolumn id="2">
+                <name>name</name>
+                <align>left</align>
+                <label>Nome</label>
+                <width>172</width>
+            </tdatagridcolumn>
+            <tdatagridcolumn id="3">
+                <name>address</name>
+                <align>left</align>
+                <label>Address</label>
+                <width>170</width>
+            </tdatagridcolumn>
+            <tdatagridcolumn id="4">
+                <name>city_name</name>
+                <align>left</align>
+                <label>City Name</label>
+                <width>160</width>
+            </tdatagridcolumn>
+        </columns>
+        <actions>
+            <tdatagridaction id="1">
+                <method>onEdit</method>
+                <image>ico_edit.png</image>
+                <field>id</field>
+                <label>Edit</label>
+                <template>edit.php</template>
+            </tdatagridaction>
+            <tdatagridaction id="2">
+                <method>onDelete</method>
+                <image>ico_delete.png</image>
+                <field>id</field>
+                <label>Delete</label>
+                <template>delete.php</template>
+            </tdatagridaction>
+        </actions>
+        <pagenavigator>yes</pagenavigator>
+    </tdatagrid>
+    <tlabel id="1">
+        <class>TLabel</class>
+        <name>label1</name>
+        <x>8</x>
+        <y>8</y>
+        <color>#773939</color>
+        <size>8</size>
+        <style>b,i</style>
+        <value>(*) Datagrid  created with Adianti Studio Designer.</value>
+    </tlabel>
+</form>

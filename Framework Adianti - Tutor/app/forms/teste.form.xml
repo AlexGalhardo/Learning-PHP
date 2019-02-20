@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tdatagrid id="0">
+        <class>TDataGrid</class>
+        <name>datagrid1</name>
+        <x>85</x>
+        <y>135</y>
+        <loader></loader>
+        <template></template>
+        <width>300</width>
+        <height>200</height>
+        <columns>
+            <tdatagridcolumn id="1">
+                <name>header1</name>
+                <align>left</align>
+                <label>Header1</label>
+                <width>82</width>
+            </tdatagridcolumn>
+        </columns>
+        <actions/>
+        <pagenavigator>no</pagenavigator>
+    </tdatagrid>
+</form>

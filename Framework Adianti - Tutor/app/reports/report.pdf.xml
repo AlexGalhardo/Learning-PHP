@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+    <page>
+        <format>a4</format>
+        <orientation>P</orientation>
+    </page>
+    <rectangle id="1">
+        <class>Rectangle</class>
+        <x>38</x>
+        <y>34</y>
+        <width>498</width>
+        <height>52</height>
+        <fillcolor>#FEFFDC</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>2</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="2">
+        <class>Text</class>
+        <x>102</x>
+        <y>44</y>
+        <font>Arial</font>
+        <size>40</size>
+        <text>&lt;b&gt;Customers Report&lt;/b&gt;</text>
+        <color>#343079</color>
+        <shadowoffset>2</shadowoffset>
+        <shadowcolor>#AAAAAA</shadowcolor>
+    </text>
+    <rectangle id="3">
+        <class>Rectangle</class>
+        <x>38</x>
+        <y>96</y>
+        <width>34</width>
+        <height>24</height>
+        <fillcolor>#DEDEDE</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="4">
+        <class>Text</class>
+        <x>44</x>
+        <y>104</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>&lt;b&gt;ID&lt;/b&gt;</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="5">
+        <class>Rectangle</class>
+        <x>72</x>
+        <y>96</y>
+        <width>160</width>
+        <height>24</height>
+        <fillcolor>#DEDEDE</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="6">
+        <class>Text</class>
+        <x>74</x>
+        <y>104</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>&lt;b&gt;Name&lt;/b&gt;</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="7">
+        <class>Rectangle</class>
+        <x>232</x>
+        <y>96</y>
+        <width>152</width>
+        <height>24</height>
+        <fillcolor>#DEDEDE</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="8">
+        <class>Text</class>
+        <x>236</x>
+        <y>104</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>&lt;b&gt;Address&lt;/b&gt;</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="9">
+        <class>Rectangle</class>
+        <x>384</x>
+        <y>96</y>
+        <width>152</width>
+        <height>24</height>
+        <fillcolor>#DEDEDE</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="10">
+        <class>Text</class>
+        <x>388</x>
+        <y>104</y>
+        <font>Arial</font>
+        <size>10</size>
+        <text>&lt;b&gt;City&lt;/b&gt;</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <anchor id="11">
+        <class>Anchor</class>
+        <x>38</x>
+        <y>120</y>
+        <name>details</name>
+    </anchor>
+</design>

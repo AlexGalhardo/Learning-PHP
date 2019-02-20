@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adianti Tutor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {LIBRARIES}
+    {HEAD}
+    <link href="app/resources/custom-frame.css" rel="stylesheet" type="text/css" media="screen" />
+    
+    <script type="text/javascript">
+    $(function() {
+        __adianti_load_page_no_register('engine.php?class=SearchBox');
+        __adianti_load_page_no_register('engine.php?class=WordSearchBox');
+    });
+    </script>
+</head>
+<body>
+    <div class="adianti_container">
+        <div class="header">
+
+            <div class="header_content" style="height: 30px">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i> Adianti Framework Tutor
+            </div>
+        </div>
+        
+        <div class="body">
+            <div id="menuDiv">
+                <div class="tutor-navbar">
+                  <div class="tutor-navbar-inner">
+                    <a generator="adianti" title="HOME" style="float:left;margin-top:10px" class="btn btn-default" href="index.php?class=HomeView"><i class="fa fa-home"></i></a>
+                    {MENU}
+                    
+                    <div class="hiddable_1000" style="margin-left:20px;padding-top:12px;float:right">
+                        <div style="display:inline-block" id="search-box"></div>
+                        <div style="display:inline-block" id="word-search-box"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="adianti_div_content" class="content"></div>
+
+            <div class="side-panel hiddable_1000">
+                <br><br>
+                <a target="newwindow" href="http://www.adianti.com.br/bkframe"><img src="app/templates/theme1/images/bkframe.png"></a><br>
+                Book
+            </div>
+            <div id="adianti_online_content"></div>
+            <div id="adianti_online_content2"></div>
+            <div id="pageboth"><br></div>
+            
+            <a id="view-source" class="float-button" title="View source code" generator="adianti-docs" href="index.php?class=DocumentationView&classname={class}&method=onHelp">
+                <i class="fa fa-code internal-float-button"></i>
+            </a>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+</html>

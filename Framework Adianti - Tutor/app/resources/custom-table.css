@@ -1,0 +1,51 @@
+table.customized-table > thead.tdatagrid_head > tr > td,
+table.customized-table > thead.tdatagrid_head > tr > th
+{
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table.customized-table > thead.tdatagrid_head > tr > th.tdatagrid_col,
+table.customized-table > thead.tdatagrid_head > tr > th.tdatagrid_action
+{
+    background-color: #6E9ED0;
+    padding-left: 2px;
+    color: white;
+    text-shadow: 1px 1px 0px #000;
+}
+
+table.customized-table > thead.tdatagrid_head > tr > th.tdatagrid_col[generator=adianti]:hover
+{
+    border-top      : 1px solid orange;
+    cursor          : pointer;
+    background-color: #A8C3DF;
+    -moz-user-select:none;
+    user-select     : none;
+    padding-bottom  : 9px;
+    text-shadow     : 1px 1px 0px #000;
+    padding-top     : 8px;
+    padding-left    : 1px;
+    padding-right   : 1px;
+}
+
+table.tdatagrid_table > tbody.tdatagrid_body > tr.tdatagrid_row_even:hover,
+table.tdatagrid_table > tbody.tdatagrid_body > tr.tdatagrid_row_odd:hover
+{
+    background-color: #FFC86F; // orange
+}
+
+table.tdatagrid_table > tbody.tdatagrid_body > tr > td
+{
+    height: 36px;
+}
+
+table.customized-table > tbody.tdatagrid_body > tr.tdatagrid_row_even
+{
+    background-color: white;
+}
+
+table.tdatagrid_table > tbody.tdatagrid_body > tr.tdatagrid_row_odd
+{
+    background-color: #fafafa;
+}

@@ -1,0 +1,19 @@
+.tframe
+{
+    margin-top: 4px;
+    padding-top: 15px !important;
+    padding-bottom: 16px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-radius: 4px !important;
+}
+
+.tframe legend {
+    background: #E9E7FF;
+    color: #fff;
+    border-radius: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 0 0 1px #8A8A8A;
+    margin-left: 3px;
+}

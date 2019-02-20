@@ -1,0 +1,55 @@
+.tnotebook
+{
+    background-color : white;
+}
+
+.tnotebook > ul.tabs
+{
+    background: #CDCDCD;
+    border-top: 1px solid #a1a1a1;
+    border-left: 1px solid #a1a1a1;
+    border-right: 1px solid #a1a1a1;
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+}
+
+.tnotebook div.frame
+{
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+}
+
+.tnotebook > ul.tabs > li
+{
+    height: 40px;
+    border:0;
+    margin-top: 5px;
+    margin-left: 3px;
+    text-shadow: none;
+    border-bottom:0;
+    background: #E8E8E8;
+    border: 1px solid #AFAFAF;
+    font-weight : bold;
+}
+
+.tnotebook > ul.tabs > li > a
+{
+    font-weight: normal !important;
+    padding: 10px;
+    color: #696969 !important;
+    font-family: sans-serif,arial,verdana !important;
+}
+
+.tnotebook > ul.tabs > li.active
+{
+    background: #FAFAFA;
+    text-shadow: none;
+    border: 1px solid #a1a1a1;
+    border-bottom:0;
+    -webkit-box-shadow: -1px -2px 2px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    -1px -2px 2px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         -1px -2px 2px 0px rgba(50, 50, 50, 0.2);
+}
+
+.tnotebook .spacer
+{
+    display: none;
+}

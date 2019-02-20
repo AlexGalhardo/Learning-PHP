@@ -1,0 +1,30 @@
+.tframe-custom
+{
+    margin-top: 4px;
+    padding-top: 5px !important;
+    padding-bottom: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 4px !important;
+    margin: 0;
+    margin-bottom: 3px;
+    border-color: #ddd;
+}
+
+.tframe-custom legend {
+    background: white;
+    color: #fff;
+    border-radius: 2px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    box-shadow: 0 0 0 1px #8A8A8A;
+    margin-left: 3px;
+    height: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tframe-custom legend >label {
+    padding-left: 10px;
+    padding-right: 10px;
+}

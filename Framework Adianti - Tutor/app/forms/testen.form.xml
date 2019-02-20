@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tselect id="0">
+        <class>TSelect</class>
+        <name>select1</name>
+        <items>1:item1
+2:item2</items>
+        <x>65</x>
+        <y>145</y>
+        <width>200</width>
+        <height>100</height>
+        <tip></tip>
+    </tselect>
+    <tdbselect id="1">
+        <class>TDBSelect</class>
+        <name>dbselect1</name>
+        <database>samples</database>
+        <model>Category</model>
+        <key>id</key>
+        <display>name</display>
+        <x>270</x>
+        <y>145</y>
+        <width>200</width>
+        <height>100</height>
+        <tip></tip>
+    </tdbselect>
+</form>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>notebook1</name>
+        <x>10</x>
+        <y>20</y>
+        <width>400</width>
+        <height>250</height>
+        <pages>
+            <tpanel id="1" tab="Form">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>label1</name>
+                    <x>15</x>
+                    <y>15</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <Style/>
+                    <value>label</value>
+                </tlabel>
+                <tentry id="1">
+                    <class>TEntry</class>
+                    <name>entry1</name>
+                    <x>65</x>
+                    <y>5</y>
+                    <value></value>
+                    <width>160</width>
+                    <editable>1</editable>
+                </tentry>
+                <tdate id="2">
+                    <class>TDate</class>
+                    <name>date1</name>
+                    <x>65</x>
+                    <y>40</y>
+                    <value></value>
+                    <mask>dd/mm/yyyy</mask>
+                    <width>160</width>
+                    <editable>1</editable>
+                </tdate>
+                <tseekbutton id="3">
+                    <class>TSeekButton</class>
+                    <name>seekbutton1</name>
+                    <Database/>
+                    <Model/>
+                    <Display/>
+                    <Receiver/>
+                    <x>65</x>
+                    <y>75</y>
+                    <value></value>
+                    <width>160</width>
+                    <editable>1</editable>
+                </tseekbutton>
+                <tbutton id="4">
+                    <class>TButton</class>
+                    <name>button1</name>
+                    <x>270</x>
+                    <y>140</y>
+                    <value>Save</value>
+                    <icon>ico_save.png</icon>
+                    <action></action>
+                </tbutton>
+                <tbutton id="5">
+                    <class>TButton</class>
+                    <name>button2</name>
+                    <x>270</x>
+                    <y>175</y>
+                    <value>Print</value>
+                    <icon>ico_pdf.png</icon>
+                    <action></action>
+                </tbutton>
+                <tframe id="6">
+                    <class>TFrame</class>
+                    <name>frame1</name>
+                    <title>Frame</title>
+                    <x>65</x>
+                    <y>115</y>
+                    <width>180</width>
+                    <height>80</height>
+                    <child>
+                        <tpanel>
+                            <tcheckgroup id="0">
+                                <class>TCheckGroup</class>
+                                <name>checkgroup2</name>
+                                <items>1:item1
+2:item2</items>
+                                <x>5</x>
+                                <y>5</y>
+                                <value>1</value>
+                            </tcheckgroup>
+                            <tradiogroup id="1">
+                                <class>TRadioGroup</class>
+                                <name>radiogroup2</name>
+                                <items>1:item1
+2:item2</items>
+                                <x>90</x>
+                                <y>5</y>
+                                <value>1</value>
+                            </tradiogroup>
+                        </tpanel>
+                    </child>
+                </tframe>
+            </tpanel>
+        </pages>
+    </tnotebook>
+    <tnotebook id="1">
+        <class>TNotebook</class>
+        <name>notebook2</name>
+        <x>10</x>
+        <y>285</y>
+        <width>400</width>
+        <height>202</height>
+        <pages>
+            <tpanel id="1" tab="DataGrid">
+                <tdatagrid id="0">
+                    <class>TDataGrid</class>
+                    <name>datagrid2</name>
+                    <x>20</x>
+                    <y>10</y>
+                    <width>347</width>
+                    <height>143</height>
+                    <columns>
+                        <tdatagridcolumn id="1">
+                            <name>header1</name>
+                            <align>left</align>
+                            <label>Header1</label>
+                            <width>82</width>
+                        </tdatagridcolumn>
+                        <tdatagridcolumn id="2">
+                            <name>header2</name>
+                            <align>left</align>
+                            <label>Header2</label>
+                            <width>82</width>
+                        </tdatagridcolumn>
+                        <tdatagridcolumn id="3">
+                            <name>header3</name>
+                            <align>left</align>
+                            <label>Header3</label>
+                            <width>82</width>
+                        </tdatagridcolumn>
+                    </columns>
+                    <actions>
+                        <tdatagridaction id="1">
+                            <Method/>
+                            <image>ico_edit.png</image>
+                            <Field/>
+                            <label>Action1</label>
+                        </tdatagridaction>
+                        <tdatagridaction id="2">
+                            <method></method>
+                            <image>ico_delete.png</image>
+                            <field></field>
+                            <label>Action2</label>
+                        </tdatagridaction>
+                    </actions>
+                    <pagenavigator>yes</pagenavigator>
+                </tdatagrid>
+            </tpanel>
+        </pages>
+    </tnotebook>
+</form>

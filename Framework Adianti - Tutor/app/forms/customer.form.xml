@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>notebook1</name>
+        <x>5</x>
+        <y>5</y>
+        <width>467</width>
+        <height>290</height>
+        <pages>
+            <tpanel id="1" tab="Registration data">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>label1</name>
+                    <x>10</x>
+                    <y>15</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>ID:</value>
+                </tlabel>
+                <tentry id="1">
+                    <class>TEntry</class>
+                    <name>id</name>
+                    <x>80</x>
+                    <y>10</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>74</width>
+                    <editable>0</editable>
+                </tentry>
+                <tlabel id="2">
+                    <class>TLabel</class>
+                    <name>label2</name>
+                    <x>10</x>
+                    <y>45</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Name:</value>
+                </tlabel>
+                <tentry id="3">
+                    <class>TEntry</class>
+                    <name>name</name>
+                    <x>80</x>
+                    <y>40</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>230</width>
+                    <editable>1</editable>
+                </tentry>
+                <tentry id="4">
+                    <class>TEntry</class>
+                    <name>address</name>
+                    <x>80</x>
+                    <y>70</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>230</width>
+                    <editable>1</editable>
+                </tentry>
+                <tlabel id="5">
+                    <class>TLabel</class>
+                    <name>label3</name>
+                    <x>10</x>
+                    <y>75</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Address:</value>
+                </tlabel>
+                <tlabel id="6">
+                    <class>TLabel</class>
+                    <name>label4</name>
+                    <x>10</x>
+                    <y>105</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Phone: </value>
+                </tlabel>
+                <tentry id="7">
+                    <class>TEntry</class>
+                    <name>phone</name>
+                    <x>80</x>
+                    <y>100</y>
+                    <value></value>
+                    <mask>99.999-999</mask>
+                    <width>90</width>
+                    <editable>1</editable>
+                </tentry>
+                <tlabel id="8">
+                    <class>TLabel</class>
+                    <name>label6</name>
+                    <x>10</x>
+                    <y>135</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>City:</value>
+                </tlabel>
+                <tentry id="9">
+                    <class>TEntry</class>
+                    <name>city_name</name>
+                    <x>275</x>
+                    <y>130</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>160</width>
+                    <editable>1</editable>
+                </tentry>
+                <tseekbutton id="10">
+                    <class>TSeekButton</class>
+                    <name>city_id</name>
+                    <database>samples</database>
+                    <model>City</model>
+                    <display>name</display>
+                    <receiver>city_name</receiver>
+                    <x>80</x>
+                    <y>130</y>
+                    <width>38</width>
+                    <editable>1</editable>
+                </tseekbutton>
+                <tlabel id="11">
+                    <class>TLabel</class>
+                    <name>label7</name>
+                    <x>195</x>
+                    <y>135</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Name: </value>
+                </tlabel>
+                <tlabel id="12">
+                    <class>TLabel</class>
+                    <name>label8</name>
+                    <x>195</x>
+                    <y>105</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Birthdate:</value>
+                </tlabel>
+                <tdate id="13">
+                    <class>TDate</class>
+                    <name>birthdate</name>
+                    <x>275</x>
+                    <y>100</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>79</width>
+                    <editable>1</editable>
+                </tdate>
+                <tlabel id="14">
+                    <class>TLabel</class>
+                    <name>label12</name>
+                    <x>10</x>
+                    <y>165</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Status:</value>
+                </tlabel>
+                <tcombo id="15">
+                    <class>TCombo</class>
+                    <name>status</name>
+                    <items>S:Single
+C:Committed
+M:Married</items>
+                    <x>80</x>
+                    <y>160</y>
+                    <width>107</width>
+                </tcombo>
+                <tlabel id="16">
+                    <class>TLabel</class>
+                    <name>label13</name>
+                    <x>195</x>
+                    <y>196</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Category: </value>
+                </tlabel>
+                <tdbcombo id="17">
+                    <class>TDBCombo</class>
+                    <name>category_id</name>
+                    <database>samples</database>
+                    <model>Category</model>
+                    <key>id</key>
+                    <display>name</display>
+                    <x>275</x>
+                    <y>191</y>
+                    <width>120</width>
+                </tdbcombo>
+                <tlabel id="18">
+                    <class>TLabel</class>
+                    <name>label14</name>
+                    <x>195</x>
+                    <y>165</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Email:</value>
+                </tlabel>
+                <tentry id="19">
+                    <class>TEntry</class>
+                    <name>email</name>
+                    <x>275</x>
+                    <y>160</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>160</width>
+                    <editable>1</editable>
+                </tentry>
+                <tlabel id="20">
+                    <class>TLabel</class>
+                    <name>label15</name>
+                    <x>10</x>
+                    <y>196</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Gender:</value>
+                </tlabel>
+                <tradiogroup id="21">
+                    <class>TRadioGroup</class>
+                    <name>gender</name>
+                    <items>M:Male
+F:Female</items>
+                    <x>80</x>
+                    <y>196</y>
+                    <value>M</value>
+                </tradiogroup>
+            </tpanel>
+        </pages>
+    </tnotebook>
+    <tbutton id="1">
+        <class>TButton</class>
+        <name>button1</name>
+        <x>5</x>
+        <y>302</y>
+        <value>Save</value>
+        <icon>ico_save.png</icon>
+        <action>onSave</action>
+        <template>save.php</template>
+    </tbutton>
+    <tlabel id="2">
+        <class>TLabel</class>
+        <name>label16</name>
+        <x>150</x>
+        <y>309</y>
+        <color>#773939</color>
+        <size>8</size>
+        <style>b,i</style>
+        <value>(*) Form created with Adianti Studio Designer.</value>
+    </tlabel>
+    <tbutton id="3">
+        <class>TButton</class>
+        <name>button3</name>
+        <x>75</x>
+        <y>302</y>
+        <value>New</value>
+        <icon>ico_edit.png</icon>
+        <action>onEdit</action>
+        <template>edit.php</template>
+    </tbutton>
+</form>

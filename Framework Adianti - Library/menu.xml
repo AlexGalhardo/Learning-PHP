@@ -1,0 +1,202 @@
+<menu>
+    <menuitem label='_t{Administration}'>
+        <icon>fa:university fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Programs}'>
+                  <icon>fa:file-code-o fa-fw</icon>
+                  <action>SystemProgramList</action>
+              </menuitem>
+              <menuitem label='_t{Groups}'>
+                  <icon>fa:users fa-fw</icon>
+                  <action>SystemGroupList</action>
+              </menuitem>
+              <menuitem label='_t{Units}'>
+                  <icon>fa:university fa-fw</icon>
+                  <action>SystemUnitList</action>
+              </menuitem>
+              <menuitem label='_t{Users}'>
+                  <icon>fa:user fa-fw</icon>
+                  <action>SystemUserList</action>
+              </menuitem>
+              <menuitem label='_t{Database explorer}'>
+                  <icon>fa:database fa-fw</icon>
+                  <action>SystemDatabaseExplorer</action>
+              </menuitem>
+              <menuitem label='_t{SQL Panel}'>
+                  <icon>fa:table fa-fw</icon>
+                  <action>SystemSQLPanel</action>
+              </menuitem>
+              <menuitem label='PHP Info'>
+                  <icon>fa:info-circle fa-fw</icon>
+                  <action>SystemPHPInfoView</action>
+              </menuitem>
+              <menuitem label='_t{Preferences}'>
+                  <icon>fa:cog fa-fw</icon>
+                  <action>SystemPreferenceForm#method=onEdit</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Cataloging}'>
+        <icon>fa:book fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Books}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>BookList</action>
+              </menuitem>
+              <menuitem label='_t{Collections}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>CollectionFormList</action>
+              </menuitem>
+              <menuitem label='_t{Classifications}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>ClassificationFormList</action>
+              </menuitem>
+              <menuitem label='_t{Subjects}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>SubjectList</action>
+              </menuitem>
+              <menuitem label='_t{Authors}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>AuthorList</action>
+              </menuitem>
+              <menuitem label='_t{Publishers}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>PublisherList</action>
+              </menuitem>
+              <menuitem label='_t{Status}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>StatusFormList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Members}'>
+        <icon>fa:users fa-fw</icon>
+        <menu>              
+              <menuitem label='_t{Categories}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>CategoryFormList</action>
+              </menuitem>
+              <menuitem label='_t{Cities}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>CityList</action>
+              </menuitem>
+              <menuitem label='_t{Members}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>MemberList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Circulation}'>
+        <icon>fa:hand-o-left fa-fw</icon>
+        <menu>           
+              <menuitem label='_t{Check out}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>CheckOutForm</action>
+              </menuitem>
+              <menuitem label='_t{Check in}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>CheckInForm</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Reports}'>
+        <icon>fa:file-pdf-o fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Dashboard}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>DashboardView</action>
+              </menuitem>
+              <menuitem label='_t{Loans}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>LoanReport</action>
+              </menuitem>
+              <menuitem label='_t{Members}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>MemberReport</action>
+              </menuitem>
+              <menuitem label='_t{Books}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>BookReport</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Documents}'>
+        <icon>fa:file-text-o fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Send document}'>
+                  <icon>fa:cloud-upload fa-fw</icon>
+                  <action>SystemDocumentUploadForm</action>
+              </menuitem>
+              <menuitem label='_t{My documents}'>
+                  <icon>fa:archive fa-fw</icon>
+                  <action>SystemDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Shared with me}'>
+                  <icon>fa:share-alt fa-fw</icon>
+                  <action>SystemSharedDocumentList</action>
+              </menuitem>
+              <menuitem label='_t{Categories}'>
+                  <icon>fa:th fa-fw</icon>
+                  <action>SystemDocumentCategoryFormList</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logs'>
+        <icon>fa:desktop fa-fw</icon>
+        <menu>
+              <menuitem label='_t{Access Stats}'>
+                  <icon>fa:bar-chart fa-fw</icon>
+                  <action>SystemAccessLogStats</action>
+              </menuitem>
+              <menuitem label='_t{Access Log}'>
+                  <icon>fa:key fa-fw</icon>
+                  <action>SystemAccessLogList</action>
+              </menuitem>
+              <menuitem label='_t{Change Log}'>
+                  <icon>fa:film fa-fw</icon>
+                  <action>SystemChangeLogView</action>
+              </menuitem>
+              <menuitem label='_t{SQL Log}'>
+                  <icon>fa:database fa-fw</icon>
+                  <action>SystemSqlLogList</action>
+              </menuitem>
+              <menuitem label='_t{PHP Log}'>
+                  <icon>fa:exclamation-triangle fa-fw</icon>
+                  <action>SystemPHPErrorLogView</action>
+              </menuitem>
+        </menu>
+    </menuitem>
+        
+    <menuitem label='Common pages'>
+        <menu>
+            <menuitem label='Common page 1'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 2'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+            <menuitem label='Common page 3'>
+                <icon></icon>
+                <action>CommonPage</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='Logout'>
+        <icon>fa:sign-out fa-fw</icon>
+        <menu>
+              <menuitem label='Logout'>
+                  <action>LoginForm#method=onLogout#static=1</action>
+                  <icon>fa:sign-out fa-fw</icon>
+              </menuitem>
+        </menu>
+    </menuitem>
+</menu>

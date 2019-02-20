@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^customer-edit$ index.php?class=CustomerFormView&method=onEdit&%{QUERY_STRING} [NC]
+RewriteRule ^customer-list$ index.php?class=CustomerDataGridView&method=onReload&%{QUERY_STRING} [NC]
+RewriteRule ^customer-delete$ index.php?class=CustomerDataGridView&method=onDelete&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-customer-list$ engine.php?class=CustomerDataGridView&method=onReload&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-customer-edit$ engine.php?class=CustomerFormView&method=onEdit&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-customer-delete$ engine.php?class=CustomerDataGridView&method=onDelete&%{QUERY_STRING} [NC]

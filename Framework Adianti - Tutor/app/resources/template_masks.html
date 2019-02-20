@@ -1,0 +1,62 @@
+<!--[main]-->
+<link href="app/resources/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+<table class="customform" style="width: 100%">
+    <tr>
+        <td colspan="2" class="formtitle">Object replacement</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>$object->id</b></td>
+        <td width="50%"><span class="formfield">{$object->id}</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>$object->name</b></td>
+        <td width="50%"><span class="formfield">{$object->name}</span></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="formtitle">Date masks</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Date (d/m/Y)</b></td>
+        <td width="50%"><span class="formfield">date_format({$date}, 'd/m/Y')</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Date (m/d/Y) </b></td>
+        <td width="50%"><span class="formfield">date_format({$date}, 'm/d/Y')</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Date (F d, Y) </b></td>
+        <td width="50%"><span class="formfield">date_format({$date}, 'F d, Y')</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Datetime (d/m/Y H:i:s) </b></td>
+        <td width="50%"><span class="formfield">date_format({$datetime}, 'd/m/Y H:i:s')</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Datetime (m/d/Y H:i:s) </b></td>
+        <td width="50%"><span class="formfield">date_format({$datetime}, 'm/d/Y H:i:s')</span></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="formtitle">Numeric masks</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Numeric (99.999,99) </b></td>
+        <td width="50%"><span class="formfield">number_format({$number}, 2, ',', '.')</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Numeric (99,999.99) </b></td>
+        <td width="50%"><span class="formfield">number_format({$number}, 2, '.', ',')</span></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="formtitle">Calculations</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Evaluate ( ($value1 + $value2) / $value3 ) </b></td>
+        <td width="50%"><span class="formfield">evaluate(({$value1} + {$value2}) / {$value3})</span></td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Evaluate ( ($value1 * $value3) / ( $value2 / 5) ) </b></td>
+        <td width="50%"><span class="formfield">evaluate(({$value1} * {$value3}) / ( {$value2} / 5))</span></td>
+    </tr>
+</table>
+<!--[/main]-->

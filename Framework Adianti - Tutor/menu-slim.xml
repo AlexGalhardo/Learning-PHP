@@ -1,0 +1,148 @@
+<menu>
+    <menuitem label='_t{Persistence}'>
+        <icon>fa:database fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Connections}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Connections</action>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Objects}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Objects</action>
+            </menuitem>
+            
+            <menuitem label='_t{Collections}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Collections</action>
+            </menuitem>
+            
+            <menuitem label='_t{Relationships}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Persistence#submenu=Relationships</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+            
+    <menuitem label='_t{Presentation}'>
+        <icon>fa:desktop fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Pages}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Pages</action>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Containers}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Containers</action>
+            </menuitem>
+            
+            <menuitem label='_t{Dialogs}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Dialogs</action>
+            </menuitem>
+            
+            <menuitem label='_t{Forms}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Forms</action>
+            </menuitem>
+        
+            <menuitem label='_t{Datagrids}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Datagrids</action>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Utilities</action>
+            </menuitem>
+            
+            <menuitem label='_t{Reports}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Reports</action>
+            </menuitem>
+            
+            <menuitem label='_t{Charts}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Charts</action>
+            </menuitem>
+            
+            <menuitem label='_t{Labels}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Labels</action>
+            </menuitem>
+            
+            <menuitem label='_t{Templates}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Templates</action>
+            </menuitem>
+            
+            <menuitem label='_t{Studio designer}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Studio designer</action>
+            </menuitem>
+            
+            <menuitem label='_t{Extras}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Presentation#submenu=Extras</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Organization}'>
+        <icon>fa:list-alt fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Standard controls}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Standard controls</action>
+            </menuitem>
+            
+            <menuitem label='_t{Manual controls}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Manual controls</action>
+            </menuitem>
+
+            <menuitem label='_t{Complete registrations}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Complete registrations</action>
+            </menuitem>
+            
+            <menuitem label='_t{Query screens}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Query screens</action>
+            </menuitem>
+            
+            <menuitem label='_t{Batch operations}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Batch operations</action>
+            </menuitem>
+            
+            <menuitem label='_t{Checkout screens}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Checkout screens</action>
+            </menuitem>
+            
+            <menuitem label='_t{Field interactions}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Field interactions</action>
+            </menuitem>
+            
+            <menuitem label='_t{Calendars}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Calendars</action>
+            </menuitem>
+            
+            <menuitem label='_t{Studio designer}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Studio designer</action>
+            </menuitem>
+            
+            <menuitem label='_t{Custom views}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <action>HomeView#method=onLoad#menu=Organization#submenu=Custom views</action>
+            </menuitem>
+        </menu>
+    </menuitem>
+</menu>

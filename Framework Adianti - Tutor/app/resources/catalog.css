@@ -1,0 +1,25 @@
+.catalog
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.product
+{
+    width:250px;
+    height:250px;
+    float:left;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    vertical-align:middle;
+    display:table-cell;
+}

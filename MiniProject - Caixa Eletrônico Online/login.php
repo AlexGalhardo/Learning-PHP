@@ -3,6 +3,7 @@ session_start();
 require 'config.php';
 
 if(isset($_POST['agencia']) && empty($_POST['agencia']) == false) {
+	
 	$agencia = addslashes($_POST['agencia']);
 	$conta = addslashes($_POST['conta']);
 	$senha = addslashes($_POST['senha']);

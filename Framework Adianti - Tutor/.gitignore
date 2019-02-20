@@ -1,0 +1,13 @@
+/lib
+/vendor
+/app/output/barchart.png
+/app/output/linechart.png
+/app/output/nfe.pdf
+/app/output/pdf_report.pdf
+/app/output/pdf_shapes.pdf
+/app/output/piechart.png
+/app/output/tabular.pdf
+app/output/customers.csv
+app/output/customers.pdf
+app/output/customers.rtf
+app/output/customers.html

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tframe id="0">
+        <class>TFrame</class>
+        <name>frame1</name>
+        <title>Register</title>
+        <x>30</x>
+        <y>15</y>
+        <width>376</width>
+        <height>134</height>
+        <child>
+            <tpanel>
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>label1</name>
+                    <x>25</x>
+                    <y>20</y>
+                    <color>#FF0000</color>
+                    <size>10</size>
+                    <style>b</style>
+                    <value>Identification: </value>
+                </tlabel>
+                <tlabel id="1">
+                    <class>TLabel</class>
+                    <name>label2</name>
+                    <x>25</x>
+                    <y>50</y>
+                    <color>#252525</color>
+                    <size>10</size>
+                    <style>b</style>
+                    <value>Name: </value>
+                </tlabel>
+                <tentry id="2">
+                    <class>TEntry</class>
+                    <name>id</name>
+                    <x>150</x>
+                    <y>10</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>47</width>
+                    <maxlen>0</maxlen>
+                    <editable>1</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="3">
+                    <class>TEntry</class>
+                    <name>name</name>
+                    <x>150</x>
+                    <y>45</y>
+                    <value></value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>1</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tbutton id="4">
+                    <class>TButton</class>
+                    <name>button1</name>
+                    <x>245</x>
+                    <y>80</y>
+                    <value>Save</value>
+                    <icon>ico_save.png</icon>
+                    <action>onSave</action>
+                    <template>save.php</template>
+                </tbutton>
+            </tpanel>
+        </child>
+    </tframe>
+    <tframe id="1">
+        <class>TFrame</class>
+        <name>frame2</name>
+        <title>Listing</title>
+        <x>30</x>
+        <y>160</y>
+        <width>376</width>
+        <height>187</height>
+        <child>
+            <tpanel>
+                <tdatagrid id="0">
+                    <class>TDataGrid</class>
+                    <name>datagrid1</name>
+                    <x>5</x>
+                    <y>5</y>
+                    <loader>onReload</loader>
+                    <template>reload.php</template>
+                    <width>328</width>
+                    <height>160</height>
+                    <columns>
+                        <tdatagridcolumn id="1">
+                            <name>id</name>
+                            <align>left</align>
+                            <label>Identification</label>
+                            <width>100</width>
+                        </tdatagridcolumn>
+                        <tdatagridcolumn id="2">
+                            <name>name</name>
+                            <align>left</align>
+                            <label>Name</label>
+                            <width>217</width>
+                        </tdatagridcolumn>
+                    </columns>
+                    <actions>
+                        <tdatagridaction id="1">
+                            <method>onEdit</method>
+                            <image>ico_edit.png</image>
+                            <field>id</field>
+                            <label>Edit</label>
+                            <template>edit.php</template>
+                        </tdatagridaction>
+                        <tdatagridaction id="2">
+                            <method>onDelete</method>
+                            <image>ico_delete.png</image>
+                            <field>id</field>
+                            <label>Delete</label>
+                            <template>delete.php</template>
+                        </tdatagridaction>
+                    </actions>
+                    <pagenavigator>no</pagenavigator>
+                </tdatagrid>
+            </tpanel>
+        </child>
+    </tframe>
+</form>

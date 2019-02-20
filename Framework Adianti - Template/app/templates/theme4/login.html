@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>Adianti Template IV</title>
+        
+        {LIBRARIES}
+        {HEAD}
+        <!-- Google Fonts -->
+        <link href="app/templates/{template}/plugins/node-waves/waves.css" rel="stylesheet" />
+        <link href="app/templates/{template}/plugins/animate-css/animate.css" rel="stylesheet" />
+        <link href="app/templates/{template}/css/style.css" rel="stylesheet">
+        <link href="app/templates/{template}/css/themes/all-themes.css" rel="stylesheet" />
+        
+        <style>
+        html
+        {
+            height: unset;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Page Loader -->
+        <div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="preloader">
+                    <div class="spinner-layer pl-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p>Carregando...</p>
+            </div>
+        </div>
+        <!-- #END# Page Loader -->
+        
+        <nav class="bg-red main-header navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; text-align:center; position:relative">
+            <div class="navbar-header" style="display: inline-block;float:none; width:100%;">
+                <span class="navbar-brand" style="color:white">Adianti Template IV</san>
+            </div>
+            <!-- /.navbar-header -->
+        </nav>
+        
+        <div id="wrapper" style="width:90%;margin:auto;margin-top:10px">
+            <!-- Navigation -->
+    
+            <div id="adianti_div_content"></div>
+            <div id="adianti_online_content"></div>
+            <div id="adianti_online_content2"></div>
+            
+        </div>
+        <div style="text-align:center">
+            <!--[CREATE-ACCOUNT]--> <a href="index.php?class=SystemRegistrationForm">[_t{Create account}]</a> <!--[/CREATE-ACCOUNT]-->
+            <!--[RESET-PASSWORD]--> <a href="index.php?class=SystemRequestPasswordResetForm">[_t{Reset password}]</a> <!--[/RESET-PASSWORD]-->
+        </div>
+        
+        <a class="little-float-button bg-orange" title="PHP Modules" href="index.php?class=SystemModulesCheckView" style="pointer-events: auto;">
+            <i class="fa fa-cog internal-float-button"></i>
+        </a>
+        
+        <!-- /#wrapper -->
+        
+        <script src="app/templates/{template}/js/admin-login.js"></script>
+    </body>
+</html>

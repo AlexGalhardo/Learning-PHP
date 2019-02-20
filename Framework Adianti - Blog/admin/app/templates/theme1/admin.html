@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog admin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {LIBRARIES}
+    {HEAD}
+</head>
+<body>
+    <div class="adianti_container">
+        <div class="header">
+            <div class="thin_bar">
+                &nbsp;
+            </div>
+            <div class="header_content">
+                <div class="logo1" style="position:relative; width:48%;padding-top:10px">
+                    <a target="newwindow" href="http://www.adianti.com.br/framework">
+                        <img src="app/templates/theme1/images/framework.png">
+                    </a>
+                </div>
+                
+                <div class="logo2" style="position:relative; width:48%">
+                    <a target="newwindow" href="http://www.adianti.com.br">
+                        <img src="app/templates/theme1/images/adianti.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header_bottom" style="clear:both"></div>
+        </div>
+        
+        <div class="body">
+            <div class="sidepanel">
+                <div class="username" style="text-align:right"> Hello {login}</div>
+                <h2>Admin</h2>
+                <ul>
+                    <li><a generator="adianti" href="index.php?class=CategoryFormList">_t{Categories}</a></li>
+                    <li><a generator="adianti" href="index.php?class=ContentForm">_t{Content}</a></li>
+                    <li><a generator="adianti" href="index.php?class=PostList">_t{Posts}</a></li>
+                    <li><a generator="adianti" href="index.php?class=LoginForm&method=onLogout&static=1">Logout</a></li>
+                </ul>
+            </div>
+            
+            <div id="adianti_div_content" class="content"></div>
+            <div id="adianti_online_content"></div>
+            <div id="pageboth"><br></div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+</html>

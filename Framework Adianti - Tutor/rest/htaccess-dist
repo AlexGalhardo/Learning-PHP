@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^tipo-produto-list$ index.php?class=TipoProdutoList&method=onReload&%{QUERY_STRING} [NC]
+RewriteRule ^tipo-produto-edit$ index.php?class=TipoProdutoForm&method=onEdit&%{QUERY_STRING} [NC]
+RewriteRule ^tipo-produto-ondelete$ index.php?class=TipoProdutoList&method=onDelete&%{QUERY_STRING} [NC]
+RewriteRule ^tipo-produto-delete$ index.php?class=TipoProdutoList&method=Delete&%{QUERY_STRING} [NC]
+
+RewriteRule ^xhr-tipo-produto-list$ engine.php?class=TipoProdutoList&method=onReload&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-tipo-produto-edit$ engine.php?class=TipoProdutoForm&method=onEdit&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-tipo-produto-ondelete$ engine.php?class=TipoProdutoList&method=onDelete&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-tipo-produto-delete$ engine.php?class=TipoProdutoList&method=Delete&%{QUERY_STRING} [NC]
+
+RewriteRule ^cities/([A-Za-z0-9]*)$ rest.php?class=CityRestService&method=handle&id=$1&%{QUERY_STRING} [NC]
+RewriteRule ^cities/([A-Za-z-_0-9]*)/([A-Za-z-_0-9]*)$ rest.php?class=CityRestService&method=$2&id=$1&%{QUERY_STRING} [NC]
+RewriteRule ^cities$ rest.php?class=CityRestService&method=handle&%{QUERY_STRING} [NC]
+
+RewriteRule ^customers/([A-Za-z0-9]*)$ rest.php?class=CustomerRestService&method=handle&id=$1&%{QUERY_STRING} [NC]
+RewriteRule ^customers/([A-Za-z-_0-9]*)/([A-Za-z-_0-9]*)$ rest.php?class=CustomerRestService&method=$2&id=$1&%{QUERY_STRING} [NC]
+RewriteRule ^customers$ rest.php?class=CustomerRestService&method=handle&%{QUERY_STRING} [NC]

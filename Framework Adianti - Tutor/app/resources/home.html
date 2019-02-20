@@ -1,0 +1,70 @@
+<!--[main]-->
+<style>
+.topic
+{
+    color: #006320;
+    font-family: "Open Sans";
+    font-size: 17pt;
+    width: 100%;
+    padding: 8px;
+}
+
+.multicolumn
+{
+    width: 100%;
+}
+
+.multicolumn .card {
+    font-family: "Open Sans";
+    font-size: 10pt;
+    color: #3F3F3F;
+    float: left;
+    line-height:1.5em;
+    width: calc(50% - 10px);
+    min-height: 64px;
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 3px;
+    margin: 5px;
+    text-decoration: none;
+    display: flex;
+}
+
+.multicolumn .card span {
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.multicolumn .card:hover
+{
+    background: whitesmoke;
+}
+
+.multicolumn .card i
+{
+    font-size: 17pt;
+}
+
+.multicolumn .card .card-content
+{
+    align-self: center;
+}
+</style>
+
+<div style="margin-left: 10px; margin-right: 10px">
+    <span class="topic">{$menu} > {$submenu}</span>
+    <div class="multicolumn">
+    <!--[items]-->
+        
+        <a class="card" generator="adianti" href="index.php?class={$action}">
+        <div class="card-content">
+            <i class="{$icon}"></i>
+            <span>{$label}</span>
+            </div>
+        </a>
+        
+    <!--[/items]-->
+    </div>
+</div>
+
+<!--[/main]-->

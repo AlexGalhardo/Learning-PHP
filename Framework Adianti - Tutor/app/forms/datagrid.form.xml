@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>notebook1</name>
+        <x>5</x>
+        <y>5</y>
+        <width>472</width>
+        <height>289</height>
+        <pages>
+            <tpanel id="1" tab="Designer Datagrid">
+                <tdatagrid id="0">
+                    <class>TDataGrid</class>
+                    <name>datagrid</name>
+                    <x>10</x>
+                    <y>5</y>
+                    <loader>onReload</loader>
+                    <template></template>
+                    <width>400</width>
+                    <height>200</height>
+                    <columns>
+                        <tdatagridcolumn id="1">
+                            <name>id</name>
+                            <align>right</align>
+                            <label>Identification</label>
+                            <width>112</width>
+                        </tdatagridcolumn>
+                        <tdatagridcolumn id="2">
+                            <name>name</name>
+                            <align>left</align>
+                            <label>Name</label>
+                            <width>280</width>
+                        </tdatagridcolumn>
+                    </columns>
+                    <actions>
+                        <tdatagridaction id="1">
+                            <method>onEdit</method>
+                            <image>ico_edit.png</image>
+                            <field>id</field>
+                            <label>Editar</label>
+                            <template></template>
+                        </tdatagridaction>
+                    </actions>
+                    <pagenavigator>yes</pagenavigator>
+                </tdatagrid>
+            </tpanel>
+        </pages>
+    </tnotebook>
+</form>

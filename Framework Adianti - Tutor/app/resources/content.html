@@ -1,0 +1,28 @@
+<!--[main]-->
+<link href="app/resources/styles.css" rel="stylesheet" type="text/css" media="screen" />
+<table class="customform" style="width: 100%">
+    <tr>
+        <td colspan="2" class="formtitle">Customer data</td>
+    </tr>
+    <tr>
+        <td width="50%">Name</td>
+        <td width="50%">{$name}</td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>{$address}</td>
+    </tr>
+    
+    <!--[object]-->
+    <tr>
+        <td class="sectiontitle" colspan=2>Embedded object</td>
+    </tr>
+    <tr bgcolor="#e0e0e0">
+        <td colspan="2">A Framework object ({$class})</td>
+    </tr>
+    <tr>
+        <td colspan="2">{$widget}</td>
+    </tr>
+    <!--[/object]-->
+</table>
+<!--[/main]-->

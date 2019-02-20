@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+    <page>
+        <format>a5</format>
+        <orientation>L</orientation>
+    </page>
+    <rectangle id="1">
+        <class>Rectangle</class>
+        <x>84</x>
+        <y>52</y>
+        <width>350</width>
+        <height>210</height>
+        <fillcolor>#FFF04B</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>2</linewidth>
+        <shadowoffset>4</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <ellipse id="2">
+        <class>Ellipse</class>
+        <x>294</x>
+        <y>210</y>
+        <width>194</width>
+        <height>104</height>
+        <fillcolor>#8081CB</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>5</linewidth>
+        <shadowoffset>4</shadowoffset>
+        <shadowcolor>#818181</shadowcolor>
+    </ellipse>
+    <rectangle id="3">
+        <class>Rectangle</class>
+        <x>30</x>
+        <y>60</y>
+        <width>230</width>
+        <height>68</height>
+        <fillcolor>#FF2D2D</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>3</linewidth>
+        <shadowoffset>4</shadowoffset>
+        <shadowcolor>#646464</shadowcolor>
+    </rectangle>
+    <line id="4">
+        <class>Line</class>
+        <x>34</x>
+        <y>166</y>
+        <x2>172</x2>
+        <y2>294</y2>
+        <linewidth>3</linewidth>
+        <linecolor>#03FF00</linecolor>
+    </line>
+    <text id="5">
+        <class>Text</class>
+        <x>46</x>
+        <y>82</y>
+        <font>Arial</font>
+        <size>32</size>
+        <text>&lt;b&gt;Hello {name}&lt;/b&gt;</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>3</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="6">
+        <class>Text</class>
+        <x>312</x>
+        <y>242</y>
+        <font>Times</font>
+        <size>26</size>
+        <text>&lt;b&gt;Your name is&lt;/b&gt;:
+      {name}</text>
+        <color>#FFFFFF</color>
+        <shadowoffset>2</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <line id="7">
+        <class>Line</class>
+        <x>200</x>
+        <y>310</y>
+        <x2>464</x2>
+        <y2>64</y2>
+        <linewidth>4</linewidth>
+        <linecolor>#8DF0FF</linecolor>
+    </line>
+    <rectangle id="8">
+        <class>Rectangle</class>
+        <x>95</x>
+        <y>137</y>
+        <width>306</width>
+        <height>62</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="9">
+        <class>Text</class>
+        <x>106</x>
+        <y>150</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Hello {name}, Hello {name}, Hello {name}, Hello {name}.
+Hello {name}, Hello {name}, Hello {name}, Hello {name}.
+Hello {name}, Hello {name}, Hello {name}, Hello {name}.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="10">
+        <class>Text</class>
+        <x>142</x>
+        <y>24</y>
+        <font>Times</font>
+        <size>26</size>
+        <text>&lt;i&gt;Adianti PDF Designer&lt;/i&gt;</text>
+        <color>#3A368C</color>
+        <shadowoffset>2</shadowoffset>
+        <shadowcolor>#C5C5C5</shadowcolor>
+    </text>
+    <line id="11">
+        <class>Line</class>
+        <x>320</x>
+        <y>336</y>
+        <x2>550</x2>
+        <y2>316</y2>
+        <linewidth>2</linewidth>
+        <linecolor>#000000</linecolor>
+    </line>
+    <anchor id="12">
+        <class>Anchor</class>
+        <x>292</x>
+        <y>74</y>
+        <name>anchor1</name>
+    </anchor>
+</design>

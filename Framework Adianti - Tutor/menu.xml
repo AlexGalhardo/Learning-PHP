@@ -1,0 +1,936 @@
+<menu>
+    <menuitem label='_t{Persistence}'>
+        <icon>fa:database fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Connections}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Database Transactions}'>
+                        <icon>fa:database fa-fw</icon>
+                        <action>SetupTransactionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual Prepared Query}'>
+                        <icon>fa:database fa-fw</icon>
+                        <action>ManualPrepareQueryView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction information}'>
+                        <icon>fa:database fa-fw</icon>
+                        <action>TransactionInfoView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual connection}'>
+                        <icon>fa:database fa-fw</icon>
+                        <action>ManualConnectionView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Objects}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Active Records}'>
+                        <icon>fa:database fa-fw</icon>
+                        <action>SetupActiveRecordView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Store}'>
+                        <icon>fa:download fa-fw</icon>
+                        <action>ObjectStoreView</action>
+                    </menuitem>
+                    <menuitem label='_t{Alternative Object Store}'>
+                        <icon>fa:download fa-fw</icon>
+                        <action>ObjectCreateView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Load}'>
+                        <icon>fa:upload fa-fw</icon>
+                        <action>ObjectLoadView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Static Load}'>
+                        <icon>fa:upload fa-fw</icon>
+                        <action>ObjectLoad2View</action>
+                    </menuitem>
+                    <menuitem label='_t{Lazy Load}'>
+                        <icon>fa:upload fa-fw</icon>
+                        <action>ObjectLazyView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Render and evaluate}'>
+                        <icon>fa:circle-o fa-fw</icon>
+                        <action>ObjectRenderView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Update}'>
+                        <icon>fa:pencil-square-o fa-fw</icon>
+                        <action>ObjectUpdateView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction class log}'>
+                        <icon>fa:film fa-fw</icon>
+                        <action>RegisterLogView</action>
+                    </menuitem>
+                    <menuitem label='_t{Transaction logger function}'>
+                        <icon>fa:film fa-fw</icon>
+                        <action>RegisterLogFunctionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Encapsulation}'>
+                        <icon>fa:shield fa-fw</icon>
+                        <action>EncapsulationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Delete}'>
+                        <icon>fa:times fa-fw</icon>
+                        <action>ObjectDeleteView</action>
+                    </menuitem>
+                    <menuitem label='_t{First and Last ID}'>
+                        <icon>fa:upload fa-fw</icon>
+                        <action>ObjectFirstLastView</action>
+                    </menuitem>
+                    <menuitem label='_t{Array conversion}'>
+                        <icon>fa:exchange fa-fw</icon>
+                        <action>ObjectFromArrayView</action>
+                    </menuitem>
+                    <menuitem label='_t{JSON conversion}'>
+                        <icon>fa:exchange fa-fw</icon>
+                        <action>ObjectToJsonView</action>
+                    </menuitem>
+                    <menuitem label='_t{Hook methods}'>
+                        <icon>fa:paperclip fa-fw</icon>
+                        <action>HookMethodView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Collections}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Criteria API}'>
+                                <icon>fa:filter fa-fw</icon>
+                                <action>CriteriaView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection load}'>
+                                <icon>fa:upload fa-fw</icon>
+                                <action>CollectionLoadView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple load}'>
+                                <icon>fa:upload fa-fw</icon>
+                                <action>CollectionStaticSimpleLoadView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection paginated load}'>
+                                <icon>fa:upload fa-fw</icon>
+                                <action>CollectionLoadPropertyView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection simple paginated load}'>
+                                <icon>fa:upload fa-fw</icon>
+                                <action>CollectionSimpleLoadPropertyView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection get objects}'>
+                                <icon>fa:upload fa-fw</icon>
+                                <action>CollectionGetObjectsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection update}'>
+                                <icon>fa:pencil-square-o fa-fw</icon>
+                                <action>CollectionUpdateView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection batch update}'>
+                                <icon>fa:pencil-square-o fa-fw</icon>
+                                <action>CollectionBatchUpdateView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static batch update}'>
+                                <icon>fa:pencil-square-o fa-fw</icon>
+                                <action>CollectionStaticBatchUpdateView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Collection as array}'>
+                                <icon>fa:filter fa-fw</icon>
+                                <action>CollectionArrayView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection transform}'>
+                                <icon>fa:exchange fa-fw</icon>
+                                <action>CollectionTransformView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection filter}'>
+                                <icon>fa:filter fa-fw</icon>
+                                <action>CollectionFilterView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection delete}'>
+                                <icon>fa:times fa-fw</icon>
+                                <action>CollectionDeleteView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple delete}'>
+                                <icon>fa:times fa-fw</icon>
+                                <action>CollectionStaticSimpleDeleteView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection count}'>
+                                <icon>fa:circle-o fa-fw</icon>
+                                <action>CollectionCountView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection static simple count}'>
+                                <icon>fa:circle-o fa-fw</icon>
+                                <action>CollectionStaticSimpleCountView</action>
+                            </menuitem>
+                            <menuitem label='_t{Collection count objects}'>
+                                <icon>fa:circle-o fa-fw</icon>
+                                <action>CollectionCountObjectsView</action>
+                            </menuitem>
+                         </menu>
+                     </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Relationships}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Relationships shortcuts}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>RelationShortcutsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Association}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>AssociationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Composition}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>CompositionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Simple Composition}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>CompositionSimpleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Aggregation}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>AggregationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Object Simple Aggregation}'>
+                        <icon>fa:link fa-fw</icon>
+                        <action>AggregationSimpleView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+            
+    <menuitem label='_t{Presentation}'>
+        <icon>fa:desktop fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Pages}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Common page}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>SinglePageView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page with embedded PDF}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>EmbeddedPDFView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page with external content}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>ExternalPageView</action>
+                    </menuitem>
+                    <menuitem label='_t{Common window}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>SingleWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window with embedded PDF}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>WindowPDFView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window with external system}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>ExternalSystemWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{On demand window}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>OnDemandWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Page center}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>PageCenterView</action>
+                    </menuitem>
+                    <menuitem label='_t{Internal pages (inbox)}'>
+                        <icon>fa:envelope-o fa-fw</icon>
+                        <action>InboxView</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi Step Form}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>MultiStepMultiFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi Step Wizard}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>MultiStepRegistration1View</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            
+            <menuitem label='_t{Containers}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Table}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>ContainerTableView</action>
+                    </menuitem>
+                    <menuitem label='_t{Table Columns}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>ContainerTableColumnsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Table Multi Cell}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>ContainerTableMultiCellView</action>
+                    </menuitem>
+                    <menuitem label='_t{Panel}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>ContainerPanelView</action>
+                    </menuitem>
+                    <menuitem label='_t{Notebook}'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ContainerNotebookView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bootstrap Notebook Wrapper}'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ContainerNotebookBootstrapView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bootstrap Notebook Vertical}'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ContainerNotebookVerticalBootstrapView</action>
+                    </menuitem>
+                    <menuitem label='_t{Notebook Styling}'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ContainerNotebookStyleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Panel group}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>ContainerPanelGroupView</action>
+                    </menuitem>
+                    <menuitem label='_t{Scroll}'>
+                        <icon>fa:sort fa-fw</icon>
+                        <action>ContainerScrollView</action>
+                    </menuitem>
+                    <menuitem label='_t{Frame}'>
+                        <icon>fa:square-o fa-fw</icon>
+                        <action>ContainerFrameView</action>
+                    </menuitem>
+                    <menuitem label='_t{Vertical Box}'>
+                        <icon>fa:bars fa-rotate-90 fa-fw</icon>
+                        <action>ContainerVBoxView</action>
+                    </menuitem>
+                    <menuitem label='_t{Horizontal Box}'>
+                        <icon>fa:bars fa-fw</icon>
+                        <action>ContainerHBoxView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Dialogs}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Information dialog}'>
+                        <icon>fa:info-circle fa-fw</icon>
+                        <action>DialogInformationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Warning dialog}'>
+                        <icon>fa:exclamation-triangle fa-fw</icon>
+                        <action>DialogWarningView</action>
+                    </menuitem>
+                    <menuitem label='_t{Error dialog}'>
+                        <icon>fa:exclamation-circle fa-fw</icon>
+                        <action>DialogErrorView</action>
+                    </menuitem>
+                    <menuitem label='_t{Question dialog}'>
+                        <icon>fa:question-circle fa-fw</icon>
+                        <action>DialogQuestionView</action>
+                    </menuitem>
+                    <menuitem label='_t{Input dialog}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>DialogInputView</action>
+                    </menuitem>
+                    <menuitem label='_t{Alerts}'>
+                        <icon>fa:exclamation-triangle fa-fw</icon>
+                        <action>AlertView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Forms}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Manual form}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormCustomView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap form}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap form grid}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormBuilderGridView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap vertical form}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormVerticalBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form with static post}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormStaticBuilderView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form field list}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>FormFieldListView</action>
+                            </menuitem>
+                            <menuitem label='_t{Styled buttons}'>
+                                <icon>fa:heart-o fa-fw</icon>
+                                <action>FormButtonStyleView</action>
+                            </menuitem>
+                            <menuitem label='_t{Input masks}'>
+                                <icon>fa:square-o fa-fw</icon>
+                                <action>FormMaskView</action>
+                            </menuitem>
+                            <menuitem label='_t{Form validation}'>
+                                <icon>fa:exclamation-triangle fa-fw</icon>
+                                <action>FormValidationView</action>
+                            </menuitem>
+                            <menuitem label='_t{Html Editor}'>
+                                <icon>fa:html5 fa-fw</icon>
+                                <action>FormHtmlEditorView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Static selections}'>
+                                <icon>fa:check-square-o fa-fw</icon>
+                                <action>FormStaticSelectionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Manual database selections}'>
+                                <icon>fa:check-square-o fa-fw</icon>
+                                <action>FormDBManualSelectionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Automatic database selections}'>
+                                <icon>fa:check-square-o fa-fw</icon>
+                                <action>FormDBAutoSelectionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Client interactions}'>
+                                <icon>fa:bolt fa-fw</icon>
+                                <action>FormClientInteractionsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Dynamic interactions}'>
+                                <icon>fa:bolt fa-fw</icon>
+                                <action>FormInteractionsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Enable/disable interactions}'>
+                                <icon>fa:bolt fa-fw</icon>
+                                <action>FormEnableDisableView</action>
+                            </menuitem>
+                            <menuitem label='_t{Show/hide rows}'>
+                                <icon>fa:bolt fa-fw</icon>
+                                <action>FormShowHideRowsView</action>
+                            </menuitem>
+                            <menuitem label='_t{Seek button}'>
+                                <icon>fa:search fa-fw</icon>
+                                <action>FormSeekButtonView</action>
+                            </menuitem>
+                            <menuitem label='_t{Sort List}'>
+                                <icon>fa:sort fa-fw</icon>
+                                <action>FormSortView</action>
+                            </menuitem>
+                            <menuitem label='_t{Sort DB List}'>
+                                <icon>fa:sort fa-fw</icon>
+                                <action>FormDBSortView</action>
+                            </menuitem>
+                        </menu>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        
+            <menuitem label='_t{Datagrids}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu class="dropdown-menu col-wrapper">
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Datagrid}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridCustomView</action>
+                            </menuitem>
+                            <menuitem label='_t{Quick datagrid}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridQuickView</action>
+                            </menuitem>
+                            <menuitem label='_t{Bootstrap Datagrid}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridBootstrapView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Actions group}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridActionGroupView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Columns group}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridColumnGroupView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids Conditional actions}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridConditionalActionView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with popover}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridPopView</action>
+                            </menuitem>
+                            <menuitem label='_t{Horizontal Scrollable Datagrids}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridHScrollView</action>
+                            </menuitem>
+                            <menuitem label='_t{Vertical Scrollable Datagrids}'>
+                                <icon>fa:table fa-fw</icon>
+                                <action>DatagridScrollView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid column actions}'>
+                                <icon>fa:sort-alpha-asc fa-fw</icon>
+                                <action>DatagridColumnActionsView</action>
+                            </menuitem>
+                         </menu>
+                    </menuitem>
+                    <menuitem>
+                        <menu class="column">
+                            <menuitem label='_t{Datagrid formatting}'>
+                                <icon>fa:tag fa-fw</icon>
+                                <action>DatagridTransformView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid date conversion}'>
+                                <icon>fa:calendar fa-fw</icon>
+                                <action>DatagridTransformObjectView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid calculations}'>
+                                <icon>fa:calculator fa-fw</icon>
+                                <action>DatagridMathView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with image}'>
+                                <icon>fa:picture-o fa-fw</icon>
+                                <action>DatagridImageView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with label}'>
+                                <icon>fa:flag-o fa-fw</icon>
+                                <action>DatagridLabelView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with progress bar}'>
+                                <icon>fa:battery-2 fa-fw</icon>
+                                <action>DatagridProgressView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrid with input fields}'>
+                                <icon>fa:square-o fa-fw</icon>
+                                <action>DatagridInputView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with input dialog}'>
+                                <icon>fa:list-alt fa-fw</icon>
+                                <action>DatagridInputDialogView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with new Window}'>
+                                <icon>fa:desktop fa-fw</icon>
+                                <action>DatagridWindowView</action>
+                            </menuitem>
+                            <menuitem label='_t{Datagrids with Checkbutton}'>
+                                <icon>fa:check-square-o fa-fw</icon>
+                                <action>DatagridCheckView</action>
+                            </menuitem>
+                        </menu>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Utilities}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Calendar}'>
+                        <icon>fa:calendar fa-fw</icon>
+                        <action>CalendarView</action>
+                    </menuitem>
+                    <menuitem label='_t{Full Calendar}'>
+                        <icon>fa:calendar fa-fw</icon>
+                        <action>FullCalendarStaticView</action>
+                    </menuitem>
+                    <menuitem label='_t{Tree View}'>
+                        <icon>fa:indent fa-fw</icon>
+                        <action>TreeView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dropdown}'>
+                        <icon>fa:list fa-fw</icon>
+                        <action>DropdownView</action>
+                    </menuitem>
+                    <menuitem label='_t{BreadCrumb}'>
+                        <icon>fa:arrow-circle-right fa-fw</icon>
+                        <action>BreadCrumbView</action>
+                    </menuitem>
+                    <menuitem label='_t{SourceCode}'>
+                        <icon>fa:code fa-fw</icon>
+                        <action>SourceCodeView</action>
+                    </menuitem>
+                </menu>
+                
+            </menuitem>
+            
+            <menuitem label='_t{Reports}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Tabular report}'>
+                        <icon>fa:file-pdf-o fa-fw</icon>
+                        <action>TabularReportView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed PDF shapes}'>
+                        <icon>fa:file-pdf-o fa-fw</icon>
+                        <action>PDFDesignShapesView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed PDF report}'>
+                        <icon>fa:file-pdf-o fa-fw</icon>
+                        <action>PDFDesignReportView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed PDF NFE}'>
+                        <icon>fa:file-pdf-o fa-fw</icon>
+                        <action>PDFDesignNFEView</action>
+                    </menuitem>
+                    <menuitem label='_t{Document HTML->PDF}'>
+                        <icon>fa:file-pdf-o fa-fw</icon>
+                        <action>DocumentHtmlPdfView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Charts}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Line chart}'>
+                        <icon>fa:line-chart fa-fw</icon>
+                        <action>LineChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Bar chart}'>
+                        <icon>fa:bar-chart fa-fw</icon>
+                        <action>BarChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Pie chart}'>
+                        <icon>fa:pie-chart fa-fw</icon>
+                        <action>PieChartView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dashboard}'>
+                        <icon>fa:pie-chart fa-fw</icon>
+                        <action>DashboardView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Labels}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Barcode}'>
+                        <icon>fa:barcode fa-fw</icon>
+                        <action>FormBarcodeView</action>
+                    </menuitem>
+                    <menuitem label='_t{QRCode}'>
+                        <icon>fa:qrcode fa-fw</icon>
+                        <action>FormQrcodeView</action>
+                    </menuitem>
+                    <menuitem label='_t{Screen labels}'>
+                        <icon>fa:qrcode fa-fw</icon>
+                        <action>FormScreenLabelsView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Templates}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Template View basic}'>
+                        <icon>fa:html5 fa-fw</icon>
+                        <action>TemplateViewBasicView</action>
+                    </menuitem>
+                    <menuitem label='_t{Template View masks}'>
+                        <icon>fa:html5 fa-fw</icon>
+                        <action>TemplateViewMaskView</action>
+                    </menuitem>
+                    <menuitem label='_t{Template View advanced}'>
+                        <icon>fa:html5 fa-fw</icon>
+                        <action>TemplateViewAdvancedView</action>
+                    </menuitem>
+                    <menuitem label='_t{Template View repeated}'>
+                        <icon>fa:html5 fa-fw</icon>
+                        <action>TemplateRepeatView</action>
+                    </menuitem>
+                    <menuitem label='_t{Using jQuery plugins}'>
+                        <icon>fa:code fa-fw</icon>
+                        <action>JqueryGalleryView</action>
+                    </menuitem>
+                    <menuitem label='_t{Creating new components}'>
+                        <icon>fa:code fa-fw</icon>
+                        <action>AccordionView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Studio designer}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Designed containers}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignContainerView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed form Elements}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed datagrids}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed form and datagrid}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignFormDataGridView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Extras}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Form components}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>FormComponentsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Texts and links}'>
+                        <icon>fa:font fa-fw</icon>
+                        <action>TextLinkView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form opening window}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>FormWindowView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form confirmation}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>FormConfirmationView</action>
+                    </menuitem>
+                    <menuitem label='_t{Expander}'>
+                        <icon>fa:expand fa-fw</icon>
+                        <action>FormExpanderView</action>
+                    </menuitem>
+                    <menuitem label='_t{Selection breaks}'>
+                        <icon>fa:check-square-o fa-fw</icon>
+                        <action>FormSelectionBreakView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form inside Popover}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>FormInsidePopoverView</action>
+                    </menuitem>
+                    <menuitem label='_t{Conditional submission}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>FormConditionalView</action>
+                    </menuitem>
+                    <menuitem label='_t{Reusable MVC Forms}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>FormReusableControl</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrid Window Form}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>DatagridWindowForm</action>
+                    </menuitem>
+                    <menuitem label='_t{Datagrid details}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>DatagridDetailView</action>
+                    </menuitem>
+                    <menuitem label='_t{Stylized Datagrids}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>DatagridStyleView</action>
+                    </menuitem>
+                    <menuitem label='_t{Form events}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>FormEventsView</action>
+                    </menuitem>
+                    <menuitem label='_t{Window events}'>
+                        <icon>fa:desktop fa-fw</icon>
+                        <action>ContainerWindowView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+        </menu>
+    </menuitem>
+    
+    <menuitem label='_t{Organization}'>
+        <icon>fa:list-alt fa-fw</icon>
+        <menu>
+            <menuitem label='_t{Standard controls}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Standard Form}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>StandardFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard DataGrid}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>StandardDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Standard Form/DataGrid}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>StandardFormDataGridView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Manual controls}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Manual form}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>CompleteFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual DataGrid}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>CompleteDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Manual Form/DataGrid}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>CompleteFormDataGridView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+
+            <menuitem label='_t{Complete registrations}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Customer list}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>CustomerDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Product list}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>ProductList</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale list}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>SaleList</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale master-detail form I}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>SaleForm#method=onClear</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale master-detail form II}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>SaleMultiValueForm#method=onClear</action>
+                    </menuitem>
+                    <menuitem label='_t{Sale master-detail form III}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>SaleMasterForm#method=onClear</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Query screens}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Customer Status}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>CustomerStatusView</action>
+                    </menuitem>
+                    <menuitem label='_t{Sales chart}'>
+                        <icon>fa:bar-chart fa-fw</icon>
+                        <action>SalesChartView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Batch operations}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Inline editing datagrid}'>
+                        <icon>fa:table fa-fw</icon>
+                        <action>InlineDataGridView</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch update list}'>
+                        <icon>fa:pencil-square-o fa-fw</icon>
+                        <action>ProductUpdateList</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch instant update list}'>
+                        <icon>fa:pencil-square-o fa-fw</icon>
+                        <action>ProductInstantUpdateList</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch delete list}'>
+                        <icon>fa:times fa-fw</icon>
+                        <action>MassiveDeleteView</action>
+                    </menuitem>
+                    <menuitem label='_t{Batch selection list}'>
+                        <icon>fa:check-square-o fa-fw</icon>
+                        <action>ProductSelectionList</action>
+                    </menuitem>
+                    <menuitem label='_t{Multi check form}'>
+                        <icon>fa:check-square-o fa-fw</icon>
+                        <action>MultiCheckView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Checkout screens}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Checkout form}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>CheckoutFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{POS form (Master/detail)}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>POSFormView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Field interactions}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Hierarchical combo}'>
+                        <icon>fa:list-alt fa-fw</icon>
+                        <action>FormHierarchicalComboView</action>
+                    </menuitem>
+                    <menuitem label='_t{Dynamic filtering}'>
+                        <icon>fa:bolt fa-fw</icon>
+                        <action>FormDynamicFilterView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Calendars}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Agenda}'>
+                        <icon>fa:calendar fa-fw</icon>
+                        <action>AgendaView</action>
+                    </menuitem>
+                    <menuitem label='_t{Data calendar}'>
+                        <icon>fa:calendar fa-fw</icon>
+                        <action>FullCalendarDatabaseView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Studio designer}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Designed form}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignedFormView</action>
+                    </menuitem>
+                    <menuitem label='_t{Designed datagrid}'>
+                        <icon>fa:object-group fa-fw</icon>
+                        <action>DesignedDataGridView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+            <menuitem label='_t{Custom views}'>
+                <icon>fa:circle-o fa-fw</icon>
+                <menu>
+                    <menuitem label='_t{Product catalog}'>
+                        <icon>fa:shopping-cart fa-fw</icon>
+                        <action>ProductCatalogView</action>
+                    </menuitem>
+                </menu>
+            </menuitem>
+            
+        </menu>
+    </menuitem>
+</menu>

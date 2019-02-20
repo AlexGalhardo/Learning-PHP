@@ -1,0 +1,237 @@
+body
+{
+	color:#333333;
+	background:#8C8C8C;
+    font-family: sans-serif,arial,verdana;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+img
+{
+    border:0;
+}
+
+.ui-widget
+{
+    font-size: 10pt;
+}
+
+button span
+{
+    font-size: 9pt;
+}
+
+#menuDiv
+{
+    width:100%;
+} 
+
+.adianti_container
+{
+    margin:auto;
+    margin-top:10px;
+    width:1180px;
+    min-height:570px;
+    display:block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+    height:auto;
+    float: center;
+    align: center;
+    text-align: left;
+}
+
+.body > .sidepanel
+{
+    font-size: 12px;
+    font-family: Sans, Helvetica, Arial, sans-serif;
+    background: none repeat scroll 0 0 #FAFAFA;
+    display: inline-block;
+    position: relative;
+    width: 260px;
+    z-index:4;
+    border:1px solid #c0c0c0;
+    height:auto;
+    margin:20px;
+    border-radius: 0;
+    float:right;
+    height: 100%;
+    min-height:570px;
+}
+
+.adianti_container .thin_bar
+{
+    width: 100%;
+    background-color:#fccb04;
+    height: 5px;
+}
+
+.adianti_container .header_content
+{
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.adianti_container .header_content .logo1
+{
+    padding-left: 2%;
+    float: left;
+    text-align: left;
+}
+
+.adianti_container .header_content .logo2
+{
+    padding-right: 2%;
+    float: right;
+    text-align: right;
+}
+
+.adianti_container .header .header_bottom
+{
+    height:5px;
+    margin-top:80px;
+    background-color: #CACFD5;
+}
+
+.body .sidepanel h2
+{
+    border-bottom: 1px solid #BBBBBB;
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 12pt;
+    padding: 5px;
+    padding-left: 12px;
+    background: rgb(110, 158, 208);
+    color: white;
+}
+
+.body .sidepanel .username
+{
+    background: #c0c0c0;
+    color: white;
+    border-bottom: 1px solid gray;
+    height:24px;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.body .sidepanel ul li
+{
+    height: 30px;
+    padding-left: 8px;
+}
+
+.body .sidepanel ul li:hover
+{
+    background: #E5E5E5;
+    border-right: 3px solid orange;
+    
+}
+
+.body .sidepanel ul
+{
+    list-style: none outside none;
+}
+
+.body .sidepanel a
+{
+    color: #333333;
+    display: block;
+    height: 25px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 10pt;
+}
+
+.body > .sidepanel *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.body .content
+{
+    padding: 20px;
+    width: 800px;
+    float: left;
+}
+
+.adianti_container .header
+{
+    background: #FFFFFF;
+    border-bottom:2px solid #555555;
+    
+}
+
+.adianti_container .body
+{
+    
+}
+
+input, textarea
+{
+    border-radius: 3px 3px 3px 3px;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.title
+{
+    font-family: sans-serif,arial,verdana;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 19pt;
+    color: #FFF;
+    display: block;
+    background: #CFCFCF;
+    text-shadow: 1px 2px 2px #4C4C4C;
+    border-radius: 5px 5px 5px 5px;
+    text-align:center;
+}
+
+.welcome
+{
+    float: right;
+    text-align: right;
+}
+
+.welcome span
+{
+    color: #B89713;
+    font-weight: bold;
+}
+
+.tframe
+{
+    margin-top: 4px;
+    padding-top: 5px !important;
+    padding-bottom: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 4px !important;
+}
+
+.tframe legend {
+    background: #E9E7FF;
+    color: #fff;
+    border-radius: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0 0 0 1px #8A8A8A;
+    margin-left: 3px;
+    height: 20px;
+}
+
+.tframe legend >label {
+    padding-left: 10px;
+    padding-right: 10px;
+}

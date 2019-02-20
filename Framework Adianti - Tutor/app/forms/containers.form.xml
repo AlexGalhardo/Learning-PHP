@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>notebook1</name>
+        <x>5</x>
+        <y>5</y>
+        <width>634</width>
+        <height>403</height>
+        <pages>
+            <tpanel id="1" tab="Basic">
+                <tframe id="0">
+                    <class>TFrame</class>
+                    <name>frame1</name>
+                    <title>Frame A</title>
+                    <x>5</x>
+                    <y>5</y>
+                    <width>616</width>
+                    <height>349</height>
+                    <child>
+                        <tpanel>
+                            <tnotebook id="0">
+                                <class>TNotebook</class>
+                                <name>notebook7</name>
+                                <x>5</x>
+                                <y>5</y>
+                                <width>591</width>
+                                <height>310</height>
+                                <pages>
+                                    <tpanel id="1" tab="SubNote A">
+                                        <tframe id="0">
+                                            <class>TFrame</class>
+                                            <name>frame10</name>
+                                            <title>Components #1</title>
+                                            <x>15</x>
+                                            <y>5</y>
+                                            <width>271</width>
+                                            <height>252</height>
+                                            <child>
+                                                <tpanel>
+                                                    <tlabel id="0">
+                                                        <class>TLabel</class>
+                                                        <name>label24</name>
+                                                        <x>25</x>
+                                                        <y>10</y>
+                                                        <color>#FF0000</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>entry</value>
+                                                    </tlabel>
+                                                    <tentry id="1">
+                                                        <class>TEntry</class>
+                                                        <name>entry5</name>
+                                                        <x>85</x>
+                                                        <y>5</y>
+                                                        <value></value>
+                                                        <mask></mask>
+                                                        <width>160</width>
+                                                        <maxlen>0</maxlen>
+                                                        <editable>1</editable>
+                                                        <tip></tip>
+                                                        <required></required>
+                                                    </tentry>
+                                                    <tlabel id="2">
+                                                        <class>TLabel</class>
+                                                        <name>label25</name>
+                                                        <x>5</x>
+                                                        <y>50</y>
+                                                        <color>#0B00FF</color>
+                                                        <size>10</size>
+                                                        <style></style>
+                                                        <value>password</value>
+                                                    </tlabel>
+                                                    <tpassword id="3">
+                                                        <class>TPassword</class>
+                                                        <name>password5</name>
+                                                        <x>85</x>
+                                                        <y>45</y>
+                                                        <value></value>
+                                                        <width>160</width>
+                                                        <editable>1</editable>
+                                                        <tip></tip>
+                                                        <required></required>
+                                                    </tpassword>
+                                                    <tlabel id="4">
+                                                        <class>TLabel</class>
+                                                        <name>label26</name>
+                                                        <x>30</x>
+                                                        <y>85</y>
+                                                        <color>#06FF00</color>
+                                                        <size>10</size>
+                                                        <style>b,u</style>
+                                                        <value>date</value>
+                                                    </tlabel>
+                                                    <tdate id="5">
+                                                        <class>TDate</class>
+                                                        <name>date5</name>
+                                                        <x>85</x>
+                                                        <y>85</y>
+                                                        <value></value>
+                                                        <mask>dd/mm/yyyy</mask>
+                                                        <width>131</width>
+                                                        <editable>1</editable>
+                                                        <tip></tip>
+                                                        <required></required>
+                                                    </tdate>
+                                                    <tlabel id="6">
+                                                        <class>TLabel</class>
+                                                        <name>label27</name>
+                                                        <x>30</x>
+                                                        <y>125</y>
+                                                        <color>#90492D</color>
+                                                        <size>12</size>
+                                                        <style>b,i</style>
+                                                        <value>text</value>
+                                                    </tlabel>
+                                                    <ttext id="7">
+                                                        <class>TText</class>
+                                                        <name>text5</name>
+                                                        <x>85</x>
+                                                        <y>120</y>
+                                                        <value></value>
+                                                        <width>140</width>
+                                                        <height>80</height>
+                                                        <tip></tip>
+                                                        <required></required>
+                                                    </ttext>
+                                                </tpanel>
+                                            </child>
+                                        </tframe>
+                                        <tframe id="1">
+                                            <class>TFrame</class>
+                                            <name>frame11</name>
+                                            <title>Components #2</title>
+                                            <x>305</x>
+                                            <y>5</y>
+                                            <width>269</width>
+                                            <height>256</height>
+                                            <child>
+                                                <tpanel>
+                                                    <tlabel id="0">
+                                                        <class>TLabel</class>
+                                                        <name>label28</name>
+                                                        <x>25</x>
+                                                        <y>5</y>
+                                                        <color>#FF0000</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>checkgroup</value>
+                                                    </tlabel>
+                                                    <tcheckgroup id="1">
+                                                        <class>TCheckGroup</class>
+                                                        <name>checkgroup5</name>
+                                                        <items>1:item1
+2:item2
+3:item3
+4:item4</items>
+                                                        <x>140</x>
+                                                        <y>5</y>
+                                                        <tip></tip>
+                                                        <value>1,2,3</value>
+                                                    </tcheckgroup>
+                                                    <tlabel id="2">
+                                                        <class>TLabel</class>
+                                                        <name>label29</name>
+                                                        <x>25</x>
+                                                        <y>105</y>
+                                                        <color>#FF9900</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>radiogroup</value>
+                                                    </tlabel>
+                                                    <tradiogroup id="3">
+                                                        <class>TRadioGroup</class>
+                                                        <name>radiogroup5</name>
+                                                        <items>1:item1
+2:item2
+3:item3
+4:item4</items>
+                                                        <x>140</x>
+                                                        <y>105</y>
+                                                        <tip></tip>
+                                                        <value>1</value>
+                                                    </tradiogroup>
+                                                    <tlabel id="4">
+                                                        <class>TLabel</class>
+                                                        <name>label30</name>
+                                                        <x>25</x>
+                                                        <y>205</y>
+                                                        <color>#FF00E7</color>
+                                                        <size>10</size>
+                                                        <style>b,u</style>
+                                                        <value>combo</value>
+                                                    </tlabel>
+                                                    <tcombo id="5">
+                                                        <class>TCombo</class>
+                                                        <name>combo5</name>
+                                                        <items>1:item1
+2:item2
+3:item3
+4:item4</items>
+                                                        <x>140</x>
+                                                        <y>205</y>
+                                                        <width>120</width>
+                                                        <tip></tip>
+                                                        <value>1</value>
+                                                    </tcombo>
+                                                </tpanel>
+                                            </child>
+                                        </tframe>
+                                    </tpanel>
+                                    <tpanel id="2" tab="SubNote B">
+                                        <tframe id="0">
+                                            <class>TFrame</class>
+                                            <name>frame12</name>
+                                            <title>Database selection components</title>
+                                            <x>25</x>
+                                            <y>20</y>
+                                            <width>541</width>
+                                            <height>222</height>
+                                            <child>
+                                                <tpanel>
+                                                    <tdbcheckgroup id="0">
+                                                        <class>TDBCheckGroup</class>
+                                                        <name>dbcheckgroup2</name>
+                                                        <database>samples</database>
+                                                        <model>Category</model>
+                                                        <key>id</key>
+                                                        <display>name</display>
+                                                        <x>30</x>
+                                                        <y>30</y>
+                                                        <tip></tip>
+                                                        <value></value>
+                                                    </tdbcheckgroup>
+                                                    <tdbradiogroup id="1">
+                                                        <class>TDBRadioGroup</class>
+                                                        <name>dbradiogroup2</name>
+                                                        <database>samples</database>
+                                                        <model>Category</model>
+                                                        <key>id</key>
+                                                        <display>name</display>
+                                                        <x>155</x>
+                                                        <y>30</y>
+                                                        <tip></tip>
+                                                        <value>2</value>
+                                                    </tdbradiogroup>
+                                                    <tdbcombo id="2">
+                                                        <class>TDBCombo</class>
+                                                        <name>dbcombo2</name>
+                                                        <database>samples</database>
+                                                        <model>Category</model>
+                                                        <key>id</key>
+                                                        <display>name</display>
+                                                        <x>145</x>
+                                                        <y>140</y>
+                                                        <width>189</width>
+                                                        <tip></tip>
+                                                    </tdbcombo>
+                                                    <tlabel id="3">
+                                                        <class>TLabel</class>
+                                                        <name>label14</name>
+                                                        <x>30</x>
+                                                        <y>5</y>
+                                                        <color>#8C3C3C</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>TDBCheckGroup</value>
+                                                    </tlabel>
+                                                    <tlabel id="4">
+                                                        <class>TLabel</class>
+                                                        <name>label15</name>
+                                                        <x>155</x>
+                                                        <y>5</y>
+                                                        <color>#70AB51</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>TDBRadioGroup</value>
+                                                    </tlabel>
+                                                    <tlabel id="5">
+                                                        <class>TLabel</class>
+                                                        <name>label16</name>
+                                                        <x>190</x>
+                                                        <y>120</y>
+                                                        <color>#5A58B5</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>TDBCombo</value>
+                                                    </tlabel>
+                                                    <tlabel id="6">
+                                                        <class>TLabel</class>
+                                                        <name>label14</name>
+                                                        <x>290</x>
+                                                        <y>5</y>
+                                                        <color>#3B44A8</color>
+                                                        <size>10</size>
+                                                        <style>b</style>
+                                                        <value>TDBSelect</value>
+                                                    </tlabel>
+                                                    <tdbselect id="7">
+                                                        <class>TDBSelect</class>
+                                                        <name>dbselect1</name>
+                                                        <database>samples</database>
+                                                        <model>Category</model>
+                                                        <key>id</key>
+                                                        <display>name</display>
+                                                        <x>290</x>
+                                                        <y>30</y>
+                                                        <width>195</width>
+                                                        <height>80</height>
+                                                        <tip></tip>
+                                                    </tdbselect>
+                                                </tpanel>
+                                            </child>
+                                        </tframe>
+                                    </tpanel>
+                                </pages>
+                            </tnotebook>
+                        </tpanel>
+                    </child>
+                </tframe>
+            </tpanel>
+            <tpanel id="2" tab="Advanced">
+                <tframe id="0">
+                    <class>TFrame</class>
+                    <name>frame3</name>
+                    <title>Bigframe</title>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>604</width>
+                    <height>308</height>
+                    <child>
+                        <tpanel>
+                            <tnotebook id="0">
+                                <class>TNotebook</class>
+                                <name>notebook5</name>
+                                <x>10</x>
+                                <y>5</y>
+                                <width>567</width>
+                                <height>255</height>
+                                <pages>
+                                    <tpanel id="1" tab="SubNote 1">
+                                        <tframe id="0">
+                                            <class>TFrame</class>
+                                            <name>frame4</name>
+                                            <title>Internal frame</title>
+                                            <x>20</x>
+                                            <y>15</y>
+                                            <width>522</width>
+                                            <height>168</height>
+                                            <child>
+                                                <tpanel>
+                                                    <tnotebook id="0">
+                                                        <class>TNotebook</class>
+                                                        <name>notebook6</name>
+                                                        <x>10</x>
+                                                        <y>10</y>
+                                                        <width>483</width>
+                                                        <height>119</height>
+                                                        <pages>
+                                                            <tpanel id="1" tab="SubNote 1.1">
+                                                                <tlabel id="0">
+                                                                    <class>TLabel</class>
+                                                                    <name>label8</name>
+                                                                    <x>75</x>
+                                                                    <y>25</y>
+                                                                    <color>#FF0000</color>
+                                                                    <size>12</size>
+                                                                    <style>b,i,u</style>
+                                                                    <value>SubNote 1.1 content</value>
+                                                                </tlabel>
+                                                            </tpanel>
+                                                            <tpanel id="2" tab="SubNote 1.2">
+                                                                <tlabel id="0">
+                                                                    <class>TLabel</class>
+                                                                    <name>label10</name>
+                                                                    <x>75</x>
+                                                                    <y>25</y>
+                                                                    <color>#0BFF00</color>
+                                                                    <size>12</size>
+                                                                    <style>b,i,u</style>
+                                                                    <value>SubNote 1.2 content</value>
+                                                                </tlabel>
+                                                            </tpanel>
+                                                        </pages>
+                                                    </tnotebook>
+                                                </tpanel>
+                                            </child>
+                                        </tframe>
+                                    </tpanel>
+                                    <tpanel id="2" tab="SubNote 2">
+                                        <ttext id="0">
+                                            <class>TText</class>
+                                            <name>text2</name>
+                                            <x>10</x>
+                                            <y>10</y>
+                                            <value></value>
+                                            <width>140</width>
+                                            <height>80</height>
+                                            <tip></tip>
+                                            <required></required>
+                                        </ttext>
+                                        <tcheckgroup id="1">
+                                            <class>TCheckGroup</class>
+                                            <name>checkgroup4</name>
+                                            <items>1:item1
+2:item2</items>
+                                            <x>35</x>
+                                            <y>120</y>
+                                            <tip></tip>
+                                            <value>1</value>
+                                        </tcheckgroup>
+                                        <tradiogroup id="2">
+                                            <class>TRadioGroup</class>
+                                            <name>radiogroup2</name>
+                                            <items>1:item1
+2:item2</items>
+                                            <x>125</x>
+                                            <y>120</y>
+                                            <tip></tip>
+                                            <value>1</value>
+                                        </tradiogroup>
+                                        <tcombo id="3">
+                                            <class>TCombo</class>
+                                            <name>combo2</name>
+                                            <items>1:item1
+2:item2</items>
+                                            <x>370</x>
+                                            <y>85</y>
+                                            <width>161</width>
+                                            <tip></tip>
+                                        </tcombo>
+                                        <tentry id="4">
+                                            <class>TEntry</class>
+                                            <name>entry3</name>
+                                            <x>370</x>
+                                            <y>10</y>
+                                            <value></value>
+                                            <mask></mask>
+                                            <width>160</width>
+                                            <maxlen>0</maxlen>
+                                            <editable>1</editable>
+                                            <tip></tip>
+                                            <required></required>
+                                        </tentry>
+                                        <tdate id="5">
+                                            <class>TDate</class>
+                                            <name>date3</name>
+                                            <x>370</x>
+                                            <y>125</y>
+                                            <value></value>
+                                            <mask>dd/mm/yyyy</mask>
+                                            <width>133</width>
+                                            <editable>1</editable>
+                                            <tip></tip>
+                                            <required></required>
+                                        </tdate>
+                                        <tpassword id="6">
+                                            <class>TPassword</class>
+                                            <name>password2</name>
+                                            <x>370</x>
+                                            <y>45</y>
+                                            <value></value>
+                                            <width>160</width>
+                                            <editable>1</editable>
+                                            <tip></tip>
+                                            <required></required>
+                                        </tpassword>
+                                        <tselect id="7">
+                                            <class>TSelect</class>
+                                            <name>select1</name>
+                                            <items>1:item1
+2:item2</items>
+                                            <x>190</x>
+                                            <y>10</y>
+                                            <width>150</width>
+                                            <height>100</height>
+                                            <tip></tip>
+                                        </tselect>
+                                    </tpanel>
+                                </pages>
+                            </tnotebook>
+                        </tpanel>
+                    </child>
+                </tframe>
+            </tpanel>
+        </pages>
+    </tnotebook>
+</form>

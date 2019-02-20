@@ -1,0 +1,37 @@
+<!--[main]-->
+<link href="app/resources/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+<table class="customform" style="width: 100%">
+    <tr>
+        <td colspan="2" class="formtitle">Customer data</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Name</b></td>
+        <td width="50%"><span class="formfield">{$name}</span></td>
+    </tr>
+    <tr>
+        <td><b>Address</b></td>
+        <td><span class="formfield">{$address}</span></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <a generator="adianti" href="index.php?class=CustomerFormView&method=onEdit&id={$code}">Click here to edit the customer</a>
+        </td>
+    </tr>
+    <!--[contacts]-->
+    <tr>
+        <td class="sectiontitle" colspan=2>Contacts</td>
+    </tr>
+    <tr bgcolor="#e0e0e0">
+        <td>Type</td>
+        <td>Value</td>
+    </tr>
+    <!--[contacts-detail]-->
+    <tr>
+        <td>{$type}</td>
+        <td><i>{$value}</i></td>
+    </tr>
+    <!--[/contacts-detail]-->
+    <!--[/contacts]-->
+</table>
+<!--[/main]-->

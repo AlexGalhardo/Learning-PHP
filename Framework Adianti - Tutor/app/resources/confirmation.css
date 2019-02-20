@@ -1,0 +1,34 @@
+.bs-callout-warning
+{
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #7274C0;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-right-color: rgb(238, 238, 238);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(238, 238, 238);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 847px;
+}

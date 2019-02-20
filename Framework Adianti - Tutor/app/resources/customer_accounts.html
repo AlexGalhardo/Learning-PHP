@@ -1,0 +1,72 @@
+<!--[main]-->
+<link href="app/resources/styles.css" rel="stylesheet" type="text/css" media="screen" />
+
+<table class="customform" style="width:100%">
+    <tr>
+        <td colspan="4" class="formtitle">Customer data</td>
+    </tr>
+    <tr>
+        <td width="50%"><b>Code</b></td>
+        <td width="50%" colspan="3"><span class="formfield">{$object->id}</span></td>
+    </tr>
+    <tr>
+        <td><b>Name</b></td>
+        <td colspan="3"><span class="formfield">{$object->name}</span></td>
+    </tr>
+    <!--[header]-->
+    <tr>
+        <td><b>{$name}</b></td>
+        <td colspan="3"><span class="formfield">{$value}</span></td>
+    </tr>
+    <!--[/header]-->
+    
+    <tr>
+        <td class="sectiontitle" colspan="4">Detail 1</td>
+    </tr>
+    
+    <!--[accounts1]-->
+    <tr bgcolor="#e0e0e0">
+        <td align="center" colspan="4"><b>Date</b>: date_format({$date}, 'd/m/Y') - 
+                                       <b>Total sale</b>: R$ number_format({$value},2,',', '.') </td>
+    </tr>
+    <tr bgcolor="#FFFCDD">
+        <td align="center"><b>Product</b></td>
+        <td align="center"><b>Qty</b></td>
+        <td align="center"><b>Value</b></td>
+        <td align="center"><b>Total</b></td>
+    </tr>
+        <!--[details]-->
+        <tr>
+            <td align="center">{$product}</td>
+            <td align="center">{$qty}</td>
+            <td align="center">R$ number_format({$value},2,',', '.')</td>
+            <td align="center">R$ number_format(evaluate({$qty} * {$value}), 2, ',', '.')</td>
+        </tr>
+        <!--[/details]-->
+    <!--[/accounts1]-->
+    
+    <tr>
+        <td class="sectiontitle" colspan="4">Detail 2</td>
+    </tr>
+    <!--[accounts2]-->
+    <tr bgcolor="#e0e0e0">
+        <td align="center" colspan="4"><b>Date</b>: date_format({$date}, 'd/m/Y') - 
+                                       <b>Total sale</b>: R$ number_format({$value}, 2, ',', '.') </td>
+    </tr>
+    <tr bgcolor="#FFFCDD">
+        <td align="center"><b>Product</b></td>
+        <td align="center"><b>Qty</b></td>
+        <td align="center"><b>Value</b></td>
+        <td align="center"><b>Total</b></td>
+    </tr>
+        <!--[details]-->
+        <tr>
+            <td align="center">{$product}</td>
+            <td align="center">{$qty}</td>
+            <td align="center">R$ number_format({$value}, 2, ',', '.')</td>
+            <td align="center">R$ number_format(evaluate({$qty} * {$value}), 2, ',', '.')</td>
+        </tr>
+        <!--[/details]-->
+    <!--[/accounts2]-->
+</table>
+<!--[/main]-->

@@ -1,0 +1,92 @@
+<!--[main]-->
+<div class="wformwrapper">
+    <div class="wactions" style="width:640px;">
+        <a class="btn btn-warning" generator="adianti" href="index.php?class=PedidoCompraView&method=onPrint&key={$id}">Imprimir</a>
+        &nbsp;
+        <a class="btn btn-info" generator="adianti" href="index.php?class=PedidoCompraForm&method=onEdit&key={$id}">Editar</a>
+        &nbsp;
+        <a class="btn btn-success" generator="adianti" href="index.php?class=PedidoCompraForm&method=onEdit">Novo</a>
+    </div>
+    <div class="wform left" style="width:640px">
+        <table width="100%">
+            <tr class="wtitle">
+                <td colspan=6>Pedido de compra #{$id}</td>
+            </tr>
+            <tr>
+                <td class="wlabel" align="center">Data</td>
+                <td align="center" colspan="2">{$dt_pedido}</td>
+                
+                <td class="wlabel" align="center">Hora</td>
+                <td align="center" colspan="2">{$hora}</td>
+            </tr>
+            
+            <tr>
+                <td class="wlabel" align="center">Transportador</td>
+                <td align="center" colspan="2"><a generator="adianti" href="index.php?class=PessoaForm&method=onEdit&key={$transportador_id}">{$nome_transportador}</a></td>
+                
+                <td class="wlabel" align="center">Fornecedor</td>
+                <td align="center" colspan="2"><a generator="adianti" href="index.php?class=PessoaForm&method=onEdit&key={$fornecedor_id}">{$nome_fornecedor}</a></td>
+            </tr>
+            
+            <tr>
+                <td colspan=6>
+                
+                    <div class="wform inner">
+                        <table width="100%">
+                            <tr class="wtitle">
+                                <td class="sectiontitle" colspan="6">Sales</td>
+                            </tr>
+                            <tr class="wheader">
+                                <td align="center">Produto</td>
+                                <td align="center">Preço</td>
+                                <td align="center">Qtde</td>
+                                <td align="center">Desconto</td>
+                                <td align="center">Total</td>
+                            </tr>
+                            <!--[details]-->
+                            <tr>
+                                <td align="left">{$id} - {$descricao}</td>
+                                <td align="right">{$preco}</td>
+                                <td align="right">{$qtde}</td>
+                                <td align="right">{$desconto}</td>
+                                <td align="right">{$total}</td>
+                            </tr>
+                            <!--[/details]-->
+                            
+                            <!--[totals]-->
+                            <tr class="wfooter">
+                                <td align="right" colspan="4"><b> Total: </b></td>
+                                <td align="right"><b> {$total} </b></td>
+                            </tr>
+                            <!--[/totals]-->
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="wform right" style="width: 240px">
+        <table width="100%">
+            <tr class="wtitle">
+                <td>Fornecedor</td>
+            </tr>
+            <tr>
+                <td class="wlabel">{$fornecedor_nome}</td>
+            </tr>
+            <tr>
+                <td>{$fornecedor_endereco}</td>
+            </tr>
+            <tr>
+                <td><a generator="adianti" href="callto:{$fornecedor_fone}">{$fornecedor_fone}</a></td>
+            </tr>
+            <tr>
+                <td><a generator="adianti" href="mailto:{$fornecedor_email}">{$fornecedor_email}</a></td>
+            </tr>
+            <tr class="waction">
+                <td><a generator="adianti" class="btn btn-sm btn-default" href="index.php?class=PessoaForm&method=onEdit&key={$fornecedor_id}">Editar</a></td>
+            </tr>
+         </table>
+    </div>
+</div>
+<!--[/main]-->

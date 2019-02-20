@@ -1,0 +1,12 @@
+<!--[main]-->
+<div class="agenda-entry" style="height: {$height}px" title="<b>{$title}</b><br>{$description}">
+    <a generator="adianti" href="index.php?class=AgendaView&method=onDelete&key={$id}"><span style="padding:1px;float:right" class="fa fa-trash-o"></span></a>
+    <a generator="adianti" href="index.php?class=AgendaEntryForm&method=onEdit&key={$id}&entry_date={$day}&start_hour={$hour}"><span style="padding:1px;float:right" class="fa fa-edit"></span></a>
+    <span class="event-title">
+        {$title}
+    </span>
+    <span class="event-description">
+        <br>{$description}
+    </span>
+</div>
+<!--[/main]-->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>{title}</title>
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="templates/{theme}/include/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="templates/{theme}/include/bootswatch.min.css" type="text/css" media="all">
+
+<body>
+<div class="container">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="{url}" title="Theme Preview" rel="home">{title}</a></h1>
+			<h4 class="site-description">{subtitle}</h4>
+		</hgroup>
+        <nav>
+            <div class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                    {category}
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-lg-8">
+            {articles}
+        </div>
+        <div class="col-lg-2">
+            <aside>
+                {sidepanel}
+            </aside>
+        </div>
+    </div>
+</div>
+</body>
+</html>

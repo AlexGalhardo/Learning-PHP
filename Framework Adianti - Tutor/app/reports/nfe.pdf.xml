@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design>
+    <page>
+        <format>a4</format>
+        <orientation>P</orientation>
+    </page>
+    <rectangle id="1">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>14</y>
+        <width>218</width>
+        <height>100</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="2">
+        <class>Rectangle</class>
+        <x>228</x>
+        <y>14</y>
+        <width>128</width>
+        <height>100</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="3">
+        <class>Rectangle</class>
+        <x>356</x>
+        <y>14</y>
+        <width>214</width>
+        <height>34</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="4">
+        <class>Rectangle</class>
+        <x>356</x>
+        <y>48</y>
+        <width>214</width>
+        <height>34</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="5">
+        <class>Rectangle</class>
+        <x>460</x>
+        <y>406</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="6">
+        <class>Rectangle</class>
+        <x>458</x>
+        <y>304</y>
+        <width>111</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="7">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>120</y>
+        <width>346</width>
+        <height>30</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="8">
+        <class>Rectangle</class>
+        <x>356</x>
+        <y>120</y>
+        <width>215</width>
+        <height>30</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="9">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>150</y>
+        <width>180</width>
+        <height>30</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="10">
+        <class>Rectangle</class>
+        <x>190</x>
+        <y>150</y>
+        <width>166</width>
+        <height>30</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="11">
+        <class>Rectangle</class>
+        <x>356</x>
+        <y>150</y>
+        <width>215</width>
+        <height>30</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="12">
+        <class>Text</class>
+        <x>12</x>
+        <y>124</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Natureza da Operação</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="13">
+        <class>Text</class>
+        <x>360</x>
+        <y>124</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Protocolo de autorização</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="14">
+        <class>Text</class>
+        <x>12</x>
+        <y>154</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Inscrição Estadual</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="15">
+        <class>Text</class>
+        <x>192</x>
+        <y>154</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Inscrição Estadual Substituição Tributária</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="16">
+        <class>Text</class>
+        <x>358</x>
+        <y>154</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>CNPJ</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="17">
+        <class>Text</class>
+        <x>8</x>
+        <y>188</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Destinatário/Remetente</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="18">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>202</y>
+        <width>340</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="19">
+        <class>Text</class>
+        <x>12</x>
+        <y>206</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Nome/Razão social</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="20">
+        <class>Rectangle</class>
+        <x>350</x>
+        <y>202</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="21">
+        <class>Rectangle</class>
+        <x>460</x>
+        <y>202</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="22">
+        <class>Text</class>
+        <x>354</x>
+        <y>206</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>CNPJ/CPF</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="23">
+        <class>Text</class>
+        <x>462</x>
+        <y>206</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Data de emissão</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="24">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>230</y>
+        <width>230</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="25">
+        <class>Rectangle</class>
+        <x>460</x>
+        <y>230</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="26">
+        <class>Rectangle</class>
+        <x>350</x>
+        <y>230</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="27">
+        <class>Rectangle</class>
+        <x>240</x>
+        <y>230</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="28">
+        <class>Text</class>
+        <x>12</x>
+        <y>234</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Endereço</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="29">
+        <class>Text</class>
+        <x>244</x>
+        <y>234</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Bairro</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="30">
+        <class>Text</class>
+        <x>354</x>
+        <y>234</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>CEP</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="31">
+        <class>Text</class>
+        <x>462</x>
+        <y>232</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Data de entrada</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="32">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>258</y>
+        <width>150</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="33">
+        <class>Rectangle</class>
+        <x>460</x>
+        <y>258</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="34">
+        <class>Text</class>
+        <x>462</x>
+        <y>262</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Data de saída</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="35">
+        <class>Rectangle</class>
+        <x>326</x>
+        <y>258</y>
+        <width>134</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="36">
+        <class>Rectangle</class>
+        <x>270</x>
+        <y>258</y>
+        <width>56</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="37">
+        <class>Rectangle</class>
+        <x>160</x>
+        <y>258</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="38">
+        <class>Text</class>
+        <x>12</x>
+        <y>262</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Município</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="39">
+        <class>Text</class>
+        <x>164</x>
+        <y>262</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Fone</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="40">
+        <class>Text</class>
+        <x>288</x>
+        <y>262</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>UF	</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="41">
+        <class>Text</class>
+        <x>332</x>
+        <y>262</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Inscrição Estadual</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="42">
+        <class>Text</class>
+        <x>8</x>
+        <y>290</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Cálculo do imposto</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="43">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>304</y>
+        <width>112</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="44">
+        <class>Rectangle</class>
+        <x>122</x>
+        <y>304</y>
+        <width>112</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="45">
+        <class>Rectangle</class>
+        <x>234</x>
+        <y>304</y>
+        <width>112</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="46">
+        <class>Rectangle</class>
+        <x>346</x>
+        <y>304</y>
+        <width>112</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="47">
+        <class>Text</class>
+        <x>12</x>
+        <y>308</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Base de cálculo ICMS</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="48">
+        <class>Text</class>
+        <x>124</x>
+        <y>308</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor do ICMS</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="49">
+        <class>Text</class>
+        <x>236</x>
+        <y>308</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Base de cálculo ICMS ST</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="50">
+        <class>Text</class>
+        <x>346</x>
+        <y>308</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor do ICMS ST</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="51">
+        <class>Text</class>
+        <x>462</x>
+        <y>308</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor total dos produtos</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="52">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>332</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="53">
+        <class>Rectangle</class>
+        <x>104</x>
+        <y>332</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="54">
+        <class>Rectangle</class>
+        <x>198</x>
+        <y>332</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="55">
+        <class>Rectangle</class>
+        <x>292</x>
+        <y>332</y>
+        <width>93</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="56">
+        <class>Rectangle</class>
+        <x>384</x>
+        <y>332</y>
+        <width>93</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="57">
+        <class>Rectangle</class>
+        <x>476</x>
+        <y>332</y>
+        <width>93</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="58">
+        <class>Text</class>
+        <x>12</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor do Frete</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="59">
+        <class>Text</class>
+        <x>108</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor do Seguro</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="60">
+        <class>Text</class>
+        <x>200</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Desconto</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="61">
+        <class>Text</class>
+        <x>294</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Outras despesas</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="62">
+        <class>Text</class>
+        <x>388</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor total do IPI</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="63">
+        <class>Text</class>
+        <x>482</x>
+        <y>336</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Valor total da Nota</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="64">
+        <class>Text</class>
+        <x>10</x>
+        <y>364</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Transportador/Volumes transportados</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="65">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>378</y>
+        <width>216</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="66">
+        <class>Rectangle</class>
+        <x>460</x>
+        <y>378</y>
+        <width>110</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="67">
+        <class>Rectangle</class>
+        <x>226</x>
+        <y>378</y>
+        <width>68</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="68">
+        <class>Rectangle</class>
+        <x>294</x>
+        <y>378</y>
+        <width>60</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="69">
+        <class>Rectangle</class>
+        <x>354</x>
+        <y>378</y>
+        <width>60</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="70">
+        <class>Rectangle</class>
+        <x>414</x>
+        <y>378</y>
+        <width>46</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="71">
+        <class>Text</class>
+        <x>14</x>
+        <y>382</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Nome/Razão Social</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="72">
+        <class>Text</class>
+        <x>228</x>
+        <y>382</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Frete por conta</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="73">
+        <class>Text</class>
+        <x>298</x>
+        <y>384</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Código ANTT</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="74">
+        <class>Text</class>
+        <x>356</x>
+        <y>384</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Placa do veículo</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="75">
+        <class>Text</class>
+        <x>426</x>
+        <y>384</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>UF</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="76">
+        <class>Text</class>
+        <x>464</x>
+        <y>384</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>CNPJ/CPF</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="77">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>406</y>
+        <width>216</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="78">
+        <class>Rectangle</class>
+        <x>226</x>
+        <y>406</y>
+        <width>188</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="79">
+        <class>Rectangle</class>
+        <x>414</x>
+        <y>406</y>
+        <width>46</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="80">
+        <class>Text</class>
+        <x>462</x>
+        <y>410</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Inscrição Estadual</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="81">
+        <class>Text</class>
+        <x>14</x>
+        <y>410</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Endereço</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="82">
+        <class>Text</class>
+        <x>228</x>
+        <y>410</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Município</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="83">
+        <class>Text</class>
+        <x>426</x>
+        <y>408</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>UF</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="84">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>434</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="85">
+        <class>Rectangle</class>
+        <x>104</x>
+        <y>434</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="86">
+        <class>Rectangle</class>
+        <x>198</x>
+        <y>434</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="87">
+        <class>Rectangle</class>
+        <x>292</x>
+        <y>434</y>
+        <width>93</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="88">
+        <class>Rectangle</class>
+        <x>384</x>
+        <y>434</y>
+        <width>93</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="89">
+        <class>Rectangle</class>
+        <x>476</x>
+        <y>434</y>
+        <width>94</width>
+        <height>28</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="90">
+        <class>Text</class>
+        <x>14</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Quantidade</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="91">
+        <class>Text</class>
+        <x>106</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Espécie</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="92">
+        <class>Text</class>
+        <x>202</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Marca</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="93">
+        <class>Text</class>
+        <x>298</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Número</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="94">
+        <class>Text</class>
+        <x>388</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Peso bruto</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="95">
+        <class>Text</class>
+        <x>482</x>
+        <y>438</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Peso líquido</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="96">
+        <class>Text</class>
+        <x>10</x>
+        <y>464</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Dados dos produtos/serviços</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="97">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>478</y>
+        <width>62</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="98">
+        <class>Text</class>
+        <x>14</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Código do Produto</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="99">
+        <class>Rectangle</class>
+        <x>72</x>
+        <y>478</y>
+        <width>140</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="100">
+        <class>Text</class>
+        <x>76</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Descrição dos produtos/serviços</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="101">
+        <class>Rectangle</class>
+        <x>212</x>
+        <y>478</y>
+        <width>30</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="102">
+        <class>Rectangle</class>
+        <x>257</x>
+        <y>478</y>
+        <width>20</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="103">
+        <class>Rectangle</class>
+        <x>277</x>
+        <y>478</y>
+        <width>20</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="104">
+        <class>Rectangle</class>
+        <x>362</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="105">
+        <class>Rectangle</class>
+        <x>297</x>
+        <y>478</y>
+        <width>35</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="106">
+        <class>Rectangle</class>
+        <x>332</x>
+        <y>478</y>
+        <width>30</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="107">
+        <class>Rectangle</class>
+        <x>386</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="108">
+        <class>Rectangle</class>
+        <x>410</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="109">
+        <class>Rectangle</class>
+        <x>434</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="110">
+        <class>Rectangle</class>
+        <x>458</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="111">
+        <class>Rectangle</class>
+        <x>482</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="112">
+        <class>Rectangle</class>
+        <x>506</x>
+        <y>478</y>
+        <width>24</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="113">
+        <class>Rectangle</class>
+        <x>530</x>
+        <y>478</y>
+        <width>20</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="114">
+        <class>Rectangle</class>
+        <x>550</x>
+        <y>478</y>
+        <width>20</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <rectangle id="115">
+        <class>Rectangle</class>
+        <x>242</x>
+        <y>478</y>
+        <width>15</width>
+        <height>15</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="116">
+        <class>Text</class>
+        <x>218</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>NCM</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="117">
+        <class>Text</class>
+        <x>241</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>CST</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="118">
+        <class>Text</class>
+        <x>256</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>CFOP</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="119">
+        <class>Text</class>
+        <x>276</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Unid.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="120">
+        <class>Text</class>
+        <x>300</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Quant.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="121">
+        <class>Text</class>
+        <x>332</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Vlr. Unit.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="122">
+        <class>Text</class>
+        <x>362</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Desc.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="123">
+        <class>Text</class>
+        <x>386</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Total</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="124">
+        <class>Text</class>
+        <x>410</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>bc.Icms</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="125">
+        <class>Text</class>
+        <x>434</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>vl.Icms</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="126">
+        <class>Text</class>
+        <x>458</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Val.ST.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="127">
+        <class>Text</class>
+        <x>482</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>BC.ST.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="128">
+        <class>Text</class>
+        <x>506</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>Vl.IPI</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="129">
+        <class>Text</class>
+        <x>530</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>ICMS</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="130">
+        <class>Text</class>
+        <x>550</x>
+        <y>484</y>
+        <font>Times</font>
+        <size>6</size>
+        <text>IPI</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="131">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>662</y>
+        <width>288</width>
+        <height>86</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="132">
+        <class>Text</class>
+        <x>14</x>
+        <y>668</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Informações complementares</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="133">
+        <class>Rectangle</class>
+        <x>306</x>
+        <y>662</y>
+        <width>274</width>
+        <height>86</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="134">
+        <class>Text</class>
+        <x>310</x>
+        <y>668</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Reservado ao fisco</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="135">
+        <class>Text</class>
+        <x>8</x>
+        <y>648</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Dados adicionais</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="136">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>766</y>
+        <width>390</width>
+        <height>22</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <line id="137">
+        <class>Line</class>
+        <x>10</x>
+        <y>758</y>
+        <x2>580</x2>
+        <y2>758</y2>
+        <linewidth>1</linewidth>
+        <linecolor>#000000</linecolor>
+    </line>
+    <text id="138">
+        <class>Text</class>
+        <x>12</x>
+        <y>770</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Recebemos de:</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="139">
+        <class>Rectangle</class>
+        <x>10</x>
+        <y>788</y>
+        <width>114</width>
+        <height>22</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="140">
+        <class>Text</class>
+        <x>12</x>
+        <y>792</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Data de recebimento</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="141">
+        <class>Rectangle</class>
+        <x>124</x>
+        <y>788</y>
+        <width>276</width>
+        <height>22</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="142">
+        <class>Text</class>
+        <x>126</x>
+        <y>792</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Identificação e assinatura do recebedor</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="143">
+        <class>Rectangle</class>
+        <x>400</x>
+        <y>766</y>
+        <width>180</width>
+        <height>44</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="144">
+        <class>Text</class>
+        <x>472</x>
+        <y>768</y>
+        <font>Times</font>
+        <size>11</size>
+        <text>NF-e</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <image id="145">
+        <class>Image</class>
+        <x>18</x>
+        <y>30</y>
+        <width>94</width>
+        <height>48</height>
+        <file>app/images/adianti-medio.png</file>
+    </image>
+    <text id="146">
+        <class>Text</class>
+        <x>126</x>
+        <y>50</y>
+        <font>Times</font>
+        <size>12</size>
+        <text>Adianti Solutions</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="147">
+        <class>Text</class>
+        <x>232</x>
+        <y>36</y>
+        <font>Times</font>
+        <size>11</size>
+        <text>DANFE
+Este é um documento
+demonstrativo, não possui
+validade fiscal.</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <rectangle id="148">
+        <class>Rectangle</class>
+        <x>356</x>
+        <y>80</y>
+        <width>214</width>
+        <height>34</height>
+        <fillcolor>#FFFFFF</fillcolor>
+        <linecolor>#000000</linecolor>
+        <linewidth>1</linewidth>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </rectangle>
+    <text id="149">
+        <class>Text</class>
+        <x>358</x>
+        <y>54</y>
+        <font>Times</font>
+        <size>8</size>
+        <text>Chave de acesso</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="150">
+        <class>Text</class>
+        <x>363</x>
+        <y>90</y>
+        <font>Arial</font>
+        <size>6</size>
+        <text>Consulta de autenticidade no portal nacional da NF-e www.
+nfe.fazenda.gov.br/portal ou no site da Sefaz Autorizadora</text>
+        <color>#000000</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="151">
+        <class>Text</class>
+        <x>14</x>
+        <y>136</y>
+        <font>Arial</font>
+        <size>8</size>
+        <text>&lt;b&gt;VENDA&lt;/b&gt;</text>
+        <color>#2A2887</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <anchor id="152">
+        <class>Anchor</class>
+        <x>14</x>
+        <y>216</y>
+        <name>nome</name>
+    </anchor>
+    <anchor id="153">
+        <class>Anchor</class>
+        <x>14</x>
+        <y>244</y>
+        <name>endereco</name>
+    </anchor>
+    <anchor id="154">
+        <class>Anchor</class>
+        <x>246</x>
+        <y>244</y>
+        <name>bairro</name>
+    </anchor>
+    <anchor id="155">
+        <class>Anchor</class>
+        <x>14</x>
+        <y>272</y>
+        <name>municipio</name>
+    </anchor>
+    <anchor id="156">
+        <class>Anchor</class>
+        <x>166</x>
+        <y>272</y>
+        <name>fone</name>
+    </anchor>
+    <anchor id="157">
+        <class>Anchor</class>
+        <x>278</x>
+        <y>272</y>
+        <name>uf</name>
+    </anchor>
+    <anchor id="158">
+        <class>Anchor</class>
+        <x>334</x>
+        <y>274</y>
+        <name>ie</name>
+    </anchor>
+    <anchor id="159">
+        <class>Anchor</class>
+        <x>356</x>
+        <y>244</y>
+        <name>cep</name>
+    </anchor>
+    <anchor id="160">
+        <class>Anchor</class>
+        <x>356</x>
+        <y>218</y>
+        <name>cnpjcpf</name>
+    </anchor>
+    <anchor id="161">
+        <class>Anchor</class>
+        <x>464</x>
+        <y>218</y>
+        <name>dataemissao</name>
+    </anchor>
+    <anchor id="162">
+        <class>Anchor</class>
+        <x>464</x>
+        <y>244</y>
+        <name>dataentrada</name>
+    </anchor>
+    <anchor id="163">
+        <class>Anchor</class>
+        <x>464</x>
+        <y>272</y>
+        <name>datasaida</name>
+    </anchor>
+    <anchor id="164">
+        <class>Anchor</class>
+        <x>14</x>
+        <y>164</y>
+        <name>for_ie</name>
+    </anchor>
+    <anchor id="165">
+        <class>Anchor</class>
+        <x>360</x>
+        <y>166</y>
+        <name>for_cnpj</name>
+    </anchor>
+    <anchor id="166">
+        <class>Anchor</class>
+        <x>362</x>
+        <y>136</y>
+        <name>protocolo</name>
+    </anchor>
+    <anchor id="167">
+        <class>Anchor</class>
+        <x>16</x>
+        <y>346</y>
+        <name>frete</name>
+    </anchor>
+    <anchor id="168">
+        <class>Anchor</class>
+        <x>202</x>
+        <y>346</y>
+        <name>desconto</name>
+    </anchor>
+    <anchor id="169">
+        <class>Anchor</class>
+        <x>486</x>
+        <y>346</y>
+        <name>valor_nota</name>
+    </anchor>
+    <anchor id="170">
+        <class>Anchor</class>
+        <x>464</x>
+        <y>318</y>
+        <name>valor_produtos</name>
+    </anchor>
+    <anchor id="171">
+        <class>Anchor</class>
+        <x>10</x>
+        <y>493</y>
+        <name>details</name>
+    </anchor>
+    <anchor id="172">
+        <class>Anchor</class>
+        <x>16</x>
+        <y>680</y>
+        <name>complementares</name>
+    </anchor>
+    <text id="173">
+        <class>Text</class>
+        <x>38</x>
+        <y>92</y>
+        <font>Arial</font>
+        <size>20</size>
+        <text>&lt;b&gt;*** MODELO ***&lt;/b&gt;</text>
+        <color>#686868</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+    <text id="174">
+        <class>Text</class>
+        <x>126</x>
+        <y>62</y>
+        <font>Times</font>
+        <size>10</size>
+        <text>&lt;b&gt;&lt;u&gt;www.adianti.com.br&lt;/u&gt;&lt;/b&gt;</text>
+        <color>#36328E</color>
+        <shadowoffset>0</shadowoffset>
+        <shadowcolor>#000000</shadowcolor>
+    </text>
+</design>

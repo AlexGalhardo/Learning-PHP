@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <tnotebook id="0">
+        <class>TNotebook</class>
+        <name>SDNotebook1</name>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>300</height>
+        <pages>
+            <tpanel id="1" tab="Dados">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>SDLabel1</name>
+                    <x>25</x>
+                    <y>35</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Código: </value>
+                </tlabel>
+                <tlabel id="1">
+                    <class>TLabel</class>
+                    <name>SDLabel2</name>
+                    <x>25</x>
+                    <y>75</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Nome: </value>
+                </tlabel>
+                <tentry id="2">
+                    <class>TEntry</class>
+                    <name>codigo</name>
+                    <x>100</x>
+                    <y>35</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>80</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="3">
+                    <class>TEntry</class>
+                    <name>nome</name>
+                    <x>100</x>
+                    <y>70</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tlabel id="4">
+                    <class>TLabel</class>
+                    <name>SDLabel3</name>
+                    <x>25</x>
+                    <y>110</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Endere?o: </value>
+                </tlabel>
+                <tentry id="5">
+                    <class>TEntry</class>
+                    <name>endereco</name>
+                    <x>100</x>
+                    <y>105</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tlabel id="6">
+                    <class>TLabel</class>
+                    <name>SDLabel4</name>
+                    <x>25</x>
+                    <y>145</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Telefone: </value>
+                </tlabel>
+                <tentry id="7">
+                    <class>TEntry</class>
+                    <name>telefone</name>
+                    <x>100</x>
+                    <y>140</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tlabel id="8">
+                    <class>TLabel</class>
+                    <name>SDLabel5</name>
+                    <x>25</x>
+                    <y>180</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Cidade: </value>
+                </tlabel>
+                <tentry id="9">
+                    <class>TEntry</class>
+                    <name>cidade</name>
+                    <x>100</x>
+                    <y>175</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tlabel id="10">
+                    <class>TLabel</class>
+                    <name>SDLabel6</name>
+                    <x>25</x>
+                    <y>215</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Estado</value>
+                </tlabel>
+                <tcombo id="11">
+                    <class>TCombo</class>
+                    <name>estado</name>
+                    <items>1:Rio Grande do Sul
+2:Santa Catarina
+3:Paran?</items>
+                    <x>100</x>
+                    <y>210</y>
+                    <width>160</width>
+                    <tip></tip>
+                </tcombo>
+            </tpanel>
+            <tpanel id="2" tab="Complemento">
+                <tlabel id="0">
+                    <class>TLabel</class>
+                    <name>SDLabel1</name>
+                    <x>34</x>
+                    <y>47</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Email: </value>
+                </tlabel>
+                <tentry id="1">
+                    <class>TEntry</class>
+                    <name>SDEntry1</name>
+                    <x>100</x>
+                    <y>40</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tlabel id="2">
+                    <class>TLabel</class>
+                    <name>SDLabel2</name>
+                    <x>35</x>
+                    <y>90</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Site: </value>
+                </tlabel>
+                <tlabel id="3">
+                    <class>TLabel</class>
+                    <name>SDLabel3</name>
+                    <x>36</x>
+                    <y>131</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>MSN: </value>
+                </tlabel>
+                <tlabel id="4">
+                    <class>TLabel</class>
+                    <name>SDLabel4</name>
+                    <x>36</x>
+                    <y>168</y>
+                    <color>#000000</color>
+                    <size>10</size>
+                    <style></style>
+                    <value>Skype</value>
+                </tlabel>
+                <tentry id="5">
+                    <class>TEntry</class>
+                    <name>SDEntry2</name>
+                    <x>100</x>
+                    <y>80</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="6">
+                    <class>TEntry</class>
+                    <name>SDEntry3</name>
+                    <x>100</x>
+                    <y>125</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+                <tentry id="7">
+                    <class>TEntry</class>
+                    <name>SDEntry4</name>
+                    <x>100</x>
+                    <y>165</y>
+                    <value>asdfdsf</value>
+                    <mask></mask>
+                    <width>160</width>
+                    <maxlen>0</maxlen>
+                    <editable>0</editable>
+                    <tip></tip>
+                    <required></required>
+                </tentry>
+            </tpanel>
+        </pages>
+    </tnotebook>
+    <tbutton id="1">
+        <class>TButton</class>
+        <name>SDButton1</name>
+        <x>330</x>
+        <y>305</y>
+        <value>Salvar</value>
+        <icon>ico_save.png</icon>
+        <action></action>
+        <template></template>
+    </tbutton>
+</form>
