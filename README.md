@@ -377,6 +377,7 @@
 
  - [Adams Óbvio](https://www.amazon.com/dp/8562409189?tag=bizzi0d-20)
  - "Bad software that adds value > best software in the world that does not add value"
+ - "Learn to say: I DONT KNOW"
  - "Premature Optimization: the Root of All Evil"
  - "Remember that dinosaurs are almost always the best references"
  - "Who thinks little, make more mistakes"
@@ -539,6 +540,6 @@
 
 <br><br>
 <p align="center">
-  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” -  Indira Gandhi</strong><br><br>
+  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” -  <br><br>Indira Gandhi</strong><br><br>
     <br>
   </p>
