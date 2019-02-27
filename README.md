@@ -539,6 +539,6 @@
 
 <br><br>
 <p align="center">
-  <strong>"Always Happy. Never Satisfied."</strong><br><br>
+  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” -  Indira Gandhi</strong><br><br>
     <br>
   </p>
