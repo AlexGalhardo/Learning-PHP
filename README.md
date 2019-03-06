@@ -392,12 +392,13 @@
  - "Write code != programming != software engineering"
  - "Maintainability > Performance"
  - "No Metrics, No Optimization"
+ - "NEVER EVER Stop Questioning"
  - "Software engineering is 80% thinking ABOUT the problem, and 20% thinking HOW to solve the problem"
  - "The more knowledge you have, the less you know. Ego = 1 / knowledge"
  - "Everyone should care about the quality"
  - "99% of good software code has been thrown away"
  - "2 + 2 is not 5, no matter how many people say it"
- - "Principles > analogy"
+ - "Principles > Analogy"
  - "Talk and learn from people smarter than you"
  - "Always try to use Single Source of Truth"
  - "Do not reinvent the wheel"
@@ -540,6 +541,6 @@
 
 <br><br>
 <p align="center">
-  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” -  <br><br>Indira Gandhi</strong><br><br>
+  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” <br><br>- Indira Gandhi</strong><br><br>
     <br>
   </p>
