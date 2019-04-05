@@ -259,17 +259,17 @@
     - Significado Internet Protocol Versão 4
     - Formato por 4 bytes (10111011.01101011.11111011.01011011) = 2^32 = 4.294.967.296
     - Example: 192.168.0.1
-    - <img src="ipv4.png" alt="ipv4" align="center">
+    - <img src="Imagens/ipv4.png" alt="ipv4" align="center">
  - IPv6
     - Versão 6, por falta de endereços suficientes atualmente
     - 3,4x10^38 endereços
-    - <img src="ipv6.jpg" alt="ipv6" align="center">
+    - <img src="Imagens/ipv6.jpg" alt="ipv6" align="center">
  - MacAddress
     - Endereço "único" físico associado à interface de comunicação, que conecta um dispositivo à rede
     - Sua identificação é gravada em hardware, isto é, na memória ROM (Read-Only-Memory)
     - Os três primeiros bytes são destinados a identificação do fabricante - eles são fornecidos pela própria IEEE
     - Os três últimos bytes são definidos pelo fabricante, sendo este responsável pelo controle da numeração de cada placa que produz. Apesar de ser único e gravado em hardware, o endereço MAC pode ser alterado através de técnicas específicas.
-    - <img src="macaddress.png" alt="macaddress" align="center">
+    - <img src="Imagens/macaddress.png" alt="macaddress" align="center">
  - HTTP
     - HyperText Transfer Protocol utilizado para sistemas de informação de hipermídia e hypertexto
     - [MDN HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
@@ -292,7 +292,7 @@
        - CODE (8 bits): utilizado em conjunto com o campo TYPE para identificar o tipo de mensagem ICMP que está sendo enviada.
        - CHECKSUM (16 bits): verifica a integridade do pacote ICMP.
        - MESSAGE CONTENTS (Tamanho Variável): contém o conteúdo da mensagem ICMP.
-    - <img src="icmp.jpg" alt="icmp" align="center">
+    - <img src="Imagens/icmp.jpg" alt="icmp" align="center">
     - <strong>Open System Interconnection</strong> é um modelo de rede de computador com objetivo de ser um padrão, para protocolos de comunicação entre os mais diversos sistemas em uma rede local (Ethernet), garantindo a comunicação entre dois sistemas computacionais (end-to-end) divido em 7 camadas.
     - <strong>PING ou Latência</strong> é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na "escuta" das respostas. Se o equipamento de destino estiver ativo, uma "resposta" (o "pong", uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. $ ping -c 5 galhardoo.com
     - <strong>Firewal ou Parede de Fogo</strong> é um dispositivo de uma rede de computadores que tem por objetivo aplicar uma política de segurança a um determinado ponto da rede. O firewall pode ser do tipo filtros de pacotes, proxy de aplicações, etc. Os firewalls são geralmente associados a redes TCP/IP.[1]. Este dispositivo de segurança existe na forma de software e de hardware, a combinação de ambos é chamado tecnicamente de "appliance".
@@ -307,12 +307,12 @@
     - <strong>LAN = Local Area Network</strong> é um conjunto de hardware e software que permite a computadores individuais estabelecerem comunicação entre si, trocando e compartilhando informações e recursos. Estas redes são denominadas locais por cobrirem uma área bem limitada, porém com o avanço tecnológico a LAN tem ultrapassado os 100 m de cobertura para se estender a uma área maior
     - <strong>MAN = Metropolitan Area Network</strong> são redes maiores que as LANs. Este tipo de rede é caracterizada por ter um alcance maior que as do tipo LAN, abrangendo cidades próximas ou regiões metropolitanas, por exemplo. Em uma definição mais prática, imaginemos por exemplo, que uma empresa possui dois escritórios em uma mesma cidade e deseja que os computadores permaneçam interligados. Para isso existe a rede de área metropolitana, que conecta diversas redes locais dentro de algumas dezenas de quilômetros.
     - <strong>WAN = Wide Area Network</strong> é uma rede de computadores que abrange uma grande área geográfica, com frequência um país ou continente. Um exemplo clássico de uma rede tipicamente WAN é a própria Internet pelo fato de abranger uma área geográfica global, interligando países e continentes.
-    - <img src="ositcp.jpg" alt="ositcp" align="center">
-    - <img src="tree-way-handshake.jpg" alt="handshake" align="center">
+    - <img src="Imagens/ositcp.jpg" alt="ositcp" align="center">
+    - <img src="Imagens/tree-way-handshake.jpg" alt="handshake" align="center">
 
 ## Domain
 
- - <img src="url.jpg" alt="url" align="center">
+ - <img src="Imagens/url.jpg" alt="url" align="center">
  - URL = Uniform Resource Locator (Nome do Domínio)
     - https://galhardoo.com
  - Subdomínio
@@ -358,7 +358,7 @@
 
 ## Cloud
 
- - <img src="cloudservices.png" alt="cloudservices" align="center">
+ - <img src="Imagens/cloudservices.png" alt="cloudservices" align="center">
  - <strong>SaaS</strong>
     - O SaaS (Software como Serviço) permite aos usuários se conectar e usar aplicativos baseados em nuvem pela Internet. Exemplos comuns são email, calendário e ferramentas do Office (como Microsoft Office 365).
     - O SaaS fornece uma solução de software completa que você pode comprar em um regime pré-pago de um provedor de serviço de nuvem. Você pode alugar o uso de aplicativo para sua organização e seus usuários se conectarem a ele pela Internet, normalmente por um navegador da Web. Toda a infraestrutura subjacente, middleware, software de aplicativo e dados de aplicativo ficam no datacenter do provedor de serviços. O provedor de serviço gerencia hardware e software e, com o contrato de serviço apropriado, garante a disponibilidade e a segurança do aplicativo e de seus dados.
