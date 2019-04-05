@@ -487,8 +487,3 @@
     - A abertura das condicionais devem ser feitas na mesma linha. O fechamento na  próxima.
     - Os parâmetros das funções/métodos, não devem conter espaços no começo e no fim.
 
-<br><br>
-<p align="center">
-  <strong>“Existem dois tipos de pessoa: as que fazem o trabalho e as que recebem o crédito. Tente estar no primeiro grupo, tem menos competição por lá.” <br><br>- Indira Gandhi</strong><br><br>
-    <br>
-  </p>
