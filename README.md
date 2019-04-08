@@ -487,3 +487,11 @@
     - A abertura das condicionais devem ser feitas na mesma linha. O fechamento na  próxima.
     - Os parâmetros das funções/métodos, não devem conter espaços no começo e no fim.
 
+
+<br><br>
+
+<p align="center">
+  "<strong>We are all very ignorant. What happens is that not all ignore the same things."</strong><br><br> - Albert Einstein
+    <br>
+  </p>
+
