@@ -13,8 +13,9 @@
  - YouTube
     - [NICbrvideos](https://www.youtube.com/user/NICbrvideos/videos)
  - Sites
+    - [W3Schools PHP7](https://www.w3schools.com/php7/default.asp)
     - [NIC.br](https://nic.br/)
-    - [Tutorial Republic](https://www.tutorialrepublic.com/php-tutorial/)
+    - [Tutorial Republic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
     - [Celke.com.br](https://celke.com.br/home)
     - [EnableCORS.org](https://enable-cors.org/)
     - [Php Weekend](http://phpweekend.com.br/)
@@ -101,10 +102,10 @@
  <VirtualHost *:80>
     ServerAdmin aleexgvieira@gmail.com
     DocumentRoot "/opt/lampp/htdocs/Learning-PHP7/Platform as a service (Multitenancy)"
-    ServerName saas.galhardoo.com
-    ServerAlias saas.galhardoo.com
-    ErrorLog "logs/saas.galhardoo.com-error_log"
-    CustomLog "logs/saas.galhardoo.com-access_log" common
+    ServerName saas.google.com
+    ServerAlias saas.google.com
+    ErrorLog "logs/saas.google.com-error_log"
+    CustomLog "logs/saas.google.com-access_log" common
 </VirtualHost>
  ```
  - Rename LocalHost
@@ -242,7 +243,7 @@
        - MESSAGE CONTENTS (Tamanho Variável): contém o conteúdo da mensagem ICMP.
     - <img src="Imagens/icmp.jpg" alt="icmp" align="center">
     - <strong>Open System Interconnection</strong> é um modelo de rede de computador com objetivo de ser um padrão, para protocolos de comunicação entre os mais diversos sistemas em uma rede local (Ethernet), garantindo a comunicação entre dois sistemas computacionais (end-to-end) divido em 7 camadas.
-    - <strong>PING ou Latência</strong> é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na "escuta" das respostas. Se o equipamento de destino estiver ativo, uma "resposta" (o "pong", uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. $ ping -c 5 galhardoo.com
+    - <strong>PING ou Latência</strong> é um utilitário que usa o protocolo ICMP para testar a conectividade entre equipamentos. É um comando disponível praticamente em todos os sistemas operacionais. Seu funcionamento consiste no envio de pacotes para o equipamento de destino e na "escuta" das respostas. Se o equipamento de destino estiver ativo, uma "resposta" (o "pong", uma analogia ao famoso jogo de ping-pong) é devolvida ao computador solicitante. $ ping -c 5 google.com
     - <strong>Firewal ou Parede de Fogo</strong> é um dispositivo de uma rede de computadores que tem por objetivo aplicar uma política de segurança a um determinado ponto da rede. O firewall pode ser do tipo filtros de pacotes, proxy de aplicações, etc. Os firewalls são geralmente associados a redes TCP/IP.[1]. Este dispositivo de segurança existe na forma de software e de hardware, a combinação de ambos é chamado tecnicamente de "appliance".
     - <strong>Gateway = Ponte de ligação</strong>  possui os seguintes significados:
        - Em uma rede de comunicações, um nó de rede equipado para interfacear com outra rede que usa protocolos diferentes. 
@@ -250,7 +251,7 @@
        - Para que serve: Organizar o tráfego de informações entre um equipamento final (computador, notebook, smartphone, tablet, etc) e a internet além de “traduzir” as informações entre redes heterogêneas. Isto é, permitir a comunicação entre diferentes ambientes e arquiteturas. Assim, a ferramenta é capaz de converter os dados entre sistemas diferentes, de modo que cada lado seja capaz de “entender” o outro.
        - Exemplos de uso: roteador e firewall.
     - <strong>Proxy = "Procurador ou Representante"</strong> é um servidor (um sistema de computador ou uma aplicação) que age como um intermediário para requisições de clientes solicitando recursos de outros servidores. Um cliente conecta-se ao servidor proxy, solicitando algum serviço, como um arquivo, conexão, página web ou outros recursos disponíveis de um servidor diferente, e o proxy avalia a solicitação como um meio de simplificar e controlar sua complexidade. Um proxy de cache HTTP ou, em inglês, caching proxy, permite por exemplo que o cliente requisite um documento na World Wide Web e o proxy procura pelo documento na sua caixa (cache). Se encontrado, a requisição é atendida e o documento é retornado imediatamente. Caso contrário, o proxy busca o documento no servidor remoto, entrega-o ao cliente e salva uma cópia em seu cache. Isto permite uma diminuição na latência, já que o servidor proxy, e não o servidor original, é requisitado, proporcionando ainda uma redução do uso da largura de banda.
-    - <strong>Traceroute</strong> é uma ferramenta de diagnóstico que rastreia a rota de um pacote através de uma rede de computadores que utiliza os protocolos IP e o ICMP. Seu funcionamento está baseado no uso do campo <strong>Time to Live (TTL)</strong> do pacote IPv4[8] destinado a limitar o tempo de vida dele. Este valor é decrementado a cada vez que o pacote é encaminhado por um roteador. Ao atingir o valor zero o pacote é descartado e o originador é alertado por uma mensagem ICMP TIME_EXCEEDED. $ traceroute galhardoo.com
+    - <strong>Traceroute</strong> é uma ferramenta de diagnóstico que rastreia a rota de um pacote através de uma rede de computadores que utiliza os protocolos IP e o ICMP. Seu funcionamento está baseado no uso do campo <strong>Time to Live (TTL)</strong> do pacote IPv4[8] destinado a limitar o tempo de vida dele. Este valor é decrementado a cada vez que o pacote é encaminhado por um roteador. Ao atingir o valor zero o pacote é descartado e o originador é alertado por uma mensagem ICMP TIME_EXCEEDED. $ traceroute google.com
     - <strong>PAN = Personal Area Network</strong>  é uma rede doméstica que liga recursos diversos ao longo de uma residência. Através da tecnologia Bluetooth e/ou cabo USB obtém-se uma rede PAN.
     - <strong>LAN = Local Area Network</strong> é um conjunto de hardware e software que permite a computadores individuais estabelecerem comunicação entre si, trocando e compartilhando informações e recursos. Estas redes são denominadas locais por cobrirem uma área bem limitada, porém com o avanço tecnológico a LAN tem ultrapassado os 100 m de cobertura para se estender a uma área maior
     - <strong>MAN = Metropolitan Area Network</strong> são redes maiores que as LANs. Este tipo de rede é caracterizada por ter um alcance maior que as do tipo LAN, abrangendo cidades próximas ou regiões metropolitanas, por exemplo. Em uma definição mais prática, imaginemos por exemplo, que uma empresa possui dois escritórios em uma mesma cidade e deseja que os computadores permaneçam interligados. Para isso existe a rede de área metropolitana, que conecta diversas redes locais dentro de algumas dezenas de quilômetros.
@@ -262,13 +263,13 @@
 
  - <img src="Imagens/url.jpg" alt="url" align="center">
  - URL = Uniform Resource Locator (Nome do Domínio)
-    - https://galhardoo.com
+    - https://google.com
  - Subdomínio
-    - https://app.galhardoo.com
+    - https://play.google.com
  - URN == Uniform Resource Name    
-    - /blog (recurso que será usado na URL)
+    - /maps (recurso que será usado na URL)
  - URI == Uniform Resource Identifier    
-      - https://galhardoo.com/projetos (URL + URN)
+      - https://google.com/maps (URL + URN)
  - TDL == Top Level Domain ou Domínio de Nível Superior
     - A IANA (Autoridade para Atribuição de Números na Internet) atualmente distingue os seguintes grupos de domínios de topo
        - domínios de topo de código de país (country-code top-level domains ou ccTLD): têm sempre duas letras e derivam do código ISO 3166-1 alpha-2
