@@ -322,41 +322,6 @@
           - <em>Exemplo: Servidores e armazenamento  Segurança/firewalls de rede Construção/planta física do datacenter</em>
 
 
-## Software Engineering Principles
-
- - [Adams Óbvio](https://www.amazon.com/dp/8562409189?tag=bizzi0d-20)
- - "Bad software that adds value > best software in the world that does not add value"
- - "Learn to say: I DONT KNOW"
- - "Premature Optimization: the Root of All Evil"
- - "Remember that dinosaurs are almost always the best references"
- - "Who thinks little, make more mistakes"
- - "In God we trust; All others must bring data"
- - "Lack of money is the root of all evil"
- - "Doesn't exist silver bullet"
- - "Make it Work > Make it Correct"
- - "Increase Revenue > Lower Costs"
- - "SaaS > PaaS > IaaS > In-House"
- - "You != Unicorn"
- - "Always try to understand what is happening under the hoods"
- - "Write code != programming != software engineering"
- - "Maintainability > Performance"
- - "No Metrics, No Optimization"
- - "NEVER EVER Stop Questioning"
- - "Software engineering is 80% thinking ABOUT the problem, and 20% thinking HOW to solve the problem"
- - "The more knowledge you have, the less you know. Ego = 1 / knowledge"
- - "Everyone should care about the quality"
- - "99% of good software code has been thrown away"
- - "2 + 2 is not 5, no matter how many people say it"
- - "Principles > Analogy"
- - "Talk and learn from people smarter than you"
- - "Always try to use Single Source of Truth"
- - "Do not reinvent the wheel"
- - "It is always good to study a tool deeply before using it in production"
- - "Modularization is everything"
- - "Good artists copy, great artists steal"
- - "Innovation only exists in a world of restraint and not of abundance"
- - "Always will have something to improve, done is better than perfect"
-
 ## Tools
     
  - HTTP Servers
