@@ -18,21 +18,9 @@
     - [CGI.br](https://cgi.br/)
     - [EnableCORS.org](https://enable-cors.org/)
     - [Php Weekend](http://phpweekend.com.br/)
- - Security
-    - [OAuth.net](https://oauth.net/)
-       - [Build a Simple REST API with Node and OAuth 2.0](https://developer.okta.com/blog/2018/08/21/build-secure-rest-api-with-node)
-       - [GitHub Source code for OAuth 2 in Action](https://github.com/oauthinaction/oauth-in-action-code)
-    - [Practical Cryptography for Developers - Free Book](https://cryptobook.nakov.com/)
-    - [HashKiller](https://hashkiller.co.uk/md5-decrypter.aspx) :skull:
- - Articles
+ - Nice to Know
     - ["Design Patterns" Aren't](https://perl.plover.com/yak/design/)
     - [Crontab](https://www.wikiwand.com/pt/Crontab)
-    - [How To Install and Secure Redis on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04)
- - SQLite
-    - [When To Use](https://www.sqlite.org/whentouse.html)
- - Wordpress
-    - [UnderScores.me](http://underscores.me/)
-    - [BrowserShot](http://browsershots.org/)
 
 ## Best Practices
 
@@ -125,64 +113,6 @@
  - 20Mbits = 20 * 2^20 = 20.971.520 bits
  - 20MByte = 20 * 2^20 * 8 = 167.772.160 bits
  - Plano de 100Mbits = (100 * 2^20) / 8 = 104.857.600 / 8 = 13.107.200 bits/s = 13MB/s 
- - Data Types
-     ```
-     Integer Types
-     Type               Storage size    Value range
-
-     char               1 byte          -128 to 127 or 0 to 255
-     unsigned char      1 byte          0 to 255
-     signed char        1 byte          -128 to 127
-     int                2 or 4 bytes    -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
-     unsigned int       2 or 4 bytes    0 to 65,535 or 0 to 4,294,967,295
-     short              2 bytes         -2,147,483,64832,768 to 32,767
-     unsigned short     2 bytes         0 to 65,535
-     long               4 bytes         -2,147,483,648 to 2,147,483,647
-     unsigned long      4 bytes         0 to 4,294,967,295
-
-
-     Floating-Point Types
-     Type               Storage size        Value range             Precision
-
-     float              4 byte              1.2E-38 to 3.4E+38      6 decimal places
-     double             8 byte              2.3E-308 to 1.7E+308    15 decimal places
-     long double        10 byte             3.4E-4932 to 1.1E+4932  19 decimal places
-
-     ```
-
-## MySQL
-
- - Usefull CLI Commands
-    - $ nmap localhost
- - Uninstall or Completely Remove MySQL from Ubuntu
-    - sudo apt-get remove --purge mysql*
-    - sudo apt-get purge mysql*
-    - sudo apt-get autoremove
-    - sudo apt-get autoclean
-    - sudo apt-get remove dbconfig-mysql
-    - sudo apt-get dist-upgrade
-    - sudo apt-get install mysql-server
- - SQL Training
-    - https://www.sqlteaching.com/
- - Ports
-    - MySQL: 3306
-    - MSSQL: 1433
- - Install MySQL Ubuntu 18.04
- ```
- $ sudo apt-get install mysql-server mysql-client libmysqlclient-dev
- ```
- - GUI Software
-    - [DBeaver](https://dbeaver.io/)
-    - [MySQLWorkBench](https://www.mysql.com/products/workbench/)
-    - [SequelPRO - MacOS Only](http://www.sequelpro.com/)
- - CLI Usefull Commands Reference
-    - https://gist.github.com/hofmannsven/9164408
-
-## PostgreSQL
-
- - Default Port: 5432
-    - Default: 5432
- - [How To Install and Use PostgreSQL on Ubuntu 18.04 - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
 
 ## Redes
 
