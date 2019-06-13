@@ -10,13 +10,12 @@
     - [Curso Completo de PHP7 - Udemy](https://www.udemy.com/curso-php-7-online/learn/v4/overview)
  - Recommended Books
     - [PHP Programando com Orientação a Objetos - 4 Edição - Pablo Dall'Oglio](https://www.amazon.com.br/PHP-Programando-com-Orienta%C3%A7%C3%A3o-Objetos-ebook/dp/B07G9PQJQR?tag=goog0ef-20&smid=A18CNA8NWQSYHH&ascsubtag=3f9e3157-63ef-45ba-8931-20a081aa9ab1)
- - YouTube
-    - [NICbrvideos](https://www.youtube.com/user/NICbrvideos/videos)
  - Sites
     - [W3Schools PHP7](https://www.w3schools.com/php7/default.asp)
-    - [NIC.br](https://nic.br/)
-    - [Tutorial Republic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
+    - [TutorialRepublic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
     - [Celke.com.br](https://celke.com.br/home)
+    - [Nic.br](https://www.nic.br/)
+    - [CGI.br](https://cgi.br/)
     - [EnableCORS.org](https://enable-cors.org/)
     - [Php Weekend](http://phpweekend.com.br/)
  - Security
@@ -118,7 +117,7 @@
 
 ## Bytes World
 
- - [American Standard Code for Information Interchange Table](https://www.ascii-code.com/)
+ - [ASCII CODE - American Standard Code for Information Interchange Table](https://www.ascii-code.com/)
  - 1Kbit = 2^10 = 1024 bits
  - 1KByte = 2^10 * 8 = 8.192 bits
  - 1Mbit = 2^20 = 1.048.576 bits 
@@ -181,52 +180,31 @@
 
 ## PostgreSQL
 
- - Ports
+ - Default Port: 5432
     - Default: 5432
- - Install PostgreSQL Ubuntu 18.04
- ```
- $ sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
- $ wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
- $ sudo apt-get update
- $ sudo apt-get install postgresql-common
- $ sudo apt-get install postgresql-9.5 libpq-dev
- ```
- - The postgres installation doesn't setup a user for you, so you'll need to follow these steps to create a user with permission to create databases. 
- ```
- $ sudo -u postgres createuser galhardo -s
- ```
- - If you would like to set a password for the user, you can do the following
- ```
- $ sudo -u postgres psql
- $ postgres=# \password root
- ```
+ - [How To Install and Use PostgreSQL on Ubuntu 18.04 - DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
 
 ## Redes
 
- - <strong>Resumindo os principais tópicos para usar como referência, como se fosse um mapa mental.</strong>
- - IPv4
-    - Significado Internet Protocol Versão 4
+ - IPv4 == Internet Protocol Versão 4
     - Formato por 4 bytes (10111011.01101011.11111011.01011011) = 2^32 = 4.294.967.296
     - Example: 192.168.0.1
     - <img src="Imagens/ipv4.png" alt="ipv4" align="center">
- - IPv6
+ - IPv6 == Internet Protocol Versão 6
     - Versão 6, por falta de endereços suficientes atualmente
     - 3,4x10^38 endereços
     - <img src="Imagens/ipv6.jpg" alt="ipv6" align="center">
- - MacAddress
-    - Endereço "único" físico associado à interface de comunicação, que conecta um dispositivo à rede
-    - Sua identificação é gravada em hardware, isto é, na memória ROM (Read-Only-Memory)
+ - MacAddress == Media Access Control
+    - Endereço "único" físico associado à interface de comunicação, que conecta um dispositivo à rede.
+    - Sua identificação é gravada em hardware, isto é, na memória ROM (Read-Only-Memory).
     - Os três primeiros bytes são destinados a identificação do fabricante - eles são fornecidos pela própria IEEE
     - Os três últimos bytes são definidos pelo fabricante, sendo este responsável pelo controle da numeração de cada placa que produz. Apesar de ser único e gravado em hardware, o endereço MAC pode ser alterado através de técnicas específicas.
     - <img src="Imagens/macaddress.png" alt="macaddress" align="center">
- - HTTP
-    - HyperText Transfer Protocol utilizado para sistemas de informação de hipermídia e hypertexto
-    - [MDN HTTP Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
-    ```
-    HTTP: Port 80
-    HTTPS: Port 443
-    ```
- - OSI & TCP/IP
+ - HTTP == HyperText Transfer Protocol
+    - Utilizado para sistemas de informação de hipermídia e hypertexto
+    - HTTP: Port 80
+    - HTTPS: Port 443
+ - Camada OSI & Protocolos TCP/IP
     - <strong>Transmission Control Protocol</strong> é um conjunto de protocolos de comunicação entre computadores em rede. O conjunto de protocolos pode ser visto como um modelo de camadas (Modelo OSI), onde cada camada é responsável por um grupo de tarefas, fornecendo um conjunto de serviços bem definidos para o protocolo da camada superior. As camadas mais altas, estão logicamente mais perto do usuário (chamada camada de aplicação) e lidam com dados mais abstratos, confiando em protocolos de camadas mais baixas para tarefas de menor nível de abstração. <strong>É orientado a conexão, ou seja, antes de enviar os dados é feito uma comunicação entre o rementente e o destinatário e cria-se um canal de comunicação, então é transmitido os dados. Exemplo de uso: gerenciadores de FTP (File Transfer Protocol), como o FileZilla, pois precisam garantir a integridade do recebimento/envio do arquivo.</strong>
     - Benefícios
        - Padronização: um padrão, um protocolo roteável que é o mais completo e aceito protocolo disponível atualmente. Todos os sistemas operacionais modernos oferecem suporte para o TCP/IP e a maioria das grandes redes se baseia em TCP/IP para a maior parte de seu tráfego.
@@ -256,8 +234,10 @@
     - <strong>LAN = Local Area Network</strong> é um conjunto de hardware e software que permite a computadores individuais estabelecerem comunicação entre si, trocando e compartilhando informações e recursos. Estas redes são denominadas locais por cobrirem uma área bem limitada, porém com o avanço tecnológico a LAN tem ultrapassado os 100 m de cobertura para se estender a uma área maior
     - <strong>MAN = Metropolitan Area Network</strong> são redes maiores que as LANs. Este tipo de rede é caracterizada por ter um alcance maior que as do tipo LAN, abrangendo cidades próximas ou regiões metropolitanas, por exemplo. Em uma definição mais prática, imaginemos por exemplo, que uma empresa possui dois escritórios em uma mesma cidade e deseja que os computadores permaneçam interligados. Para isso existe a rede de área metropolitana, que conecta diversas redes locais dentro de algumas dezenas de quilômetros.
     - <strong>WAN = Wide Area Network</strong> é uma rede de computadores que abrange uma grande área geográfica, com frequência um país ou continente. Um exemplo clássico de uma rede tipicamente WAN é a própria Internet pelo fato de abranger uma área geográfica global, interligando países e continentes.
-    - <img src="Imagens/ositcp.jpg" alt="ositcp" align="center">
-    - <img src="Imagens/tree-way-handshake.jpg" alt="handshake" align="center">
+    - Camadas OSI
+       - <img src="Imagens/ositcp.jpg" alt="ositcp" align="center">
+    - Tree Way Handshake
+       - <img src="Imagens/tree-way-handshake.jpg" alt="handshake" align="center">
 
 ## Domain
 
@@ -324,30 +304,24 @@
 
 ## Tools
     
+ - Composer
+    - https://getcomposer.org
+    - https://packagist.org
  - HTTP Servers
-    - [Linux - XAMPP](https://www.apachefriends.org/index.html)
+    - [XAMPP](https://www.apachefriends.org/index.html)
  - [cPanel](https://cpanel.com/)
-    ```
-    cPanel: 2082
-    cPanel  HTTPS: 2083
-    WHM: 2086
-    WHM HTTPS: 2087
-    Webmail: 2095
-    Webmail  HTTPS: 2096
-    ```
- - Hosts
-    - [BlueHost](https://bluehost.com)
-    - [Umbler](https://umbler.com)
- - File Transfer Protocol
-    ```
-    FTP: 21
-    Webdisk: 2077
-    Webdisk HTTPS: 2078
-    ```
+    - cPanel: 2082
+    - cPanel  HTTPS: 2083
+    - WHM: 2086
+    - WHM HTTPS: 2087
+    - Webmail: 2095
+    - Webmail  HTTPS: 2096
+ - FTP - File Transfer Protocol
+    - Default Port: 21
+    - Webdisk: 2077
+    - Webdisk HTTPS: 2078
     - [FileZilla](https://filezilla-project.org/)
- - Marketing
-    - [Marketing Digital](https://github.com/AlexGalhardo/ICMC-USP/tree/master/Marketing%20Digital)
- - HTTP Requests
+ - HTTP Requests Tools
     - [REST TestTest](https://resttesttest.com/)
     - [Insomnia](https://insomnia.rest/)
     - [Postman](https://www.getpostman.com/)
@@ -357,9 +331,6 @@
     - [Amazon CloudFront](https://aws.amazon.com/cloudfront)
     - [MemCachier](https://www.memcachier.com/)
     - [Fastly](https://www.fastly.com/)
- - Composer
-    - https://getcomposer.org
-    - https://packagist.org
  - Code Quality
     - [CodeClimate](https://codeclimate.com/)
  - DataBase as a Service
@@ -377,43 +348,38 @@
     - [NGrok](https://ngrok.com/)
  - Reset CSS
     - [Normalize.CSS](https://necolas.github.io/normalize.css/)
- - Simple Mail Transfer Protocol
-    ```
-    Abreviado SMTP, traduzido do inglês, significa "Protocolo de transferência de correio simples") 
+ - SMTP - Simple Mail Transfer Protocol
+    - "Protocolo de transferência de correio simples" 
     é o protocolo padrão para envio de e-mails através da Internet, definido na RFC 821.
-    É um protocolo relativamente simples, em texto plano, onde um ou vários destinatários de uma mensagem 
+    - É um protocolo relativamente simples, em texto plano, onde um ou vários destinatários de uma mensagem 
     são especificados (e, na maioria dos casos, validados) sendo, depois, a mensagem transferida.
-    SMTP: Port 587
-    SMTP + SSL: Port 465
-    SMTP + TLS: Port 587 (recomendado)
-    ```
-    ```
-    POP3 significa Post Office Protocol. 
-    O POP3 permite que um cliente faça download de um e-mail de um servidor de e-mail. 
-    O protocolo POP3 é simples e não oferece muitos recursos, excepto para download. 
-    O seu conceito pressupõe que o cliente de e-mail faça download de todo o e-mail disponível no servidor, apaga-os do servidor e, em seguida, desliga-se. 
-    Ao utilizar este procolo, irá conseguir visualizar os seus emails caso não tenha acesso à Internet.
-    POP3: Port 110
-    POP3  + SSL: Port 995
-    POP3 + TLS: Port 110 (recomendado)
-    ```
-    ```
-    IMAP significa Internet Message Access Protocol. 
-    O IMAP partilha muitos recursos semelhantes com o POP3.  
+    - SMTP: Port 587
+    - SMTP + SSL: Port 465
+    - SMTP + TLS: Port 587 (recomendado)
+ - POP3 == Post Office Protocol. 
+    - O POP3 permite que um cliente faça download de um e-mail de um servidor de e-mail. 
+    - O protocolo POP3 é simples e não oferece muitos recursos, excepto para download. 
+    - O seu conceito pressupõe que o cliente de e-mail faça download de todo o e-mail disponível no servidor, apaga-os do servidor e, em seguida, desliga-se. 
+    - Ao utilizar este procolo, irá conseguir visualizar os seus emails caso não tenha acesso à Internet.
+    - POP3: Port 110
+    - POP3  + SSL: Port 995
+    - POP3 + TLS: Port 110 (recomendado)
+ - IMAP == Internet Message Access Protocol. 
+    - O IMAP partilha muitos recursos semelhantes com o POP3.  
     Também é um protocolo que um cliente de e-mail pode usar para fazer download de e-mails de um servidor de e-mail. No entanto, o IMAP inclui mais recursos do que POP3. 
-    O protocolo IMAP foi desenvolvido para permitir que os utilizadores mantenham seus e-mails no servidor. 
-    O IMAP requer mais espaço em disco no servidor e no geral mais recursos de servidor do que POP3, já que todos os e-mails são armazenados no servidor. 
-    Ao utilizar este procolo, apenas irá conseguir visualizar os seus emails, caso não tenha acesso à Internet, se o seu cliente de e-mail estiver configurado especificamente para tal.
-    IMAP: Port 143
-    IMAP + SSL: Port 993
-    IMAP + TLS: Port 143 (recomendado)
-    ```
-    - [Amazon Simple Email Service](https://aws.amazon.com/ses/)
-    - [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
-    - [MailCatcher](https://mailcatcher.me/)
-    - [MailTrap](https://mailtrap.io/)
-    - [SendGrid](https://sendgrid.com/)
-    - [MailGun](https://www.mailgun.com/)
+    - O protocolo IMAP foi desenvolvido para permitir que os utilizadores mantenham seus e-mails no servidor. 
+    - O IMAP requer mais espaço em disco no servidor e no geral mais recursos de servidor do que POP3, já que todos os e-mails são armazenados no servidor. 
+    - Ao utilizar este procolo, apenas irá conseguir visualizar os seus emails, caso não tenha acesso à Internet, se o seu cliente de e-mail estiver configurado especificamente para tal.
+    - IMAP: Port 143
+    - IMAP + SSL: Port 993
+    - IMAP + TLS: Port 143 (recomendado)
+    - Tools
+       - [Amazon Simple Email Service](https://aws.amazon.com/ses/)
+       - [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
+       - [MailCatcher](https://mailcatcher.me/)
+       - [MailTrap](https://mailtrap.io/)
+       - [SendGrid](https://sendgrid.com/)
+       - [MailGun](https://www.mailgun.com/)
  - CEP
     - [ViaCEP](http://viacep.com.br/)
  - PDF
@@ -453,11 +419,4 @@
     - A abertura das condicionais devem ser feitas na mesma linha. O fechamento na  próxima.
     - Os parâmetros das funções/métodos, não devem conter espaços no começo e no fim.
 
-
-<br><br>
-
-<p align="center">
-  "<strong>We are all very ignorant. What happens is that not all ignore the same things."</strong><br><br> - Albert Einstein
-    <br>
-  </p>
 

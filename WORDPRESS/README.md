@@ -1,15 +1,3 @@
-<p align="center">
-  <a href="https://wordpress.org/">
-    <img src="wordpress.png" alt="" width=256 height=200>
-  </a>
-
-  <p align="center">
-    Learning Wordpress to make awesome CMS systems :smile:
-    <br>
-  </p>
-
-<br><br>
-
 ## References
 
  - Courses
