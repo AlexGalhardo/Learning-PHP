@@ -350,3 +350,72 @@
     - Os parâmetros das funções/métodos, não devem conter espaços no começo e no fim.
 
 
+## Embarcados
+
+ - ROM(READ ONLY MEMORY) =  ROM (apenas para leitura, que não pode ser gravado)
+ - DVD = (Digital Vídeo Disc (“disco de vídeo digital”) e Digital Versatile Disk (disco digital versátil”))
+    - o DVD foi concebido para armazenar filmes e a capacidade de um DVD convencional, de 4,7 GB (Gigabytes), leva isso em conta.
+    - Senão vejamos: tanto o DVD convencional quanto o CD contêm uma única trilha em espiral que começa junto ao centro do disco e se “desenrola” até próximo da borda. Essa trilha é formada por pequenas saliências ou ressaltos separados por trechos da superfície original, espelhada, da face refletora do disco. Enquanto o disco gira, um feixe de raio laser é projetado sobre a trilha. Quando este feixe encontra um pequeno trecho da superfície original, é refletido para uma célula fotoelétrica. Quando incide em uma saliência, ou ressalto, é desviado para longe da célula. Com isso, na medida que o disco gira e a trilha é varrida pelo laser, a célula fotoelétrica recebe um feixe de luz intermitente. Isso gera uma sucessão de pulsos de corrente elétrica (células fotoelétricas emitem corrente elétrica quando recebem luz), pulsos esses que são convertidos em bits, que por sua vez são agrupados oito a oito para formar os bytes que codificam os dados digitalizados.
+ - LASER = Light Amplification by Stimulated Emission of Radiation
+    - ou amplificação da luz por emissão estimulada de radiação, um dispositivo que gera um feixe de luz monocromática quando estimulado por uma fonte externa de radiação. A luz utilizada nos CDs e DVDs convencionais é de cor vermelha, cujo comprimento de onda mede 0,65 m (mícron, ou milésimo de milímetro).
+ - CLP = Controlador Lógico Programável
+ - Lógica Analógica
+   - Lógica medida através de ondas
+   - Medidas em Hertz (frêquencia/por segundo)
+   - colocar imagem com diferenças de ondas (raio x, visível, etc)
+ - Lógica binária
+   - Medida através de bits (verdadeiro ou falso, ligado ou desligado, 5V ou 0V)
+   - Sons
+     - explicar como funciona os sons com lógica binária
+     - colocar uma imagem com uma onda e suas 2 caractéristicas (x, y)
+   - Imagems
+     - explicar como funciona as imagens com lógica binária
+   - 1 BYTE = 8 Bits = 2^8 = 0 até 255
+     - explica as diferenças cores de 0 (preto) até FFF(255 = branco)
+ - Volts
+   - Medido em VOLTS
+   - Significa a tensão (diferença de elétrons) SEMPRE entre 2 bases: uma negativa e outra positiva
+ - Transistor
+   - colocar a imagem do transistor explicando cada uma de suas partes
+ - Resistor = Como se fosse um fúnil da corrente elétrica
+    - Medido em Ohms (omega)
+    - R = V/I
+ - Potência (P)
+    - Medido em Watts
+    - P = I . V
+ - Ampere (I)
+    - Quantidade de corrente eĺétrica
+ - Circuito aberto = FALSO (0)
+ - Circuito fechado = VERDADEIRO (1)
+ - Diodo = corrente elétrica em apenas uma direção
+ - ENERGIA ELÉTRICA = a natureza sempre tende ao equílibrio
+   - ou seja, se possuo 7 prótons no núcleo,
+   - eu preciso de 7 elétrons nas camadas de valência
+   - como o hidrogênio que possui 1 proton e 1 eletron na camada de valência
+   - com isso, se o átomo possui mais elétrons do que precisa, ele tende para o átomo que possui menos elétrons
+   - sempre do positivo (anodo) para o negativo (catodo)
+   - é no movimento destes elétrons para entrar em equilibrio que ocorre a energia elétrica
+ - Efeito JOULE
+   - quando usamos um resistor em uma corrente elétrica, o resistor para não deixar passar esse excesso de elétrons, transforma eles em calor
+   - como usavo no chuveiro ou ferro de passar roupa por exemplo
+ - LED (Light Emitting Diode)
+   - Diodo emissor de luz
+   - (colocar imagem com diferentes tipos de led, com suas cores, resistências e potencias)
+ - LDR ((Light Dependent Resistor)
+   -  resistor dependente de luz ou fotorresistência
+ - Capacitor (componente elétrica = armazena corrente elétrica/carga por um determinado tempo)
+   - medido em FARADS
+   - capacitância = capacidade de corrente elétrica/carga que o capacitor consegue armazenar
+ - Circuito em paralelo
+   - divide a tensão (volts) da corrente elétrica de forma igual a todos os componentes (como nas casas, mantendo sempre a voltagem inicial)
+ - Circuito contínuo
+   - divide a tensão (volts) da corrente elétrica de forma divida a todos os componentes (após passar 110V em uma lampada, a próxima lampada recebe a outra metade, 55V)
+ - Materias condutores e resistores de corrente elétrica
+   - colocar 2 imagens com os melhores materias de cada um
+ - Peso = Massa x Gravidade = Medido em Newtons
+ - Massa = Peso em KG (no caso, a massa dos prótons e neutrons do átomo)
+ - última camada de valência = todo átomo é como se fosse uma cébola, separado por 7 camadas
+ - Catodo = Parte Negativa de um componente eletrônico
+ - Anôdo = parte positiva de um componente eletrônico
+ - Molèculas = são átomos de cada elemento químico interconectados pela última camada de valência (compartilham o último elétron na sétima camada, exemplo: H20)
+   - colocar imagem com tabela periódica
