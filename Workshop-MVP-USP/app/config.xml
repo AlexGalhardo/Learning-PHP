@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "info.formiga.teste"
+        versionCode = "1"
+        version     = "0.1.0">
+
+    <name>Formiga news</name>
+    <description>Formiga: seu app de notícias</description>
+
+    <!-- WHITE LIST-->
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <access origin="*://www.formiga.info" subdomains="true" />
+
+    <!-- Versao do PhoneGap -->
+    <preference name="phonegap-version" value="cli-8.0.0" />
+
+    <!-- Informacoes do desenvolvedor -->
+    <author href="https://www.formiga.info" email="fabbri07@gmail.com">BRUNO FABBRI</author>
+
+    <!-- Disabilitar overscroll -->
+    <preference name="DisallowOverscroll" value="true" />
+
+    <!-- Viewport vertical -->
+    <preference name="orientation" value="portrait" />
+
+    <!-- Escondendo o statusbar -->
+    <edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
+        <true/>
+    </edit-config>
+    <edit-config target="UIViewControllerBasedStatusBarAppearance" file="*-Info.plist" mode="overwrite" platform="ios">
+        <false/>
+    </edit-config>
+    
+</widget>

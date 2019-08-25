@@ -1,0 +1,17 @@
+.excluir-noticia{
+  position:absolute;
+  left:80%;
+  display:none;
+}
+
+.editoria_noticia{
+  color:gray;
+}
+
+.cor_resp_positiva{
+  color:green;
+}
+
+.cor_resp_negativa{
+  color:red;
+}

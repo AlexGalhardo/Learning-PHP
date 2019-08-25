@@ -1,0 +1,16 @@
+git init
+git add .
+git commit -m 'first commit'
+heroku login
+
+// create heroku repository
+heroku create
+
+// create mysql database in heroku
+heroku addons:create cleardb:ignite
+
+// get database configurations
+heroku config
+
+mysql --host=us-cdbr-iron-east-04.cleardb.net --user=bcc9c63d6f92d1 --password=b785c416 --reconnect heroku_73da8744c6fe16d < formiga_db.sq
+

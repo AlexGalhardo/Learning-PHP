@@ -1,0 +1,10 @@
+{
+    "name": "root/formiga",
+    "authors": [
+        {
+            "name": "galhardo",
+            "email": "aleexgvieira@gmail.com"
+        }
+    ],
+    "require": {}
+}

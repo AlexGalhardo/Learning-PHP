@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- Para usar no app, eh recomendado embarcar o arquivo junto com o codigo do app -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap_4.1.1_dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="noticias.css">
+
+  <title>Formiga News</title>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Barra superior -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">Formiga News</a>
+      <div class="float-right">
+        <img class="img-fluid" src="assets/img/recarregar.png" onclick="location.reload()">
+      </div>
+    </nav>
+
+    <!-- Area para as noticias -->
+    <div id="noticias"></div>
+
+    <!-- Modal para abertura das noticias -->
+    <div class="modal fade" id="modalNoticia" tabindex="-1" role="dialog" aria-labelledby="tituloModalNoticia" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <!-- Aqui vai o titulo da noticia -->
+            <h5 class="modal-title" id="tituloModalNoticia"></h5>
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- Aqui vai o conteudo da noticia -->
+          <div class="modal-body" id="conteudoModalNoticia"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS necessarios para o bootstrap 4.1 (jQuery completo e nao slim) -->
+  <!-- Para usar no app, eh recomendado embarcar os arquivos junto com o codigo do app -->
+  <script src="assets/vendor/jquery_3.3.1/jquery_3.3.1.min.js"></script>
+  <script src="assets/vendor/popper_1.14.3/popper_1.14.3.min.js"></script>
+  <script src="assets/vendor/bootstrap_4.1.1_dist/js/bootstrap.min.js"></script>
+
+  <!-- JS externos ao html -->
+  <script src="constantes.js"></script>
+  <script src="noticias.js"></script>
+
+  <!-- JS interno ao html -->
+  <script type="text/javascript" charset="UTF-8">
+
+    $(document).ready(function(){
+
+      // Lista noticias
+      listar_noticias()
+
+    })
+
+  </script>
+
+</body>
+</html>
