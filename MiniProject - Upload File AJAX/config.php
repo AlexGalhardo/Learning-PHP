@@ -6,7 +6,7 @@ $config = array();
 
 if(ENVIRONMENT == 'development'){
 	define("BASE_URL", "http://localhost/ajax/");
-	$config['dbname'] = 'estrutura_mvc';
+	$config['dbname'] = 'recomendae';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';
