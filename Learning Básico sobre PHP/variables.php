@@ -148,8 +148,8 @@ echo "<br>E a versão deste site é " . VERSION;
 /**
  * Formas de usar variáveis
  */
-
 $nomee = "fulano";
+
 /**
  * Este modo troca a variavel $nome pelo seu valor
  */
@@ -160,4 +160,7 @@ echo "<br>Aspas dulpas == Meu nome é $nomee";
  */
 echo '<br>Aspas simples == Meu nome é $nomee';
 
+
+$nomeCompleto = "Alex Galhardo Vieira";
+echo "Meu nome completo é {$nomeCompleto}";
 ?>

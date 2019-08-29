@@ -21,6 +21,11 @@
  - Nice to Know
     - ["Design Patterns" Aren't](https://perl.plover.com/yak/design/)
     - [Crontab](https://www.wikiwand.com/pt/Crontab)
+ - GUI Softwares
+    - [HeidiSQL](https://www.heidisql.com/)
+    - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
+ - Usefull Plugins Chrome
+    - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
 
 ## Best Practices
 

@@ -4,7 +4,7 @@ require 'environment.php';
 $config = array();
 if(ENVIRONMENT == 'development') {
 	define("BASE_URL", "http://localhost/Learning-PHP7/MiniProject%20-%20OLX%20MVC/");
-	$config['dbname'] = 'olx_mvc';
+	$config['dbname'] = 'olx';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';
