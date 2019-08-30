@@ -15,6 +15,7 @@
     - [TutorialRepublic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
     - [Celke.com.br](https://celke.com.br/home)
     - [Nic.br](https://www.nic.br/)
+    - [Ceweb.br](https://ceweb.br/)
     - [CGI.br](https://cgi.br/)
     - [EnableCORS.org](https://enable-cors.org/)
     - [Php Weekend](http://phpweekend.com.br/)
@@ -26,6 +27,38 @@
     - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
  - Usefull Plugins Chrome
     - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
+
+## Tutorials
+
+ - [Generating a new SSH key pair](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair)
+ - [Enabling SSL (https protocol) with xampp in a local PHP project](https://ourcodeworld.com/articles/read/198/enabling-ssl-https-protocol-with-xampp-in-a-local-php-project)
+    ```
+    # http
+    <VirtualHost 127.0.0.2:80>
+        DocumentRoot "/opt/lampp/htdocs/loginfacebook"
+        DirectoryIndex index.php
+
+        <Directory "/opt/lampp/htdocs/loginfacebook">
+            Options All
+            AllowOverride All
+            Require all granted
+        </Directory>
+    </VirtualHost>
+
+    # https
+    <VirtualHost 127.0.0.2:443>
+        DocumentRoot "/opt/lampp/htdocs/loginfacebook"
+        ServerName myproject.com
+        SSLEngine on
+        SSLCertificateFile "etc/ssl.crt/server.crt"
+        SSLCertificateKeyFile "etc/ssl.key/server.key"
+        <Directory "/opt/lampp/htdocs/loginfacebook">
+            Options All
+            AllowOverride All
+            Require all granted
+        </Directory>
+    </VirtualHost>
+    ```
 
 ## Best Practices
 
