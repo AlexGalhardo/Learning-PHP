@@ -9,6 +9,10 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
 
 	try {
 		/**
+		* Diferença entre bindValue e bindParam
+		* o bindValue aceita como valor o retorno de uma função por exemplo, enquanto o bindParam só aceita variaveis já preenchidas :D 
+		*/
+		/**
 		 * Prepare um Objeto com os dados do Banco
 		 * @var PDO
 		 */
