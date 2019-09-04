@@ -7,10 +7,12 @@
 
  - Courses
     - [PHP Do Zero ao Profissional](https://phpdozeroaoprofissional.com.br/)
+    - [UpInside.com.br](https://www.upinside.com.br/)
     - [Curso Completo de PHP7 - Udemy](https://www.udemy.com/curso-php-7-online/learn/v4/overview)
  - Recommended Books
     - [PHP Programando com Orientação a Objetos - 4 Edição - Pablo Dall'Oglio](https://www.amazon.com.br/PHP-Programando-com-Orienta%C3%A7%C3%A3o-Objetos-ebook/dp/B07G9PQJQR?tag=goog0ef-20&smid=A18CNA8NWQSYHH&ascsubtag=3f9e3157-63ef-45ba-8931-20a081aa9ab1)
  - Sites
+    - [ThePHPLeague.com](https://thephpleague.com/)
     - [W3Schools PHP7](https://www.w3schools.com/php7/default.asp)
     - [TutorialRepublic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
     - [Celke.com.br](https://celke.com.br/home)
@@ -23,6 +25,8 @@
     - ["Design Patterns" Aren't](https://perl.plover.com/yak/design/)
     - [Crontab](https://www.wikiwand.com/pt/Crontab)
  - GUI Softwares
+    - [SequelPRO](https://www.sequelpro.com/)
+    - [Dbeaver](https://dbeaver.io/download/)
     - [HeidiSQL](https://www.heidisql.com/)
     - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
  - Usefull Plugins Chrome
@@ -30,6 +34,8 @@
 
 ## Tutorials
 
+ - <?= phpinfo(); ?>
+ - [Instalação PHP Ubuntu 18.04](https://php.com.br/instalacao-php-linux)
  - [Generating a new SSH key pair](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair)
  - [Enabling SSL (https protocol) with xampp in a local PHP project](https://ourcodeworld.com/articles/read/198/enabling-ssl-https-protocol-with-xampp-in-a-local-php-project)
     ```
@@ -59,6 +65,7 @@
         </Directory>
     </VirtualHost>
     ```
+  - [Interoperabilidade](https://pt.wikipedia.org/wiki/Interoperabilidade)
 
 ## Best Practices
 
@@ -67,6 +74,7 @@
 - [PHP The Right Way - Github](https://github.com/PHPSP/php-the-right-way)
 - [FIG Standards Aproved- GitHub](https://github.com/php-fig/fig-standards/tree/master/accepted)
 - [PHPBestPractices.org](https://phpbestpractices.org)
+- [Design Patterns PHP](https://designpatternsphp.readthedocs.io/pt_BR/latest/)
 
 ## Unix Permissions
 
@@ -275,6 +283,8 @@
  - Composer
     - https://getcomposer.org
     - https://packagist.org
+       - https://packagist.org/search/?q=coffecode&reason=vendor_not_found
+    - http://platesphp.com/
  - HTTP Servers
     - [XAMPP](https://www.apachefriends.org/index.html)
  - [cPanel](https://cpanel.com/)
