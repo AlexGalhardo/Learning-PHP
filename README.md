@@ -31,8 +31,8 @@
     - [Dbeaver](https://dbeaver.io/download/)
     - [HeidiSQL](https://www.heidisql.com/)
     - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
- - Usefull Plugins Chrome
-    - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
+ - Events
+    - [PhpConference](https://phpconference.com/)
 
 ## Tutorials
 
@@ -301,10 +301,13 @@
     - Webdisk: 2077
     - Webdisk HTTPS: 2078
     - [FileZilla](https://filezilla-project.org/)
- - HTTP Requests Tools
+ - REST APIs
+    - [GuzzlePHP](http://docs.guzzlephp.org/en/stable/)
     - [REST TestTest](https://resttesttest.com/)
     - [Insomnia](https://insomnia.rest/)
     - [Postman](https://www.getpostman.com/)
+ - Benchmark
+    - [PHPBench](https://phpbench.com/)
  - Open Source Forum
     - [Flarum](https://github.com/flarum/flarum)
  - Insights
@@ -330,7 +333,17 @@
     - [NGrok](https://ngrok.com/)
  - Reset CSS
     - [Normalize.CSS](https://necolas.github.io/normalize.css/)
+ - Usefull Plugins Chrome
+    - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
  - SMTP - Simple Mail Transfer Protocol
+    - [MailGun](https://www.mailgun.com/)
+    - [SendGrid](https://sendgrid.com/)
+    - SMTP Gmail
+       - Nome do servidor SMTP Gmail: smtp.gmail.com
+       - Usuario SMTP Gmail: o seu endereço Gmail
+       - Password SMTP Gmail: a sua password
+       - Porta SMTP do Gmail (TLS): 587.
+       - Porta SMTP do Gmail (SSL): 465.
     - "Protocolo de transferência de correio simples" 
     é o protocolo padrão para envio de e-mails através da Internet, definido na RFC 821.
     - É um protocolo relativamente simples, em texto plano, onde um ou vários destinatários de uma mensagem 
@@ -377,7 +390,9 @@
  - Security
     - [Security Sensio Labs](https://security.sensiolabs.org/)
  - Interaction controls to your HTML tables
-    - [DataTables.net](https://datatables.net/)      
+    - [DataTables.net](https://datatables.net/)
+ - BarCode Generator
+    - [Picqer](https://github.com/picqer/php-barcode-generator)      
  
 ## PSRs
 
