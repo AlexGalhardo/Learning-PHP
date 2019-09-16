@@ -36,6 +36,8 @@
     - [PHP Experience](https://eventos.imasters.com.br/phpexperience/)
     - [PHPRSConf](https://conference.phprs.com.br/)
     - [PHPSCConf](https://conf.phpsc.com.br/)
+ - O QUE NÃO FAZER
+    - [Gambiarras Design Patterns](https://desciclopedia.org/wiki/Gambi_Design_Patterns)
 
 ## Tutorials
 
