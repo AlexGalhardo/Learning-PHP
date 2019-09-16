@@ -8,10 +8,12 @@
  - Courses
     - [PHP Do Zero ao Profissional](https://phpdozeroaoprofissional.com.br/)
     - [UpInside.com.br](https://www.upinside.com.br/)
+    - [PHP Programando com Orientação a Objetos e Design Patterns](https://php.com.br/c7?cursos)
     - [Curso Completo de PHP7 - Udemy](https://www.udemy.com/curso-php-7-online/learn/v4/overview)
  - Recommended Books
     - [PHP Programando com Orientação a Objetos - 4 Edição - Pablo Dall'Oglio](https://www.amazon.com.br/PHP-Programando-com-Orienta%C3%A7%C3%A3o-Objetos-ebook/dp/B07G9PQJQR?tag=goog0ef-20&smid=A18CNA8NWQSYHH&ascsubtag=3f9e3157-63ef-45ba-8931-20a081aa9ab1)
  - Sites
+    - [PHP.com.br](https://php.com.br)
     - [ThePHPLeague.com](https://thephpleague.com/)
     - [W3Schools PHP7](https://www.w3schools.com/php7/default.asp)
     - [TutorialRepublic PHP7 Tutorial](https://www.tutorialrepublic.com/php-tutorial/)
@@ -303,6 +305,8 @@
     - [REST TestTest](https://resttesttest.com/)
     - [Insomnia](https://insomnia.rest/)
     - [Postman](https://www.getpostman.com/)
+ - Open Source Forum
+    - [Flarum](https://github.com/flarum/flarum)
  - Insights
     - [New Relic](https://newrelic.com/)
  - Perfomance
