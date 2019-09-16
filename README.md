@@ -33,10 +33,14 @@
     - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
  - Events
     - [PhpConference](https://phpconference.com/)
+    - [PHP Experience](https://eventos.imasters.com.br/phpexperience/)
+    - [PHPRSConf](https://conference.phprs.com.br/)
+    - [PHPSCConf](https://conf.phpsc.com.br/)
 
 ## Tutorials
 
  - <?= phpinfo(); ?>
+ - [Encontrar Erros no PHP](https://www.adianti.com.br/forum/pt/view_5093)
  - [Instalação PHP Ubuntu 18.04](https://php.com.br/instalacao-php-linux)
  - [Generating a new SSH key pair](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair)
  - [Enabling SSL (https protocol) with xampp in a local PHP project](https://ourcodeworld.com/articles/read/198/enabling-ssl-https-protocol-with-xampp-in-a-local-php-project)
