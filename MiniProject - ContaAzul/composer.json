@@ -1,0 +1,5 @@
+{
+	"require":{
+		"nfephp-org/nfephp":"^4.0"
+	}
+}
