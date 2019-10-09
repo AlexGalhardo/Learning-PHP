@@ -329,8 +329,10 @@
     - [Heroku PostgreSQL](https://www.heroku.com/postgres)
  - Documentation 
     - [PHPDoc](https://www.phpdoc.org/)
- - Boleto
+ - Pagamentos
+    - [Pagar.me](https://pagar.me/)
     - [Boleto PHP](https://boletophp.com.br/)
+    - [GerenciaNet](https://gerencianet.com.br/)
  - Image Optimization
     - [Squoosh](https://squoosh.app/)
  - Graphics
