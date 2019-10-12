@@ -295,6 +295,8 @@
     - http://platesphp.com/
  - HTTP Servers
     - [XAMPP](https://www.apachefriends.org/index.html)
+ - MySQL
+    - [DB4Free.net](https://db4free.net)
  - [cPanel](https://cpanel.com/)
     - cPanel: 2082
     - cPanel  HTTPS: 2083
