@@ -7,7 +7,6 @@
 
  - Courses
     - [PHP Do Zero ao Profissional](https://phpdozeroaoprofissional.com.br/)
-    - [UpInside.com.br](https://www.upinside.com.br/)
     - [PHP Programando com Orientação a Objetos e Design Patterns](https://php.com.br/c7?cursos)
     - [Curso Completo de PHP7 - Udemy](https://www.udemy.com/curso-php-7-online/learn/v4/overview)
  - Recommended Books
