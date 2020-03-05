@@ -40,7 +40,6 @@
 
 ## Tutorials
 
- - <?= phpinfo(); ?>
  - [Encontrar Erros no PHP](https://www.adianti.com.br/forum/pt/view_5093)
  - [Instalação PHP Ubuntu 18.04](https://php.com.br/instalacao-php-linux)
  - [Generating a new SSH key pair](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair)
@@ -287,6 +286,10 @@
 
 ## Tools
     
+ - Comandos ùteis
+   - ```php  
+        <?= phpinfo(); ?>
+     ```
  - Composer
     - https://getcomposer.org
     - https://packagist.org
