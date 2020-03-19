@@ -130,109 +130,6 @@
 - [HeidiSQL](https://www.heidisql.com/)
 - [MySQL WorkBench](https://www.mysql.com/products/workbench/)
 
-## Laravel
-- [https://laravel.com/docs/7.x](https://laravel.com/docs/7.x)
-- <strong>Como MVC Funciona no Laravel</strong>: requisição cliente -> routes/web.php -> app/Http/Controllers/ControladorDaRota.php -> dentro do controller, usamos extends Model (se precisar) -> resources/views/template.blade.php (manda os dados do controller para o view interpretar) -> cliente
-- <strong>Lembrando que o Laravel só se apresenta para o público através da pasta "public" por questões óbvias de segurança.</strong>
-- Iniciando Projeto
-   - $ composer global require laravel/installer
-   - $ composer create-project --prefer-dist laravel/laravel project_name (última versão)
-   - $ composer create-project --prefer-dist laravel/laravel project_name "6.*" (espeficiar versão do laravel)
-   - $ cd project_name && php artisan serve (servidor local do laravel, sem precisar do xampp, etc)
-- Comandos Artisan
-   - $ php artisan (para ver os todos comandos disponíveis no artisan)
-   - $ php artisan make:controller NameController (criar controller)
-   - $ php artisan key:generate
-   - $ php artisan route:list (verificar todas as rotas criadas automaticamente para o NewController)
-   - $ php artisan make:migration create_categories_table (criar table 'categories' no banco de dados) 
-   - $ php artisan make:migration teste --create=teste (criar esboço de criação de table 'teste')
-   - $ php artisan make:migration teste1 --table=teste1 (criar esboço de ALTER TABLE)
-   - $ php artisan migrate:rollback (para voltar todas as migrations feitas)
-   - $ php artisan migrate:rollback --step=1 (para voltar a última migration executada)
-   - $ php artisan make:migration create_posts_table (criar table 'posts' no banco de dados'
-   - $ php artisan migrate:fresh (dropar todas as tables do banco de dados, e migrar todas as tables dentro do projeto)
-   - $ php artisan make:controller PostController (criar controller simples chamado Post)
-   - $ php artisan make:model Post (criar class do model PostController, na raiz app\Post.php)
-   - $ php artisan make:model Product -mcr (criar model Product, migration Product e Product controller de uma vez só)
-- Possíveis Erros
-   - $ sudo apt install php7.4-mbstring php7.4-xml (algumas extensões necessárias para o laravel)
-   - $ sudo subl /opt/lampp/etc/php.ini (tirar ; de extension=php_mbstring.dll e extension=php_xmlrpc.dll)
-- Routes/web.php
-   - Route::get('listagem-usuario', 'UserController@listUser'); Explicando: usando o método GET para acessar a url https://localhost/laravel/public/listagem-usuario, usando o método listUser do controller UserController 
-   - $ php artisan route:list (listar todas as rotas disponíveis na aplicação)
-   ```php
-    Route::resource('new', 'Form\NewController')
-      ->names('users')// troca o nome das rotas new.users, new.store, para users.store
-      ->parameters(['new' => 'user']); // troca new/{new} para new/{user}
-   ```
-   ```php
-     app\Providers\AppServiceProvider.php  usar ->
-        use Illuminate\Support\Facades\Route;
-        public function boot(){
-          Route::resourceVerbs([
-             "create" => 'novo',
-             "edit" => 'editar'
-          ]);
-        }
-        // para editar GET|HEAD  | new/create etc
-   ```
-- Migrations
-   - Depois de configurar o .env com os dados certos do banco de dados e ter criado ele também, executar: $ php artisan migrate
-   ```php
-     // exemplo de código de database/migrations/~_create_posts_table.php
-     <?php
-
-     use Illuminate\Database\Migrations\Migration;
-     use Illuminate\Database\Schema\Blueprint;
-     use Illuminate\Support\Facades\Schema;
-
-     class CreatePostsTable extends Migration
-     {
-         /**
-          * Run the migrations.
-          *
-          * @return void
-          * $ php artisan make:migration create_posts_table
-          */
-         public function up()
-         {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('id'); // bigint(20)
-            $table->unsignedBigInteger('author'); // unsigned big int
-            $table->string('title'); // varchar(255)
-            $table->string('slug'); // varchar(255)
-            $table->string('subtitle')->nullable(); // text, campo pode ser nulo
-            $table->text('content'); // text
-            $table->timestamps(); // created_at, updated_at
-
-            // relacionamento com a table user
-            // crie uma chave estrangeira para o campo author, 
-            // em referencia ao id do user
-            $table->foreign('author')->references('id')->on('users')->onDelete('CASCADE');
-        });
-       }
-
-       /**
-        * Reverse the migrations.
-        *
-        * @return void
-        * função de rollback, drop table posts
-        */
-       public function down()
-       {
-           Schema::dropIfExists('posts');
-       }
-   }
-   ```
-
-- Controllers
-   - $ php artisan make:controller Form\\NewController --resource --model=User (Criar controller no folder app\Http\Controllers\Form com operações CRUD com injeção de dependência do model User)
-
-## Fast HTTP Server
-
-    $ cd project_folder
-    $ php -S localhost:8000
-
 ## Ferramentas
     
  - Comandos úteis
@@ -265,176 +162,19 @@
     - https://packagist.org/packages/cocur/slugify
     - https://packagist.org/packages/phpunit/phpunit
     - https://packagist.org/packages/dompdf/dompdf
-    - <strong>Composer Errors</strong>
-       - Cannot create cache directory /home/<user>/.composer/cache/repo/https---packagist.org/, or directory is not writable. Proceeding without cache
-          - $ sudo chown -R $USER $HOME/.composer
-       - Do not run Composer as root/super user! See https://getcomposer.org/root for details
-       - How do I install untrusted packages safely? Is it safe to run Composer as superuser or root?#
-          - $ composer install --no-plugins --no-scripts ...
-          - $ composer update --no-plugins --no-scripts ...
+ - <strong>Composer Errors</strong>
+    - Cannot create cache directory /home/<user>/.composer/cache/repo/https---packagist.org/, or directory is not writable. Proceeding without cache
+       - $ sudo chown -R $USER $HOME/.composer
+    - Do not run Composer as root/super user! See https://getcomposer.org/root for details
+    - How do I install untrusted packages safely? Is it safe to run Composer as superuser or root?#
+       - $ composer install --no-plugins --no-scripts ...
+       - $ composer update --no-plugins --no-scripts ...
 
  - Template Engines
     - https://platesphp.com/
     - https://twig.symfony.com/
     - https://packagist.org/packages/jenssegers/blade
- - HTTP Servers
-    - [XAMPP](https://www.apachefriends.org/index.html)
- - Free Online MySQL 
-    - [DB4Free.net](https://db4free.net)
- - [cPanel](https://cpanel.com/)
-    - cPanel: 2082
-    - cPanel  HTTPS: 2083
-    - WHM: 2086
-    - WHM HTTPS: 2087
-    - Webmail: 2095
-    - Webmail  HTTPS: 2096
- - FTP (File Transfer Protocol)
-    - Default Port: 21
-    - Webdisk: 2077
-    - Webdisk HTTPS: 2078
-    - [FileZilla](https://filezilla-project.org/)
- - Asynchronous
-    - [ReactPHP](https://reactphp.org/)
- - REST APIs
-    - [REST TestTest](https://resttesttest.com/)
-    - [Insomnia](https://insomnia.rest/)
-    - [Postman](https://www.getpostman.com/)
- - Benchmark
-    - [PHPBench](https://phpbench.com/)
- - Open Source Forum
-    - [Flarum](https://github.com/flarum/flarum)
- - Insights
-    - [New Relic](https://newrelic.com/)
- - Perfomance
-    - [Amazon CloudFront](https://aws.amazon.com/cloudfront)
-    - [MemCachier](https://www.memcachier.com/)
-    - [Fastly](https://www.fastly.com/)
- - Code Quality
-    - [CodeClimate](https://codeclimate.com/)
- - DataBase as a Service
-    - [OpenRedis](https://openredis.com/)
-    - [Heroku PostgreSQL](https://www.heroku.com/postgres)
- - Documentation 
-    - [PHPDoc](https://www.phpdoc.org/)
- - Pagamentos
-    - [Pagar.me](https://pagar.me/)
-    - [Boleto PHP](https://boletophp.com.br/)
-    - [GerenciaNet](https://gerencianet.com.br/)
- - Image Optimization
-    - [Squoosh](https://squoosh.app/)
- - Graphics
-    - [ChartJS](http://www.chartjs.org/)
- - Public LocalHost
-    - [NGrok](https://ngrok.com/)
- - Reset CSS
-    - [Normalize.CSS](https://necolas.github.io/normalize.css/)
- - Usefull Plugins Chrome
-    - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
- - SMTP (Simple Mail Transfer Protocol)
-    - [MailGun](https://www.mailgun.com/)
-    - [SendGrid](https://sendgrid.com/)
-    - SMTP Gmail
-       - Nome do servidor SMTP Gmail: smtp.gmail.com
-       - Usuario SMTP Gmail: o seu endereço Gmail
-       - Password SMTP Gmail: a sua password
-       - Porta SMTP do Gmail (TLS): 587.
-       - Porta SMTP do Gmail (SSL): 465.
-    - "Protocolo de transferência de correio simples" 
-    é o protocolo padrão para envio de e-mails através da Internet, definido na RFC 821.
-    - É um protocolo relativamente simples, em texto plano, onde um ou vários destinatários de uma mensagem 
-    são especificados (e, na maioria dos casos, validados) sendo, depois, a mensagem transferida.
-    - SMTP: Port 587
-    - SMTP + SSL: Port 465
-    - SMTP + TLS: Port 587 (recomendado)
- - POP3 == Post Office Protocol. 
-    - O POP3 permite que um cliente faça download de um e-mail de um servidor de e-mail. 
-    - O protocolo POP3 é simples e não oferece muitos recursos, excepto para download. 
-    - O seu conceito pressupõe que o cliente de e-mail faça download de todo o e-mail disponível no servidor, apaga-os do servidor e, em seguida, desliga-se. 
-    - Ao utilizar este procolo, irá conseguir visualizar os seus emails caso não tenha acesso à Internet.
-    - POP3: Port 110
-    - POP3  + SSL: Port 995
-    - POP3 + TLS: Port 110 (recomendado)
- - IMAP == Internet Message Access Protocol. 
-    - O IMAP partilha muitos recursos semelhantes com o POP3.  
-    Também é um protocolo que um cliente de e-mail pode usar para fazer download de e-mails de um servidor de e-mail. No entanto, o IMAP inclui mais recursos do que POP3. 
-    - O protocolo IMAP foi desenvolvido para permitir que os utilizadores mantenham seus e-mails no servidor. 
-    - O IMAP requer mais espaço em disco no servidor e no geral mais recursos de servidor do que POP3, já que todos os e-mails são armazenados no servidor. 
-    - Ao utilizar este procolo, apenas irá conseguir visualizar os seus emails, caso não tenha acesso à Internet, se o seu cliente de e-mail estiver configurado especificamente para tal.
-    - IMAP: Port 143
-    - IMAP + SSL: Port 993
-    - IMAP + TLS: Port 143 (recomendado)
-    - Tools
-       - [Amazon Simple Email Service](https://aws.amazon.com/ses/)
-       - [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
-       - [MailCatcher](https://mailcatcher.me/)
-       - [MailTrap](https://mailtrap.io/)
-       - [SendGrid](https://sendgrid.com/)
-       - [MailGun](https://www.mailgun.com/)
- - CEP
-    - [ViaCEP](http://viacep.com.br/)
- - PDF
-    - [mPDF](https://mpdf.github.io/)
- - JSON
-    - [JSONEditorOnline.org](http://jsoneditoronline.org/)
- - Monitoring Server
-    - [UpTime Robot](https://uptimerobot.com/)
- - Testing
-    - [PHP Unit](https://phpunit.de/)
-    - [XDebug](https://github.com/xdebug/xdebug)
-    - [BlackFire](https://blackfire.io/)
- - Security
-    - [Security Sensio Labs](https://security.sensiolabs.org/)
- - Interaction controls to your HTML tables
-    - [DataTables.net](https://datatables.net/)
- - BarCode Generator
-    - [Picqer](https://github.com/picqer/php-barcode-generator)
- - Completely Uninstall LAMP Ubuntu 18.04 LTS
-    ```sh
-    #!/bin/bash
-
-    # This will remove Apache
-    sudo service apache2 stop
-    sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
-    sudo apt remove apache2.*
-    sudo apt-get autoremove
-    whereis apache2
-    sudo rm -rf /etc/apache2
-
-    # This will remove PHP
-    sudo apt-get purge `dpkg -l | grep php7.2| awk '{print $2}' |tr "\n" " "`
-    sudo apt-get purge php7.*
-    sudo apt-get autoremove --purge
-    whereis php
-    sudo rm -rf /etc/php
-
-    # This will remove MYSql
-    sudo service mysql stop
-    sudo apt-get remove --purge *mysql\*
-    sudo apt-get remove --purge mysql-server mysql-client mysql-common -y
-    rm -rf /etc/mysql
-    sudo apt-get autoremove
-    sudo apt-get autoclean
-
-    sudo reboot
-    ```
-    
-## .htaccess
-    RewriteEngine On
-    Options All -Indexes
-
-    # ROUTER WWW Redirect.
-    # RewriteCond %{HTTP_HOST} !^www\. [NC]
-    # RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # ROUTER HTTPS Redirect
-    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
-    # RewriteCond %{HTTPS} off
-    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # ROUTER URL Rewrite
-    RewriteCond %{SCRIPT_FILENAME} !-f
-    RewriteCond %{SCRIPT_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?route=/$1 [L,QSA]
+ 
 
 ## Exemplo de composer.json
 ```json
@@ -475,16 +215,6 @@
     }
 }
 ```
-
-## Configurações | Tutoriais APACHE
- - $ cd /opt/lampp/etc/ && sudo subl php.ini
- - Rename LocalHost
- ```
- $ sudo nano /etc/hosts
- 
- 127.0.0.1   new_localhost_url_here
- 127.0.0.1   new_localhost_url_here
- ```
  
 ## Bits & Bytes
 
@@ -496,6 +226,229 @@
  - 20Mbits = 20 * 2^20 = 20.971.520 bits
  - 20MByte = 20 * 2^20 * 8 = 167.772.160 bits
  - Plano de 100Mbits = (100 * 2^20) / 8 = 104.857.600 / 8 = 13.107.200 bits/s = 13MB/s 
+
+## Lógica Pagination
+    TOTAL = 54
+    10 itens por página
+    quantidade de páginas = 54 / 10 = 5.4 Ou seja => 5 págnas inteiras
+    e mais 4 itens na última página
+    6 páginas total
+    OFFSET = de onde eu começo?
+    Na programação, sempre começamos pelo 0, mas aqui começaremos pelo 1
+    OFFSET da página 2 = (10 * numero da página) = numero da página = (10*2) - 10 = 20 - 10 = 10
+    
+    EXEMPLO:
+    $limit = 10; // 10 postagens por página
+    $offset = intval($_GET['page']) * $limit - $limit;
+
+## spl_autoload_register
+```php
+spl_autoload_register(function($class){
+    if(file_exists("dao/". $class . ".php")){
+        require "dao/". $class . ".php";
+    }
+    if(file_exists("models/{$class}.php")){
+        require "models/{$class}.php";
+    }
+});
+```
+
+## Variáveis Globais
+```php
+/**
+ * VARIÁVEIS SUPERGLOBAIS
+ * Superglobais
+ * Superglobais — Superglobais são variáveis 
+ * nativas que estão sempre disponíveis em todos escopos
+ * https://www.php.net/manual/pt_BR/language.variables.superglobals.php
+ * https://pt.stackoverflow.com/questions/227200/qual-a-diferen%C3%A7a-entre-vari%C3%A1veis-globais-e-superglobais
+ */
+ $GLOBALS
+$_SERVER
+$_GET
+$_POST
+$_FILES
+$_COOKIE
+$_SESSION
+$_REQUEST
+$_ENV
+
+/**
+ * Qual a diferença entre variáveis globais e superglobais? 
+ * A diferença é que as super globais não há a necessidade de informar global $variavel, você simplesmente acessa. 
+ * Elas estão disponíveis em todos os escopos
+ */
+```
+
+## DATETIME & TIMESTAMPS
+```php
+
+/**
+ * DATETIME & TIMESTAMPS
+ * https://www.php.net/manual/en/function.date.php#refsect1-function.date-parameters
+ * http://www.diogomatheus.com.br/blog/php/trabalhando-com-datas-no-php/
+ * https://github.com/diogomatheus/Example-DateTime-PHP
+ * /
+/*
+Carácter	Descrição
+d	Dia do mês (2 dígitos)
+D	Dia do mês (Representação textual, Mon até Sun)
+m	Mês (2 dígitos)
+M	Mês (Representação textual, Jan até Dec)
+y	Ano (2 dígitos)
+Y	Ano (4 dígitos)
+l	Dia do mês (Representação textual, Sunday até Saturday)
+h	Hora (12 horas)
+H	Hora (24 horas)
+i	Minutos (2 dígitos)
+s	Segundos (2 dígitos)
+a	am ou pm
+A	AM ou PM
+*/
+```
+- index.html
+```html
+<h2>Máquina do Tempo</h2>
+    <form action="datetime.php" method="post">
+        <div id="firstDate">
+            Dia: <input type="text" name="dayOne" class="simple" />
+            Mês: <input type="text" name="monthOne" class="simple" />
+            Ano: <input type="text" name="yearOne" class="full" /> &nbsp;
+            Hora: <input type="text" name="hourOne" class="simple" />
+            Minuto: <input type="text" name="minuteOne" class="simple" />
+            Segundo: <input type="text" name="secondOne" class="simple" />
+        </div>
+        <br />
+        <div id="operationType">
+            Tipo de operação:
+            <select name="operationType">
+            <option value="A">Adição</option>
+            <option value="S">Subtração</option>
+            <option value="D">Diferença</option>
+            <option value="C">Comparação</option>
+        </select>
+        </div>
+        <br />
+        <div id="secondDate">
+            Dia: <input type="text" name="dayTwo" class="simple" />
+            Mês: <input type="text" name="monthTwo" class="simple" />
+            Ano: <input type="text" name="yearTwo" class="full" /> &nbsp;
+            Hora: <input type="text" name="hourTwo" class="simple" />
+            Minuto: <input type="text" name="minuteTwo" class="simple" />
+            Segundo: <input type="text" name="secondTwo" class="simple" />
+        </div>
+        <br />
+        <input type="submit" value="Calcular" />
+    </form>
+```
+
+- datetime.php
+```
+function buildDateTime($hour, $minute, $second,
+        $month, $day, $year) {
+    $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
+    $date = new DateTime("now",
+            new DateTimeZone('America/Sao_Paulo'));
+    $date->setTimestamp($timestamp);
+    return $date;
+}
+
+function buildDateInterval($hour, $minute, $second,
+        $month, $day, $year) {
+    $interval = "P{$year}Y{$month}M{$day}D";
+    $interval .= "T{$hour}H{$minute}M{$second}S";
+    return new DateInterval($interval);
+}
+
+// Função para simplificar resgate de informações
+function getPostParam($name) {
+    return !isset($_POST[$name]) ? 0 : (int) $_POST[$name];
+}
+
+// Resgatar valores
+$hourOne = getPostParam('hourOne');
+$minuteOne = getPostParam('minuteOne');
+$secondOne = getPostParam('secondOne');
+$monthOne = getPostParam('monthOne');
+$dayOne = getPostParam('dayOne');
+$yearOne = getPostParam('yearOne');
+
+$operationType = $_POST['operationType'];
+
+$hourTwo = getPostParam('hourTwo');
+$minuteTwo = getPostParam('minuteTwo');
+$secondTwo = getPostParam('secondTwo');
+$monthTwo = getPostParam('monthTwo');
+$dayTwo = getPostParam('dayTwo');
+$yearTwo = getPostParam('yearTwo');
+
+// Monta datas e intervalo
+$dateOne = buildDateTime($hourOne, $minuteOne,
+    $secondOne, $monthOne, $dayOne, $yearOne);
+
+$intervalTwo = buildDateInterval($hourTwo, $minuteTwo,
+    $secondTwo, $monthTwo, $dayTwo, $yearTwo);
+
+$dateTwo = buildDateTime($hourTwo, $minuteTwo,
+    $secondTwo, $monthTwo, $dayTwo, $yearTwo);
+
+// Verifica tipo de operação e calcula resultado
+switch ($operationType) {
+    case 'A':
+        $dateOne->add($intervalTwo);
+        $resultado = "O resultado da adição é
+            {$dateOne->format('d/m/Y H:i:s')}.";
+        break;
+    case 'S':
+        $dateOne->sub($intervalTwo);
+        $resultado = "O resultado da subtração é
+            {$dateOne->format('d/m/Y H:i:s')}.";
+        break;
+    case 'D':
+        $diff = $dateOne->diff($dateTwo);
+        $resultado = "A diferença entre as datas é de ";
+        $resultado .= "{$diff->format('%d Dias')} ";
+        $resultado .= "{$diff->format('%m Meses')} ";
+        $resultado .= "{$diff->format('%y Anos')} ";
+        $resultado .= "{$diff->format('%h Horas')} ";
+        $resultado .= "{$diff->format('%i Minutos')} ";
+        $resultado .= "{$diff->format('%s Segundos')}.";
+        break;
+    case 'C':
+        if($dateOne == $dateTwo) {
+            $resultado = "As datas informadas são iguais.";
+        } else if($dateOne > $dateTwo) {
+            $resultado = "{$dateOne->format('d/m/Y H:i:s')}
+                é maior que {$dateTwo->format('d/m/Y H:i:s')}.";
+        } else {
+            $resultado = "{$dateTwo->format('d/m/Y H:i:s')}
+                é maior que {$dateOne->format('d/m/Y H:i:s')}.";
+        }
+        break;
+}
+```
+## JSON
+```php
+$pessoas = array();
+
+array_push($pessoas, array(
+	"nome"=>"João",
+	"idade"=>20
+));
+
+array_push($pessoas, array(
+	"nome"=>"Glaucio",
+	"idade"=>25
+));
+
+echo json_encode($pessoas);
+
+$json = '[{"nome":"Jo\u00e3o","idade":20},{"nome":"Glaucio","idade":25}]';
+
+$data = json_decode($json, true);
+
+var_dump($data);
+```
 
 ## Introdução
 ```php
@@ -665,6 +618,31 @@ foreach($ingredientes as $chave => $valor){
 }
 
 ```
+## ForEach
+```php
+$meses = array(
+	"Janeiro", "Fevereiro", "Março",
+	"Abril", "Maio", "Junho",
+	"Julho", "Agosto", "Setembro",
+	"Outubro", "Novembro", "Dezembro"
+);
+
+foreach ($meses as $index => $mes) {
+
+	echo "Índice: ".$index."<br/>";
+	echo "O mês é ".$mes. "<br/><br/>";
+
+}
+
+if(isset($_GET)){
+	foreach ($_GET as $key => $value) {
+		echo "Nome do campo: " . $key . "<br/>";
+		echo "Valor do campo: " . $value . "<br/>";
+		echo "<hr/>";
+	}
+}
+```
+
 
 ## Funções
 ```php
@@ -779,7 +757,57 @@ $nomeIncompleto = substr($nomeOriginal, 0, 3);
 echo "<br>Nome Incompleto pegando os 3 primeiro caracter é: " . $nomeIncompleto;
 ```
 
-## Formulário Validações Sessão Cookies Arquivos
+## Arquivos
+```php
+// lendo arquivos
+$texto = file_get_contents("texto.txt");
+// \n clássico para pular linha
+$texto = explode("\n", $texto);
+$linhas =  count($texto);
+// escrevendo em arquivos
+$adicionarTxt = "Novo text para enviar no arquivo";
+// se arquivo não existi, vai criar
+// se arquivo existir, vai substituir
+// se diretório não tiver permissão de escrita, vai dar erro
+file_put_contents('nome.txt', $adicionarTxt);
+// renomear arquivo
+rename('teste.txt', 'novoNome.txt');
+// movendo 
+rename('teste.txt', 'pasta/teste.txt');
+// fazendo copia
+copy('pasta/teste2.txt', 'teste2.txt');
+// excluindo qualquer arquivo
+unlink('pasta/teste2.txt');
+```
+
+## Upload Arquivos
+```php
+/**
+ * UPLOAD DE ARQUIVOS
+ */
+?>
+<form method="POST" action="recebedor.php" enctype="multipart/form-data">
+    <input type="file" name="arquivo">
+    <input type="submit" value="Enviar">
+</form>
+
+<?php
+// recebedor.php
+echo '<pre>';
+print_r($_FILES);
+
+$permitidos = ['image/jpeg', 'image/png', 'image/png'];
+if(in_array($FILES['arquivo']['type'], $permitidos)){
+    // $fileName = $_FILES['arquivo']['name']; não recomendado!
+    $fileName = md5(time().rand(0, 1000)). '.jpg';
+    move_uploaded_file($_FILES['arquivo']['tmp_name'], 'arquivos/'.$nome);
+    echo "arquivo enviado com sucesso!";
+} else {
+    echo "arquivo não permitido!";
+}
+```
+
+## Formulário Validações Sessão Cookies 
 - index.php
 ```php
 <?php
@@ -888,3 +916,268 @@ if($nome && $idade && $email){
 }
 ```
 
+## POO
+- Usuario.php
+```php 
+<?php 
+
+class Usuario {
+
+	private $idusuario;
+	private $deslogin;
+	private $dessenha;
+	private $dtcadastro;
+
+	public function getIdusuario(){
+		return $this->idusuario;
+	}
+
+	public function setIdusuario($value){
+		$this->idusuario = $value;
+	}
+
+	public function getDeslogin(){
+		return $this->deslogin;
+	}
+
+	public function setDeslogin($value){
+		$this->deslogin = $value;
+	}
+
+	public function getDessenha(){
+		return $this->dessenha;
+	}
+
+	public function setDessenha($value){
+		$this->dessenha = $value;
+	}
+
+	public function getDtcadastro(){
+		return $this->dtcadastro;
+	}
+
+	public function setDtcadastro($value){
+		$this->dtcadastro = $value;
+	}
+	
+	public function loadById($id){
+		$sql = new Sql();
+		$results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID", array(
+			":ID"=>$id
+		));
+
+		if (count($results) > 0) {
+			$this->setData($results[0]);
+		}
+	}
+
+	public static function getList(){
+		$sql = new Sql();
+		return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogin;");
+	}
+
+	public static function search($login){
+		$sql = new Sql();
+		return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ORDER BY deslogin", array(
+			':SEARCH'=>"%".$login."%"
+		));
+	}
+
+	public function login($login, $password){
+		$sql = new Sql();
+		$results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogin = :LOGIN AND dessenha = :PASSWORD", array(
+			":LOGIN"=>$login,
+			":PASSWORD"=>$password
+		));
+
+		if (count($results) > 0) {
+			$this->setData($results[0]);
+		} else {
+			throw new Exception("Login e/ou senha inválidos.");
+		}
+	}
+
+	public function setData($data){
+		$this->setIdusuario($data['idusuario']);
+		$this->setDeslogin($data['deslogin']);
+		$this->setDessenha($data['dessenha']);
+		$this->setDtcadastro(new DateTime($data['dtcadastro']));
+	}
+
+	public function insert(){
+		$sql = new Sql();
+		$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)", array(
+			':LOGIN'=>$this->getDeslogin(),
+			':PASSWORD'=>$this->getDessenha()
+		));
+		
+		if (count($results) > 0) {
+			$this->setData($results[0]);
+		}
+	}
+
+	public function update($login, $password){
+		$this->setDeslogin($login);
+		$this->setDessenha($password);
+		$sql = new Sql();
+		$sql->query("UPDATE tb_usuarios SET deslogin = :LOGIN, dessenha = :PASSWORD WHERE idusuario = :ID", array(
+			':LOGIN'=>$this->getDeslogin(),
+			':PASSWORD'=>$this->getDessenha(),
+			':ID'=>$this->getIdusuario()
+		));
+	}
+
+	public function delete(){
+		$sql = new Sql();
+		$sql->query("DELETE FROM tb_usuarios WHERE idusuario = :ID", array(
+			':ID'=>$this->getIdusuario()
+		));
+		$this->setIdusuario(0);
+		$this->setDeslogin("");
+		$this->setDessenha("");
+		$this->setDtcadastro(new DateTime());
+	}
+
+	public function __construct($login = "", $password = ""){
+		$this->setDeslogin($login);
+		$this->setDessenha($password);
+	}
+
+	public function __toString(){
+		return json_encode(array(
+			"idusuario"=>$this->getIdusuario(),
+			"deslogin"=>$this->getDeslogin(),
+			"dessenha"=>$this->getDessenha(),
+			"dtcadastro"=>$this->getDtcadastro()->format("d/m/Y H:i:s")
+		));
+	}
+} 	
+```
+
+- Sql.php
+```php
+<?php 
+
+class Sql extends PDO {
+
+	private $conn;
+
+	public function __construct(){
+		$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "root");
+	}
+
+	private function setParams($statement, $parameters = array()){
+		foreach ($parameters as $key => $value) {
+			$this->setParam($statement, $key, $value);
+		}
+	}
+
+	private function setParam($statement, $key, $value){
+		$statement->bindParam($key, $value);
+	}
+
+	public function query($rawQuery, $params = array()){
+		$stmt = $this->conn->prepare($rawQuery);
+		$this->setParams($stmt, $params);
+		$stmt->execute();
+		return $stmt;
+	}
+
+	public function select($rawQuery, $params = array()):array
+	{
+		$stmt = $this->query($rawQuery, $params);
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+	}
+}
+```
+## CRUD Simples PDO
+- usuarios.php
+```php
+<?php
+
+class Usuarios {
+
+	private $db;
+
+	public function __construct(){
+
+		try {
+			$this->db = new PDO("mysql:dbname=mp_pdo_statement;host=localhost", "root", "");
+		} catch(PDOException $e){
+			echo "ERRO: " . $e->getMessage();
+		}
+	}
+
+	public function selecionar($id){
+
+		// padrão
+		// $sql = "SELECT * FROM usuarios WHERE id = '$id';"
+		
+		// novo comando usando PDO
+		// muito mais seguro, pq ele verifica erros de segurança
+		// como SQL Injection por exemplo
+		$sql = $this->db->prepare("SELECT * FROM usuarios WHERE id = :id");
+		/**
+		 * no bindValue é como se ele passase a variável por valor
+		 * ou seja, uma cópia 
+		 */
+		$sql->bindValue(":id", $id);
+		$sql->execute();
+
+		$array = array();
+
+		if($sql->rowCount() > 0){
+			$array = $sql->fetch(); // só retorna os dados daquele item especifico
+		}
+
+		return $array;
+	}
+
+	public function inserir($nome, $email, $senha){
+
+		$sql = $this->db->prepare("INSERT INTO usuarios SET nome = :nome, email = :email, senha = :senha");
+		/**
+		 * No bindParam, ele vai associar/REFERENCIAR o apelido
+		 * diretamente com a variável
+		 *
+		 * é como se fosse um ponteiro em C
+		 */
+		$sql->bindParam(":nome", $nome);
+		$sql->bindParam(":email", $email);
+		$sql->bindValue(":senha", MD5($senha));
+		
+		// se eu mudar o $nome = 'outroNome' por exemplo
+		// o bindParam garante que ele vai executar com o valor pela referência
+		// lógico, antes de executar o ->execute();
+		$sql->execute();
+	}
+
+	public function atualizar($nome, $email, $senha, $id){
+
+		$sql = $this->db->prepare("UPDATE usuarios SET nome = ?, email = ?, senha = ? WHERE id = ?");
+		$sql->execute(array(
+			$nome, $email, md5($senha), $id
+		));
+	}
+
+	public function deletar($id){
+
+		$sql = $this->db->prepare("DELETE FROM usuarios WHERE id = ?");
+		$sql->bindValue(1, $id);
+		$sql->execute();
+	}
+}
+```
+
+- index.php
+```php
+<?php
+require 'usuarios.php';
+
+$u = new Usuarios();
+$res = $u->selecionar(1);
+$atualizado = $u->atualizar("Galhardo", "galhardo@gmail.com", "123456", 4);
+$u->deletar(3);
+$u->deletar(2);
+print_r($res); // retorna um array com os dados da linha selecionada do banco
+```
