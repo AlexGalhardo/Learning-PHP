@@ -280,904 +280,599 @@ $_ENV
  */
 ```
 
-## DATETIME & TIMESTAMPS
+## Fast HTTP Server
+    $ cd project_folder
+    $ php -S localhost:8000
+
+
+## Diferença FastCGI, suPHP, CGI, mod_php (DSO) e PHP-FPM
+- https://brasilcloud.com.br/duvidas/diferenca-fastcgi-suphp-cgi-mod_php-dso-fpm/
+- https://pt.stackoverflow.com/questions/132348/qual-a-diferen%c3%a7a-de-usar-o-php-como-m%c3%b3dulo-do-apache-cgi-fastcgi-e-linha-de-co?answertab=oldest#tab-top
+- https://pt.stackoverflow.com/questions/207464/como-funciona-o-php-fpm
+
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<th></th>
+<th><strong>mod_php</strong></th>
+<th><strong>CGI</strong></th>
+<th><strong>suPHP</strong></th>
+<th><strong>FastCGI</strong></th>
+<th><strong>PHP-FPM</strong></th>
+</tr>
+<tr>
+<th><strong>Uso de memória</strong></th>
+<td>Baixo</td>
+<td>Baixo</td>
+<td>Baixo</td>
+<td>Alto</td>
+<td>Alto</td>
+</tr>
+<tr>
+<th><strong>Utilização do CPU</strong></th>
+<td>Baixo</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Baixo</td>
+<td>Baixo</td>
+</tr>
+<tr>
+<th><strong>Segurança</strong></th>
+<td>Baixo</td>
+<td>Baixo</td>
+<td>Alto</td>
+<td>Alto</td>
+<td>Alto</td>
+</tr>
+<tr>
+<th><strong>Executar como proprietário do arquivo</strong></th>
+<td>Não</td>
+<td>Não</td>
+<td>Sim</td>
+<td>Sim</td>
+<td>Sim</td>
+</tr>
+<tr>
+<th><strong>Desempenho Geral</strong></th>
+<td>Rápido</td>
+<td>Lento</td>
+<td>Lento</td>
+<td>Rápido</td>
+<td>Rápido</td>
+</tr>
+</tbody>
+</table>
+
+## HEADER CONTENT-TYPE JSON Para APIs
+- Quando trabalhamos com APIs devemos sempre informar os cabeçalhos corretos dos retornos das requisições.
+- Frameworks como Laravel e Synfony já fazem boa parte do trabalho para nós, mas se estivermos desenvolvendo scripts php sem nenhuma ferramenta auxiliar como estas, devemos cuidar estes detalhes.
+
+- HEADER CONTENT-TYPE
+   - Para informar para a aplicação que está consumindo nosso script que o retorno é no formato JSON, devemos usar a função header do PHP juntamente com o valor Content-Type, como no exemplo abaixo:
+   - No mesmo valor de Content-Type informamos também que os dados são codificados em utf-8, para evitar erros de acentos e outros caracteres.
 ```php
+$return = ['status' => 'ok'];
 
-/**
- * DATETIME & TIMESTAMPS
- * https://www.php.net/manual/en/function.date.php#refsect1-function.date-parameters
- * http://www.diogomatheus.com.br/blog/php/trabalhando-com-datas-no-php/
- * https://github.com/diogomatheus/Example-DateTime-PHP
- * /
-/*
-Carácter	Descrição
-d	Dia do mês (2 dígitos)
-D	Dia do mês (Representação textual, Mon até Sun)
-m	Mês (2 dígitos)
-M	Mês (Representação textual, Jan até Dec)
-y	Ano (2 dígitos)
-Y	Ano (4 dígitos)
-l	Dia do mês (Representação textual, Sunday até Saturday)
-h	Hora (12 horas)
-H	Hora (24 horas)
-i	Minutos (2 dígitos)
-s	Segundos (2 dígitos)
-a	am ou pm
-A	AM ou PM
-*/
+header('Content-Type: application/json;charset=utf-8');
+echo json_encode($return); die;
 ```
-- index.html
-```html
-<h2>Máquina do Tempo</h2>
-    <form action="datetime.php" method="post">
-        <div id="firstDate">
-            Dia: <input type="text" name="dayOne" class="simple" />
-            Mês: <input type="text" name="monthOne" class="simple" />
-            Ano: <input type="text" name="yearOne" class="full" /> &nbsp;
-            Hora: <input type="text" name="hourOne" class="simple" />
-            Minuto: <input type="text" name="minuteOne" class="simple" />
-            Segundo: <input type="text" name="secondOne" class="simple" />
-        </div>
-        <br />
-        <div id="operationType">
-            Tipo de operação:
-            <select name="operationType">
-            <option value="A">Adição</option>
-            <option value="S">Subtração</option>
-            <option value="D">Diferença</option>
-            <option value="C">Comparação</option>
-        </select>
-        </div>
-        <br />
-        <div id="secondDate">
-            Dia: <input type="text" name="dayTwo" class="simple" />
-            Mês: <input type="text" name="monthTwo" class="simple" />
-            Ano: <input type="text" name="yearTwo" class="full" /> &nbsp;
-            Hora: <input type="text" name="hourTwo" class="simple" />
-            Minuto: <input type="text" name="minuteTwo" class="simple" />
-            Segundo: <input type="text" name="secondTwo" class="simple" />
-        </div>
-        <br />
-        <input type="submit" value="Calcular" />
-    </form>
+   
+## CORS 
+- Referências:
+   - https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS
+- Aplicado no PHP
+   ```php
+   <?php
+   header('Access-Control-Allow-Origin: *');
+   header('Access-Control-Allow-Methods: GET, POST');
+   header("Access-Control-Allow-Headers: X-Requested-With");
+   ```
+
+## Deploy Laravel UpInside
+- Deploy Servidor Compartilhado: https://www.youtube.com/watch?v=fkwhtu0H5EU
+- Deploy Servidor Privado: https://www.youtube.com/watch?v=bcjlZl9F0dU
+- Instalar LAMPP Linha de Comando: https://github.com/teddysun/lamp
+- $ wget https://getcomposer.org/installer
+- $ php installer
+- $ php composer.phar install_composer
+- CTRL + W para buscar dentro do nano e editar o php.init
+- Reiniciar Apache: $ /etc/init.d/httpd restart 
+- $ rm -rf folder (recursive forced)
+- Apontar para a public do laravel: $ ln -s laraveltips/public default
+- $ find * -type d -exec chmod 775 {} \\; (permissões diretórios)
+- $ find * -type f -exec chmod 644 {} \\; (permissões arquivos)
+
+## Kill Process Using Port 80
+- https://unix.stackexchange.com/questions/244531/kill-process-running-on-port-80
+- There are several ways to find which running process is using a port.
+- Using fuser it will give the PID(s) of the multiple instances associated with the listening port.
+- $ sudo apt-get install psmisc
+- $ sudo fuser 80/tcp
+   - 80/tcp:               1858  1867  1868  1869  1871
+- After finding out, you can either stop or kill the process(es).
+- You can also find the PIDs and more details using lsof
+   - $ sudo lsof -i tcp:80 
+- To limit to sockets that listen on port 80 (as opposed to clients that connect to port 80):
+   - sudo lsof -i tcp:80 -s tcp:listen
+- To kill them automatically:
+   - sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
+
+
+## Docker
+- https://laradock.io/
+- https://github.com/laradock/laradock
+- https://hub.docker.com/
+   - https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+
+## APACHE
+ - $ cd /opt/lampp/etc/ && sudo subl php.ini (editar arquivo php.ini)
+ - Rename LocalHost
+    - $ sudo nano /etc/hosts
+    - 127.0.0.1   new_localhost_url_here
+    - 127.0.0.1   new_localhost_url_here
+
+
+## CHMOD
 ```
+- Change Mode Command
+    ```
+    Permissão Binário   Octal
+    ---        000       0
+    --x        001       1
+    -w-        010       2
+    -wx        011       3
+    r--        100       4
+    r-x        101       5
+    rw-        110       6
+    rwx        111       7
 
-- datetime.php
-```
-function buildDateTime($hour, $minute, $second,
-        $month, $day, $year) {
-    $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
-    $date = new DateTime("now",
-            new DateTimeZone('America/Sao_Paulo'));
-    $date->setTimestamp($timestamp);
-    return $date;
-}
+    x -> execute 
+    w -> write
+    r -> read
 
-function buildDateInterval($hour, $minute, $second,
-        $month, $day, $year) {
-    $interval = "P{$year}Y{$month}M{$day}D";
-    $interval .= "T{$hour}H{$minute}M{$second}S";
-    return new DateInterval($interval);
-}
-
-// Função para simplificar resgate de informações
-function getPostParam($name) {
-    return !isset($_POST[$name]) ? 0 : (int) $_POST[$name];
-}
-
-// Resgatar valores
-$hourOne = getPostParam('hourOne');
-$minuteOne = getPostParam('minuteOne');
-$secondOne = getPostParam('secondOne');
-$monthOne = getPostParam('monthOne');
-$dayOne = getPostParam('dayOne');
-$yearOne = getPostParam('yearOne');
-
-$operationType = $_POST['operationType'];
-
-$hourTwo = getPostParam('hourTwo');
-$minuteTwo = getPostParam('minuteTwo');
-$secondTwo = getPostParam('secondTwo');
-$monthTwo = getPostParam('monthTwo');
-$dayTwo = getPostParam('dayTwo');
-$yearTwo = getPostParam('yearTwo');
-
-// Monta datas e intervalo
-$dateOne = buildDateTime($hourOne, $minuteOne,
-    $secondOne, $monthOne, $dayOne, $yearOne);
-
-$intervalTwo = buildDateInterval($hourTwo, $minuteTwo,
-    $secondTwo, $monthTwo, $dayTwo, $yearTwo);
-
-$dateTwo = buildDateTime($hourTwo, $minuteTwo,
-    $secondTwo, $monthTwo, $dayTwo, $yearTwo);
-
-// Verifica tipo de operação e calcula resultado
-switch ($operationType) {
-    case 'A':
-        $dateOne->add($intervalTwo);
-        $resultado = "O resultado da adição é
-            {$dateOne->format('d/m/Y H:i:s')}.";
-        break;
-    case 'S':
-        $dateOne->sub($intervalTwo);
-        $resultado = "O resultado da subtração é
-            {$dateOne->format('d/m/Y H:i:s')}.";
-        break;
-    case 'D':
-        $diff = $dateOne->diff($dateTwo);
-        $resultado = "A diferença entre as datas é de ";
-        $resultado .= "{$diff->format('%d Dias')} ";
-        $resultado .= "{$diff->format('%m Meses')} ";
-        $resultado .= "{$diff->format('%y Anos')} ";
-        $resultado .= "{$diff->format('%h Horas')} ";
-        $resultado .= "{$diff->format('%i Minutos')} ";
-        $resultado .= "{$diff->format('%s Segundos')}.";
-        break;
-    case 'C':
-        if($dateOne == $dateTwo) {
-            $resultado = "As datas informadas são iguais.";
-        } else if($dateOne > $dateTwo) {
-            $resultado = "{$dateOne->format('d/m/Y H:i:s')}
-                é maior que {$dateTwo->format('d/m/Y H:i:s')}.";
-        } else {
-            $resultado = "{$dateTwo->format('d/m/Y H:i:s')}
-                é maior que {$dateOne->format('d/m/Y H:i:s')}.";
-        }
-        break;
-}
-```
-## JSON
-```php
-$pessoas = array();
-
-array_push($pessoas, array(
-	"nome"=>"João",
-	"idade"=>20
-));
-
-array_push($pessoas, array(
-	"nome"=>"Glaucio",
-	"idade"=>25
-));
-
-echo json_encode($pessoas);
-
-$json = '[{"nome":"Jo\u00e3o","idade":20},{"nome":"Glaucio","idade":25}]';
-
-$data = json_decode($json, true);
-
-var_dump($data);
-```
-
-## Introdução
-```php
-// https://www.cloudbooklet.com/upgrade-php-version-to-php-7-4-on-ubuntu/
-
-// Apache recebe a requisição
-// Manda pro local correto
-// Chama o PHP para interpretar o código PHP
-// O PHP manda o resultado para o Apache
-// O apache junta com o que não é interpretado
-
-// FAST CLI HTTP SERVER
-// $ cd project-folder
-// $ php -S localhost:8000
-
-// Print dados
-echo 'Olá Mundo!';
-
-$firstName = "Alex";
-$lastName = "Galhardo";
-echo "<br><hr>Olá {$firstName} {$lastName}, seja bem vindo!";
-
-// Tipo de Dados
-$false = false;
-$true = true;
-$inteiro = 90;
-$float = 23.5;
-$nulo = null;
-$array = array();
-$string = "AlexGalhardo";
-
-
-// Concatenação de informações
-echo "<br><hr>O numero inteiro é: " . $inteiro . " e o numero float é: " . $float;
-// aspas duplas, vai entender o valor das variáveis
-$completeName = "Apas duplas: $firstName $lastName"; 
-// aspas simples, vai entender nome da variável, e não seu valor
-$literalCompleteName = 'Aspas simples: $firstname $lastName';
-echo "<br><hr> $completeName";
-echo "<br><hr> $literalCompleteName";
-
-// Arrays
-$ingredientes = [
-    'açucar',
-    'farinha de trigo',
-    'ovo',
-    'leite',
-    'fermento em pó'
-];
-
-// programação sempre começa em 0
-echo "<br><hr>Primeiro ingrediente do array ingredientes[0]: $ingredientes[0]";
-// Se der erro Notice: aviso meio grave, uma notificação
-
-// Array Spread PHP7.4
-$ingredientes2 = [
-    ...$ingredientes,
-    'corante'
-];
-echo "<br><hr>Primeiro ingredientes2[0]: $ingredientes2[0]";
-
-$lista1 = ['alex', 'joao', 'pedro'];
-$lista2 = ['maria', 'adriana', 'julia'];
-$lista3 = [...$lista1, ...$lista2];
-print "<br><hr>";
-print_r($lista3);
-```
-
-## Condicionais & Loops
-```php
-// CONDICIONAIS IF & ELSE
-$idade = 18;
-if($idade > 18){
-    echo "Maior de 18 anos!";
-} else if($idade < 18){
-    echo "Menor de 18 anos!";
-} else {
-    echo "Igual 18 anos!";
-} 
-/*
-X < Y maior
-X > Y menor
-X == Y igual
-X != Y diferente
-X >= Y maior ou igual que
-X <= Y menor ou igual que
-*/
-
-// Condicional Ternário/Operador ternário/ if de uma linha
-// (CONDIÇÃO) ? RESULTADO POSITIVO : RESULTADO NEGATIVO
-echo "<br><hr>";
-$idade2 = 20;
-echo ($idade2 < 18) ? 'Menor de idade' : 'Maior de idade';
-
-// Condicional NULL CAO PHP7.4
-echo "<br><hr>CONDICIONAL NULL CAO PHP7.4: ";
-$nome = 'Alex';
-// $sobrenome = 'Galhardo';
-$nomeCompleto = $nome;
-// verifica se sobrenome existe
-$nomeCompleto .= isset($sobrenome) ? $sobrenome : '';
-// $sobrenome existe? use ela! SENÃO use ''
-$nomeCompleto .= $sobrenome ?? '';
-echo $nomeCompleto;
-
-// SWITCH
-echo "<br><hr>";
-$tipo = 'foto';
-if($tipo == 'foto'){
-    echo "exibindo foto";
-}
-if($tipo == 'video'){
-    echo "exibindo video";
-} if($tipo == 'texto'){
-    echo "exibindo texto";
-}
-// Nesse caso acima vale mais a pena usar SWITCH
-echo "<br><hr>";
-$tipo2 = 'video';
-switch($tipo2){
-    case 'foto':
-        echo "exibindo Foto";
-        break;
-    case 'video':
-        echo "exibindo VIDEO";
-        break;
-    case 'texto':
-        echo "exibindo TEXTO";
-        break;
-}
-
-// LOOP WHILE
-echo "<br><hr>";
-$numero = 10;
-while($numero > 0){
-    echo "Numero atual: $numero <br>";
-    $numero--;
-}
-
-echo "<hr>";
-// LOOP FOR é um pouco mais seguro que WHILE
-// porque possui começo, meio e fim
-for($numeroFor=0; $numeroFor<=10; $numeroFor++){
-    echo "Numero atual do FOR LOOP: $numeroFor <br>";
-}
-
-// LOOP FOREACH, usado para trabalhar com arrays
-// for each = para cada
-echo "<hr>";
-$ingredientes = [
-    'açucar',
-    'farinha de trigo',
-    'ovo',
-    'leite',
-    'fermento em pó'
-];
-
-// pegando cada valor do array
-foreach($ingredientes as $ingrediente){
-    echo "Item: $ingrediente <br>";
-}
-
-echo "<hr>";
-// pegando cada chave e valor do array
-foreach($ingredientes as $chave => $valor){
-    echo "Chave: $chave Valor: $valor <br>";
-}
-
-```
-## ForEach
-```php
-$meses = array(
-	"Janeiro", "Fevereiro", "Março",
-	"Abril", "Maio", "Junho",
-	"Julho", "Agosto", "Setembro",
-	"Outubro", "Novembro", "Dezembro"
-);
-
-foreach ($meses as $index => $mes) {
-
-	echo "Índice: ".$index."<br/>";
-	echo "O mês é ".$mes. "<br/><br/>";
-
-}
-
-if(isset($_GET)){
-	foreach ($_GET as $key => $value) {
-		echo "Nome do campo: " . $key . "<br/>";
-		echo "Valor do campo: " . $value . "<br/>";
-		echo "<hr/>";
-	}
-}
+    owner  group  general  unix command      -> quando usar
+    ---   ---     ---
+    rwx   rwx     rwx 
+    421   401     401      sudo chmod 755   -> diretórios em produção
+    420   400     400      sudo chmod 644   -> arquivos em produção
+    ```
+ - Dar todas permissões arquivos e diretórios de forma recursiva
+    ```
+    $ sudo chmod -R 755 folder/
 ```
 
 
-## Funções
-```php
-<?php
+## PHP.INI
+- date.timezone=America/Sao_Paulo
+- memory_limit=512M
+- error_reporting=E_ALL
+- extension=php_openssl.dll
+- extension=php_pdo_pgsql.dll
+- extension=php_pdo_mysql.dll
+- display_errors=On
 
-// FUNÇÕES
-function digaOla(){
-    echo "Olá alex! <br>";
-}
-// execute a função 3 vezes
-digaOla();
-digaOla();
-digaOla();
+## Windows
+- C:\xampp\php\php.ini
+- C:\xampp\apache\conf\httpd.config
+- Caminho correto da pasta ssl.crt no windows usando o xampp c:\xamp\apache\conf
 
-// Com definição de parâmetros e definição de retorno
-function somar(int $valor1, int $valor2): int {
-    $somaFinal = $valor1 + $valor2;
-    return $somaFinal;
-    // tudo que acontece em la vegas, fica em las vegas
-}
-echo "<hr>A soma final é: " . somar(10, 20);
+## XDebug
+ - https://xdebug.org/wizard
+ - $ sudo apt install php-dev
+ - Copiar arquivos: http://localhost/dashboard/phpinfo.php CTRL+A dentro do site
+ - Seguir as intruções do site, exemplo:
+ ```
+ Instructions
+ Download xdebug-2.9.3.tgz
+ Install the pre-requisites for compiling PHP extensions.
+ On your Ubuntu system, install them with: apt-get install php-dev autoconf automake
+ Unpack the downloaded file with tar -xvzf xdebug-2.9.3.tgz
+ Run: cd xdebug-2.9.3
+ Run: phpize (See the FAQ if you don't have phpize).
 
-// com definição de parâmetro opcional
-function multiplicar(int $num1, int $num2, int $num3 = 1): int {
-    return $num1 * $num2 * $num3;
-}
-echo "<hr>A multiplicação de 10 x 20 é: ". multiplicar(10, 20);
-echo "<hr>A multiplicação de 10 x 20 x 30 é: ". multiplicar(10, 20, 30);
+ As part of its output it should show:
 
-// Passar parâmetros como REFERÊNCIA 
-// SIMULA BASTANTE A LINGUAGEM C E C++
-// ao invés de passar só o valor da variável
-// ela vai passar a "REFERÊNCIA DELA/ENDEREÇO DE MEMÓRIA
-// para que a variável também possa ser editada dentro da função
-$total = 100;
-function novaSoma(int $param1, int $param2, int &$total): int {
-    $total += 100;
-    return $param1+$param2;
-}
-echo "<hr>Total antigo é: $total";
-echo "<hr>novaSoma(500, 250) é: " . novaSoma(500, 250, $total);
-echo "<hr>Total novo é: $total";
+ Configuring for:
+ ...
+ Zend Module Api No:      20190902
+ Zend Extension Api No:   320190902
+ If it does not, you are using the wrong phpize. Please follow this 
+ FAQ entry and skip the next step.
 
-// exemplo de função nativa
-echo "<hr>Ordenando a lista: <br>";
-$lista = [8, 7, 6, 5, 4, 3, 2, 1];
-sort($lista);
-print_r($lista);
+ Run: ./configure
+ Run: make
+ Run: cp modules/xdebug.so /opt/lampp/lib/php/extensions/no-debug-non-zts-20190902
+ Edit /opt/lampp/etc/php.ini and add the line
+ zend_extension = /opt/lampp/lib/php/extensions/no-debug-non-zts-20190902/xdebug.so
+ Restart the webserver
+ ```
 
-// Funções Anônimas
-// Quando usamos funções anônimas?
-// 1 - Armazenando em uma variável
-// 2 - servir como uma função que eu consiga jogar em qualquer lugar
-$dizimo = function(int $valor) {
-    return $valor * 0.1;
-};
-echo "<hr> Dizimo é: ". $dizimo(90);
+## Certificado SSL LocalHost
+- Enviar arquivos para dentro do servidor
+   - sudo cp localhost.crt /opt/lampp/etc/ssl.crt
+- Editar httpd-ssql.conf
+   - /opt/lampp/etc/extra$ sudo subl httpd-ssl.conf
+   ```
+    #   Server Certificate:
+    #   Point SSLCertificateFile at a PEM encoded certificate.  If
+    #   the certificate is encrypted, then you will be prompted for a
+    #   pass phrase.  Note that a kill -HUP will prompt again.  Keep
+    #   in mind that if you have both an RSA and a DSA certificate you
+    #   can configure both in parallel (to also allow the use of DSA
+    #   ciphers, etc.)
+    #   Some ECC cipher suites (http://www.ietf.org/rfc/rfc4492.txt)
+    #   require an ECC certificate which can also be configured in
+    #   parallel.
+    SSLCertificateFile "/opt/lampp/etc/ssl.crt/localhost.crt"
+    #SSLCertificateFile "/opt/lampp/etc/server-dsa.crt"
+    #SSLCertificateFile "/opt/lampp/etc/server-ecc.crt"
 
-$funcao = $dizimo(100);
-echo "<hr> funcao é: " .$funcao;
+    #   Server Private Key:
+    #   If the key is not combined with the certificate, use this
+    #   directive to point at the key file.  Keep in mind that if
+    #   you've both a RSA and a DSA private key you can configure
+    #   both in parallel (to also allow the use of DSA ciphers, etc.)
+    #   ECC keys, when in use, can also be configured in parallel
+    SSLCertificateKeyFile "/opt/lampp/etc/ssl.crt/localhost.key"
+    #SSLCertificateKeyFile "/opt/lampp/etc/server-dsa.key"
+    #SSLCertificateKeyFile "/opt/lampp/etc/server-ecc.key"
+   ```
 
-// Funções Flexa (Arrow Function) PHP7.4
-$funcClassica = function($valor){
-    return $valor * 0.1;
-};
+## SSH Keys
 
-// => já indica valor de return
-$funcArrow = fn(int $valor) => $valor * 0.2;
-echo "<hr> funcArrow(100)é: " . $funcArrow(100);
+- Follow these instructions to create or add SSH keys on Linux, MacOS & Windows. Windows users without OpenSSH can install and use PuTTY instead.
+- Create a new key pair, if needed
+- Open a terminal and run the following command:
+   - $ ssh-keygen
+- You will be prompted to save and name the key.
+- Generating public/private rsa key pair. Enter file in which to save the key (/Users/USER/.ssh/id_rsa): 
+- Next you will be asked to create and confirm a passphrase for the key (highly recommended):
+   - $ Enter passphrase (empty for no passphrase):
+   - $ Enter same passphrase again: 
+- This will generate two files, by default called id_rsa and id_rsa.pub. Next, add this public key.
+- Add the public key
+- Copy and paste the contents of the .pub.pub file, typically id_rsa.pub, into the SSH key content field on the left.
+   - $ cat ~/.ssh/id_rsa.pub
 
-// Funções recursivas
-// função que executa ela mesmo internamente
-echo "<hr> RECURSÃO: <br>";
-function dividir($numero){
-    $metade = $numero / 2;
-    echo $metade . "<br>";
-    if(round($metade) > 0){
-        dividir($metade);
-    }
-}
-dividir(10000);
+## PostgreSQL
+- Curso Online Grátis: Conceitos e melhores práticas com bancos de dados PostgreSQL => https://web.digitalinnovation.one/course/conceitos-e-melhores-praticas-com-bancos-de-dados-postgresql/learning/83cbc77b-5abe-4a19-bcba-5ccc0baa502d
+- Oificla Site: https://www.postgresql.org/
+- Install Ubuntu APT: https://wiki.postgresql.org/wiki/Apt
+- Oficial Documentation: https://www.postgresql.org/docs/manuals/
+- PGAdmin Site: https://www.pgadmin.org/
+- PGAdmin GUI: http://127.0.0.1:42205/browser/
+- $ pgadmin4 (start)
 
-// Funções nativas de MATEMÁTICA
-// https://www.php.net/manual/pt_BR/book.math.php
-echo "<hr>FUNÇÕES NATIVAS DE MATEMÁTICA<br>";
-$numeroAbsoluto = -8.4;
-echo "<br>Numero absoluto de -8.4 é: " . abs($numeroAbsoluto);
-echo "<br>Numero pi é: " . pi();
-$arredondaParaBaixo = 2.7;
-echo "<br>Arredonda 2.7 para baixo é: " , floor($arredondaParaBaixo);
-$arrendondaParaCima = 3.1;
-echo "<br>Arredonda 3.1 para cima é : " . ceil($arrendondaParaCima);
-$arredondaProxima = 3.428712;
-echo "<br>Arredonda próximo 3 casas decimais de 3.428712 é: " 
-. round($arredondaProxima, 3);
-echo "<br>Numero aleatório: " . rand(3, 9) . "<br>";
-$lista = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-echo "<br>Maior numero da lista é: " . max($lista);
+## Ferramentas 
 
-// Funções Nativas de String
-$MAISUCULA = "ALEX GALHARDO";
-$minuscula = "alex galhardo";
-echo "<hr><br>Minuscula é: " . strtolower($MAISUCULA);
-echo "<br>Maiuscula é: " . strtoupper($minuscula);
-echo "<br>Tamanho do nome é: " . strlen($MAISUCULA);
-$nomeSujo = "  alexgalhardo  ";
-echo "<br>Limpando '  alexgalhardo  ' temos: " . trim($nomeSujo);
-$nomeOriginal = "Alex Galhardo";
-$nomeAlterado = str_replace('Galhardo', 'Vieira', $nomeOriginal);
-echo "<br>Nome Alterado é: " . $nomeAlterado;
-$nomeIncompleto = substr($nomeOriginal, 0, 3);
-echo "<br>Nome Incompleto pegando os 3 primeiro caracter é: " . $nomeIncompleto;
-```
+- HTTP Servers
+    - [XAMPP](https://www.apachefriends.org/index.html)
+    - [Nginx](https://www.nginx.com/)
+- Free Online MySQL 
+    - [DB4Free.net](https://db4free.net)
+- Deploy
+    - https://deployer.org/
+- GitHub
+    - https://dillinger.io/
+    - http://gitignore.io/
+- [cPanel](https://cpanel.com/)
+    - cPanel: 2082
+    - cPanel  HTTPS: 2083
+    - WHM: 2086
+    - WHM HTTPS: 2087
+    - Webmail: 2095
+    - Webmail  HTTPS: 2096
+ - FTP (File Transfer Protocol)
+    - Default Port: 21
+    - Webdisk: 2077
+    - Webdisk HTTPS: 2078
+    - [FileZilla](https://filezilla-project.org/)
+ - PHP Asynchronous
+    - [ReactPHP](https://reactphp.org/)
+ - REST APIs
+    - [REST TestTest](https://resttesttest.com/)
+    - [Insomnia](https://insomnia.rest/)
+    - [Postman](https://www.getpostman.com/)
+ - Benchmark
+    - [PHPBench](https://phpbench.com/)
+ - Open Source Forum
+    - [Flarum](https://github.com/flarum/flarum)
+ - Insights
+    - [New Relic](https://newrelic.com/)
+ - Perfomance
+    - [Amazon CloudFront](https://aws.amazon.com/cloudfront)
+    - [MemCachier](https://www.memcachier.com/)
+    - [Fastly](https://www.fastly.com/)
+ - Code Quality
+    - [CodeClimate](https://codeclimate.com/)
+ - DataBase as a Service
+    - [OpenRedis](https://openredis.com/)
+    - [Heroku PostgreSQL](https://www.heroku.com/postgres)
+ - Documentation 
+    - [PHPDoc](https://www.phpdoc.org/)
+ - Pagamentos
+    - [Pagar.me](https://pagar.me/)
+    - [Boleto PHP](https://boletophp.com.br/)
+    - [GerenciaNet](https://gerencianet.com.br/)
+    - [StripePHP](https://packagist.org/packages/stripe/stripe-php)
+    - [PayPal PHP](https://packagist.org/packages/paypal/rest-api-sdk-php)
+ - Image Optimization
+    - [Squoosh](https://squoosh.app/)
+ - Graphics
+    - [ChartJS](http://www.chartjs.org/)
+ - Public LocalHost
+    - [NGrok](https://ngrok.com/)
+ - Reset CSS
+    - [Normalize.CSS](https://necolas.github.io/normalize.css/)
+ - CEP
+    - [ViaCEP](http://viacep.com.br/)
+ - PDF
+    - [mPDF](https://mpdf.github.io/)
+ - JSON
+    - [JSONEditorOnline.org](http://jsoneditoronline.org/)
+ - Monitoring Server
+    - [UpTime Robot](https://uptimerobot.com/)
+ - Testing
+    - [PHP Unit](https://phpunit.de/)
+    - [XDebug](https://github.com/xdebug/xdebug)
+    - [BlackFire](https://blackfire.io/)
+ - Security
+    - [Security Sensio Labs](https://security.sensiolabs.org/)
+ - Interaction controls to your HTML tables
+    - [DataTables.net](https://datatables.net/)
+ - BarCode Generator
+    - [Picqer](https://github.com/picqer/php-barcode-generator)
+ - Plugins Chrome
+    - [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh?hl=pt-BR)
+ - SMTP (Simple Mail Transfer Protocol)
+    - [MailGun](https://www.mailgun.com/)
+    - [SendGrid](https://sendgrid.com/)
+    - [Amazon Simple Email Service](https://aws.amazon.com/ses/)
+    - [PHP Mailer](https://github.com/PHPMailer/PHPMailer)
+    - [MailCatcher](https://mailcatcher.me/)
+    - [MailTrap](https://mailtrap.io/)
+    - [SendGrid](https://sendgrid.com/)
+    - SMTP Gmail
+       - Nome do servidor SMTP Gmail: smtp.gmail.com
+       - Usuario SMTP Gmail: o seu endereço Gmail
+       - Password SMTP Gmail: a sua password
+       - Porta SMTP do Gmail (TLS): 587.
+       - Porta SMTP do Gmail (SSL): 465.
+    - "Protocolo de transferência de correio simples" 
+    é o protocolo padrão para envio de e-mails através da Internet, definido na RFC 821.
+    - É um protocolo relativamente simples, em texto plano, onde um ou vários destinatários de uma mensagem 
+    são especificados (e, na maioria dos casos, validados) sendo, depois, a mensagem transferida.
+    - SMTP: Port 587
+    - SMTP + SSL: Port 465
+    - SMTP + TLS: Port 587 (recomendado)
+ - POP3 == Post Office Protocol. 
+    - O POP3 permite que um cliente faça download de um e-mail de um servidor de e-mail. 
+    - O protocolo POP3 é simples e não oferece muitos recursos, excepto para download. 
+    - O seu conceito pressupõe que o cliente de e-mail faça download de todo o e-mail disponível no servidor, apaga-os do servidor e, em seguida, desliga-se. 
+    - Ao utilizar este procolo, irá conseguir visualizar os seus emails caso não tenha acesso à Internet.
+    - POP3: Port 110
+    - POP3  + SSL: Port 995
+    - POP3 + TLS: Port 110 (recomendado)
+ - IMAP == Internet Message Access Protocol. 
+    - O IMAP partilha muitos recursos semelhantes com o POP3.  
+    Também é um protocolo que um cliente de e-mail pode usar para fazer download de e-mails de um servidor de e-mail. No entanto, o IMAP inclui mais recursos do que POP3. 
+    - O protocolo IMAP foi desenvolvido para permitir que os utilizadores mantenham seus e-mails no servidor. 
+    - O IMAP requer mais espaço em disco no servidor e no geral mais recursos de servidor do que POP3, já que todos os e-mails são armazenados no servidor. 
+    - Ao utilizar este procolo, apenas irá conseguir visualizar os seus emails, caso não tenha acesso à Internet, se o seu cliente de e-mail estiver configurado especificamente para tal.
+    - IMAP: Port 143
+    - IMAP + SSL: Port 993
+    - IMAP + TLS: Port 143 (recomendado)
+ - Completely Uninstall LAMP Ubuntu 18.04 LTS
+    ```sh
+    #!/bin/bash
 
-## Arquivos
-```php
-// lendo arquivos
-$texto = file_get_contents("texto.txt");
-// \n clássico para pular linha
-$texto = explode("\n", $texto);
-$linhas =  count($texto);
-// escrevendo em arquivos
-$adicionarTxt = "Novo text para enviar no arquivo";
-// se arquivo não existi, vai criar
-// se arquivo existir, vai substituir
-// se diretório não tiver permissão de escrita, vai dar erro
-file_put_contents('nome.txt', $adicionarTxt);
-// renomear arquivo
-rename('teste.txt', 'novoNome.txt');
-// movendo 
-rename('teste.txt', 'pasta/teste.txt');
-// fazendo copia
-copy('pasta/teste2.txt', 'teste2.txt');
-// excluindo qualquer arquivo
-unlink('pasta/teste2.txt');
-```
+    # This will remove Apache
+    sudo service apache2 stop
+    sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common
+    sudo apt remove apache2.*
+    sudo apt-get autoremove
+    whereis apache2
+    sudo rm -rf /etc/apache2
 
-## Upload Arquivos
-```php
-/**
- * UPLOAD DE ARQUIVOS
- */
-?>
-<form method="POST" action="recebedor.php" enctype="multipart/form-data">
-    <input type="file" name="arquivo">
-    <input type="submit" value="Enviar">
-</form>
+    # This will remove PHP
+    sudo apt-get purge `dpkg -l | grep php7.2| awk '{print $2}' |tr "\n" " "`
+    sudo apt-get purge php7.*
+    sudo apt-get autoremove --purge
+    whereis php
+    sudo rm -rf /etc/php
 
-<?php
-// recebedor.php
-echo '<pre>';
-print_r($_FILES);
+    # This will remove MYSql
+    sudo service mysql stop
+    sudo apt-get remove --purge *mysql\*
+    sudo apt-get remove --purge mysql-server mysql-client mysql-common -y
+    rm -rf /etc/mysql
+    sudo apt-get autoremove
+    sudo apt-get autoclean
 
-$permitidos = ['image/jpeg', 'image/png', 'image/png'];
-if(in_array($FILES['arquivo']['type'], $permitidos)){
-    // $fileName = $_FILES['arquivo']['name']; não recomendado!
-    $fileName = md5(time().rand(0, 1000)). '.jpg';
-    move_uploaded_file($_FILES['arquivo']['tmp_name'], 'arquivos/'.$nome);
-    echo "arquivo enviado com sucesso!";
-} else {
-    echo "arquivo não permitido!";
-}
-```
-
-## Formulário Validações Sessão Cookies 
-- index.php
-```php
-<?php
-
-require_once('header.php');
-session_start();
-// METHOD=POST -> MANDA INFORMAÇÕES INTERNAMENTE
-// METGOD=GET -> MANDA INFORMAÇÕES NA URL
-
-if($_SESSION['aviso']){
-    echo $_SESSION['aviso'];
-    $_SESSION['aviso'] = '';
-}
-?>
-
-<a href="apagar.php">Apagar Cookie</a>
-
-<form method="POST" action="recebedor.php">
-    <label>Nome</label>
-    <br>
-    <input type="text" name="nome"/>
-    <br>
-
-    <label>email</label>
-    <br>
-    <input type="text" name="email"/>
-    <br>
-
-    <label>Idade</label>
-    <br>
-    <input type="text" name="idade"/>
-
-    <br>
-    <input type="submit" value="Enviar">
-</form>
-```
-- apagar.php
-```php
-<?php
-
-setcookie('nome', '', time() - 3600);
-
-header("Location: index.php");
-exit;
-```
-- header.php
-```php
-<h1>Cabeçalho</h1>
-<?php 
-    if(isset($_COOKIE['nome'])) {
-        $nome = $_COOKIE['nome'];
-        echo "<h2>".$nome."</h2>";
-    }
-?>
-<hr>
-```
-- recebedor.php
-```php
-<?php 
-session_start();
-
-// verifica se esta preenchido ou não
-// se não estiver, retorne false
-// $nome = filter_input(INPUT_GET, 'nome');
-// $idade = filter_input(INPUT_GET, 'idade');
-
-// PARA METODOS POST
-$nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
-$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-// $idade = filter_input(INPUT_POST, 'idade', FILTER_SANITIZE_NUMBER_INT);
-$idade = filter_input(INPUT_POST, 'idade', FILTER_VALIDATE_INT);
-
-// $sobrenome = "Galhardo";
-// filter_var($sobrenome, ALGUMA_VERIFICAO_AQUI);
-
-// FILTER_VALIDATE_EMAIL
-// FILTER_VALIDATE_INT
-// FILTER_VALIDATE_IP
-// FILTER_VALIDATE_URL
-
-// FILTER_SANITIZE_EMAIL
-// FILTER_SANITIZE_STRING
-// FILTER_SANITIZE_SPECIAL_CHARS
-// FILTER_SANITIZE_URL
-// FILTER_SANITIZE_NUMBER_FLOAT
-
-if($nome && $idade && $email){
-
-    // só consigo setar um cookie, tem que ser antes de qualquer informação
-    // parametros => nomedocookie, o que vai ser armazenado, tempo do cookie
+    sudo reboot
+    ```
     
-    // 86400 = segundos em 1 dia/24 horas
-    // cokie vai durar 30 dias no navegador do usuário
-    $tempo_do_cookie = time() + (86400 * 30); 
-    setcookie('nome', $nome, $tempo_do_cookie);
+## .htaccess
+    RewriteEngine On
+    Options All -Indexes
 
-    echo "NOME é: {$nome} e a idade é: {$idade}";
-} else {
-    $_SESSION['aviso'] = 'Preencha os itens corretamente!';
-    // echo "NÃO ENVOU NOME!";
-    // redireciona para o index.php
-    // só posso fazer redirecionamento de header
-    // se eu não tiver mandado nenhuma informação para o navegador
-    header("Location: index.php");
-    exit; // cancela os códigos abaixo dessa linha
-}
-```
+    # ROUTER WWW Redirect.
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+    # RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-## POO
-- Usuario.php
-```php 
-<?php 
+    # ROUTER HTTPS Redirect
+    # RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-class Usuario {
+    # ROUTER URL Rewrite
+    RewriteCond %{SCRIPT_FILENAME} !-f
+    RewriteCond %{SCRIPT_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?route=/$1 [L,QSA]
 
-	private $idusuario;
-	private $deslogin;
-	private $dessenha;
-	private $dtcadastro;
+## CURL
+- Referências
+   - https://codecommit.com.br/curl-tutorial-basico-comandos-basicos
 
-	public function getIdusuario(){
-		return $this->idusuario;
-	}
+- O cURL é uma ferramenta de linha de comando ou biblioteca para realizar transferencia de informações com URLs.
+- Ele suporta diversos tipos de transferência, como HTTP, HTTPS, IMAP, FTP, SFTP, IMAP, SCP, SMTP, Telnet e diversos outros protocolos utilizados pelo mercado.
+- A grande maioria das linguagens de programação tem suporte nativo ao cURL, pela sua grande usabilidade.
 
-	public function setIdusuario($value){
-		$this->idusuario = $value;
-	}
+- USO BÁSICO - GET
+   - Fazendo uma requisição GET para uma URL específica
+      - curl https://url.com.br/
+   - Incluindo informações de HTTP-Header no retorno
+      - curl --include https://url.com.br/
 
-	public function getDeslogin(){
-		return $this->deslogin;
-	}
+- AUTENTICAÇÃO DE USUÁRIO
+   - Informando apenas um usuário (o cURL pede a senha em seguida, ideal para ser usado em scripts e não armazenar senhas)
+      - curl --user "usuario" https://url.com.br/
+   - Informando usuário e senha
+      - curl --user "usuario:senha" https://url.com.br/
+- POST
+   - Use a flag --request (-X) juntamente com a flag --data (-d) para realizar uma requisição do tipo POST
+      - curl --request POST --data 'success=true' https://url.com.br/
+   - Sempre que a flag --data for informada o cURL irá assumir que a requisição é to tipo POST
+      - curl --data 'success=true' https://url.com.br/
+   - A informação do POST pode ser informada como em uma URL
+      - curl --request POST --data 'success=true&alert=true&status=2' https://url.com.br/
+   - Você pode informar um arquivo para que as informações do POST sejam lidas
+      - curl --data @data.txt https://url.com.br/
 
-	public function setDeslogin($value){
-		$this->deslogin = $value;
-	}
+- HEADERS
+   - As vezes você precisa informar algum cabeçalho na requisição
+      - curl -H 'Content-Type: application/json' -H 'Authentication: f536bc365bc53cf366c3fbc36b5f3' --data 'success=true' https://url.com.br/
+      
+- HTTPS
+   - Você pode pedir para o cURL ignorar o HTTPS passando a flag --insecure. Esta flag deve ser usada com cuidado, pois pode gerar insegurança nas requisições.
+      - curl --insecure https://url.com.br/
 
-	public function getDessenha(){
-		return $this->dessenha;
-	}
+## cURL PHP
+- https://imasters.com.br/back-end/curl-com-php-para-apis-restfull
+- https://www.codigomaster.com.br/desenvolvimento/utilizando-curl-com-php/
+- https://codecommit.com.br/curl-com-php
+- http://rberaldo.com.br/trabalhando-com-a-biblioteca-curl/
 
-	public function setDessenha($value){
-		$this->dessenha = $value;
-	}
-
-	public function getDtcadastro(){
-		return $this->dtcadastro;
-	}
-
-	public function setDtcadastro($value){
-		$this->dtcadastro = $value;
-	}
-	
-	public function loadById($id){
-		$sql = new Sql();
-		$results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID", array(
-			":ID"=>$id
-		));
-
-		if (count($results) > 0) {
-			$this->setData($results[0]);
-		}
-	}
-
-	public static function getList(){
-		$sql = new Sql();
-		return $sql->select("SELECT * FROM tb_usuarios ORDER BY deslogin;");
-	}
-
-	public static function search($login){
-		$sql = new Sql();
-		return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ORDER BY deslogin", array(
-			':SEARCH'=>"%".$login."%"
-		));
-	}
-
-	public function login($login, $password){
-		$sql = new Sql();
-		$results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogin = :LOGIN AND dessenha = :PASSWORD", array(
-			":LOGIN"=>$login,
-			":PASSWORD"=>$password
-		));
-
-		if (count($results) > 0) {
-			$this->setData($results[0]);
-		} else {
-			throw new Exception("Login e/ou senha inválidos.");
-		}
-	}
-
-	public function setData($data){
-		$this->setIdusuario($data['idusuario']);
-		$this->setDeslogin($data['deslogin']);
-		$this->setDessenha($data['dessenha']);
-		$this->setDtcadastro(new DateTime($data['dtcadastro']));
-	}
-
-	public function insert(){
-		$sql = new Sql();
-		$results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)", array(
-			':LOGIN'=>$this->getDeslogin(),
-			':PASSWORD'=>$this->getDessenha()
-		));
-		
-		if (count($results) > 0) {
-			$this->setData($results[0]);
-		}
-	}
-
-	public function update($login, $password){
-		$this->setDeslogin($login);
-		$this->setDessenha($password);
-		$sql = new Sql();
-		$sql->query("UPDATE tb_usuarios SET deslogin = :LOGIN, dessenha = :PASSWORD WHERE idusuario = :ID", array(
-			':LOGIN'=>$this->getDeslogin(),
-			':PASSWORD'=>$this->getDessenha(),
-			':ID'=>$this->getIdusuario()
-		));
-	}
-
-	public function delete(){
-		$sql = new Sql();
-		$sql->query("DELETE FROM tb_usuarios WHERE idusuario = :ID", array(
-			':ID'=>$this->getIdusuario()
-		));
-		$this->setIdusuario(0);
-		$this->setDeslogin("");
-		$this->setDessenha("");
-		$this->setDtcadastro(new DateTime());
-	}
-
-	public function __construct($login = "", $password = ""){
-		$this->setDeslogin($login);
-		$this->setDessenha($password);
-	}
-
-	public function __toString(){
-		return json_encode(array(
-			"idusuario"=>$this->getIdusuario(),
-			"deslogin"=>$this->getDeslogin(),
-			"dessenha"=>$this->getDessenha(),
-			"dtcadastro"=>$this->getDtcadastro()->format("d/m/Y H:i:s")
-		));
-	}
-} 	
-```
-
-- Sql.php
+- Inicializando curl
+   - $curl = curl_init($url);
+- Para informarmos um parametro devemos utilizar a função 
+   - `curl_setopt()` 
+   - bool curl_setopt ( resource $ch , int $option , mixed $value )
+      - ch, um handle cURL retornado por curl_init().
+      - option, que possui várias opções do tipo CURLOPT, como por exemplo, CURLOPT_URL, que vamos utilizar em nosso primeiro exemplo.
+      - value, o valor a ser definido no parâmetro option, neste caso, nossa URL.
+   
+- E caso necessário podemos informar mais de um parametro utilizando a função `curl_setopt_array()`
+   - `CURLOPT_RETURNTRANSFER` – Retorna uma string
+   - `CURLOPT_CONNECTTIMEOUT` – Segundos tentando conectar até o timeout
+   - `CURLOPT_TIMEOUT` – Segundos limite para execução do cURL
+   - `CURLOPT_USERAGENT` – String contendo um user-agent
+   - `CURLOPT_URL` – URL – enviar a requisição
+   - `CURLOPT_PORT` – Informe de porta
+   - `CURLOPT_HTTPHEADER` – Cabeçalhos da requisição
+   - `CURLOPT_POST` – Envia a requisição como POST
+   - `CURLOPT_POSTFIELDS` – Array de informações enviadas como POST
+      - curl_setopt($cr, CURLOPT_POSTFIELDS, "cliente=1&nome=alex");
+-  Envio e armazenamento da resposta
+   - $response = curl_exec($curl);
+- Fecha e limpa recursos
+   - curl_close($curl);
+- Exemplo:
 ```php
-<?php 
-
-class Sql extends PDO {
-
-	private $conn;
-
-	public function __construct(){
-		$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "root");
-	}
-
-	private function setParams($statement, $parameters = array()){
-		foreach ($parameters as $key => $value) {
-			$this->setParam($statement, $key, $value);
-		}
-	}
-
-	private function setParam($statement, $key, $value){
-		$statement->bindParam($key, $value);
-	}
-
-	public function query($rawQuery, $params = array()){
-		$stmt = $this->conn->prepare($rawQuery);
-		$this->setParams($stmt, $params);
-		$stmt->execute();
-		return $stmt;
-	}
-
-	public function select($rawQuery, $params = array()):array
-	{
-		$stmt = $this->query($rawQuery, $params);
-		return $stmt->fetchAll(PDO::FETCH_ASSOC);
-	}
-}
+// Cria o cURL
+$curl = curl_init();
+// Seta algumas opções
+curl_setopt_array($curl, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_URL => 'http://exemplo.com.br',
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => [
+        item1 => 'valor',
+        item2 => 'valor'
+    ]
+]);
+// Envia a requisição e salva a resposta
+$response = curl_exec($curl);
+// Fecha a requisição e limpa a memória
+curl_close($curl);
 ```
-## CRUD Simples PDO
-- usuarios.php
-```php
-<?php
+- ERROS
+   - É importante sempre tratar possíveis erros que aconteçam na requisição. Para isso existem duas funções do cURL:
+      - curl_error() - Retorna uma string com uma mensagem de erro, se a string estiver em branco, nenhum erro aconteceu
+      - curl_errno() - Retorna um código de erro
 
-class Usuarios {
+## Comandos Rápidos MySQL
+- Referências:
+   - https://www.mysqltutorial.org/mysql-cheat-sheet/
+- COMANDOS DE SERVIDOR
+   - Em um servidor Linux você pode utilizar os comandos a seguir para se conectar no cliente local do MySQL:
+      - mysql -u [usuario] -p; // Conecta no cliente MySQL com o usuário informado
+      - mysql -u [usuario] -p [banco]; // Conecta no cliente MySQL e em um banco especificado
+      - mysqldump -u [usuario] -p [banco] > backup.sql; // Exporta os dados do banco para o arquivo especificado 
+   - COMANDOS PARA BANCOS DE DADOS
+      - CREATE DATABASE [IF NOT EXISTS] banco; // Cria um banco, se já não existir um com este nome
+      - USE database_name; // Seleciona um banco ou troca o banco já selecionado para um novo
+      - DROP DATABASE [IF EXISTS] banco; // Remove um banco e todos seus arquivos físicos
+      - SHOW DATABASES;
+    - TRABALHANDO COM TABELAS
+      - show tables; // Lista todas tabelas disponíveis no banco selecionado
+      - CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tabela( coluna tipo(tamanho) NOT NULL ); // Cria uma nova tabela - Leia mais sobre o comando CREATE TABLE
+      - DROP TABLE [IF EXISTS] table // Remove uma tabela - Saiba mais
+      - TRUNCATE TABLE table // Limpa o conteúdo de uma tabela 
+      - DESCRIBE table  //  Fornece informações de uma tabela ou colunas
+   - ALTERANDO A ESTRUTURA DE UMA TABELA
+      - ALTER TABLE table ADD [coluna]; // Adiciona uma nova coluna
+      - ALTER TABLE table DROP [coluna]; // Remove uma coluna
+      - ALTER TABLE table ADD INDEX [nome](coluna, ...); // Adiciona um índice (index) a tabela
+      - ALTER TABLE table ADD PRIMARY KEY (column,...) // Adiciona uma chave primária (primary key)
+      - ALTER TABLE table DROP PRIMARY KEY // Remove uma chave primária
+   - TRABALHANDO COM ÍNDICES (INDEX)
+      - CREATE [UNIQUE|FULLTEXT] INDEX indice ON tabela (coluna,...) // Cria um novo índice
+      - DROP INDEX indice // Remove um índice
+   - CONSULTANDO INFORMAÇÕES
+      - SELECT * FROM tabela // Busca todos os campos de uma tabela
+      - SELECT coluna1, coluna2 FROM tabela // Busca colunas específicas de uma tabela
+      - SELECT DISTINCT (coluna) FROM tabela //Busca apenas informações únicas
+      - SELECT * FROM tabela WHERE condicao // Filtra a busca pelos parâmetros informados
+      - SELECT coluna1 AS coluna_nova FROM tabela // Retorna a informação de uma coluna utilizando um "apelido" para a mesma
+      - SELECT * FROM tabela1 INNER JOIN tabela2 ON codicoes // Busca informações de múltiplas tabelas utilizando o parâmetro JOIN
+      - SELECT COUNT (*) FROM tabela // Conta as linhas encontradas na consulta
+      - SELECT * FROM tabela ORDER BY coluna [DESC,ASC]  // Ordena os resultados da busca
+      - SELECT * FROM tabela GROUP BY coluna // Agrupa os resultados de uma busca
+   - INSERINDO INFORMAÇÕES
+      - INSERT INTO tabela (coluna1,...) VALUES (valor1,...); // Insere um novo registro na tabela
+      - INSERT INTO tabela (coluna1,...) VALUES (valor1,...), (valor1,...), (valor1,...); // Insere múltiplos valores em uma tabela
+   - ATUALIZANDO INFORMAÇÕES
+      - UPDATE tabela SET coluna1 = valor1, ... // Atualiza os valores de uma tabela
+      - UPDATE tabela SET coluna1 = valor1 WHERE condicao // Atualiza os valores de registros que sejam especificados pela condição WHERE
+   - DELETANDO INFORMAÇÕES
+      - DELETE FROM tabela; // Deleta todas linhas de uma tabela
+   - DELETE FROM tabela WHERE condicao;
+      - Deleta as linhas especificadas pela condição
+   - PESQUISANDO INFORMAÇÕES
+      - SELECT * FROM tabela WHERE coluna LIKE '%valor%' // Pesquisa por informações utilizando o operador LIKE
+  - SELECT * FROM tabela WHERE coluna RLIKE 'expressao_regular'
+      - Pesquisa por informações utilizando uma expressão regular
 
-	private $db;
+## DUMP MYSQL
+- O MySQL disponibiliza uma ferramenta simples para exportar bancos de dados diretamente no servidor, o mysqldump. Com essa ferramenta você pode fazer dumps de bancos rodando no servidor local ou exportar bancos para outros servidores diretamente. 
+- O arquivo exportado contém uma série de comandos e parametros SQL para a criação e importação dos dados.
+- FAZENDO O BACKUP DE UM BANCO MYSQL
+   - Para utilizar o mysqldump para realizar o backup você precisa ter acesso ao servidor que o serviço está rodando.      - Este acesso pode ser feito por SSH, caso você tenha as credenciais. Após o acesso, você pode usar o comando a seguir:
+      - mysqldump -u [usuario] –p [banco] > [arquivo.sql]
+   - Os parâmetros utilizados no comando acima são os seguintes:
+      - [usuario] - Nome de usuário com acessos ao banco
+      - [banco] - Nome do banco de dados
+      - [arquivo.sql] - Nome do arquivo do dump
+   - EXPORTAR APENAS A ESTRUTURA DO BANCO
+   - Se você deseja apenas exportar a estrutura do banco, se informações, basta adicionar o comando --no-data, como no exemplo:
+      - mysqldump -u [usuario] –p --no-data [banco] > [arquivo.sql]
+   - EXPORTAR APENAS AS INFORMAÇÕES
+   - Se você deseja exportar apenas as informações do banco, sem a estrutura, basta adicionar o comando --no-create-info, como no exemplo a seguir:
 
-	public function __construct(){
-
-		try {
-			$this->db = new PDO("mysql:dbname=mp_pdo_statement;host=localhost", "root", "");
-		} catch(PDOException $e){
-			echo "ERRO: " . $e->getMessage();
-		}
-	}
-
-	public function selecionar($id){
-
-		// padrão
-		// $sql = "SELECT * FROM usuarios WHERE id = '$id';"
-		
-		// novo comando usando PDO
-		// muito mais seguro, pq ele verifica erros de segurança
-		// como SQL Injection por exemplo
-		$sql = $this->db->prepare("SELECT * FROM usuarios WHERE id = :id");
-		/**
-		 * no bindValue é como se ele passase a variável por valor
-		 * ou seja, uma cópia 
-		 */
-		$sql->bindValue(":id", $id);
-		$sql->execute();
-
-		$array = array();
-
-		if($sql->rowCount() > 0){
-			$array = $sql->fetch(); // só retorna os dados daquele item especifico
-		}
-
-		return $array;
-	}
-
-	public function inserir($nome, $email, $senha){
-
-		$sql = $this->db->prepare("INSERT INTO usuarios SET nome = :nome, email = :email, senha = :senha");
-		/**
-		 * No bindParam, ele vai associar/REFERENCIAR o apelido
-		 * diretamente com a variável
-		 *
-		 * é como se fosse um ponteiro em C
-		 */
-		$sql->bindParam(":nome", $nome);
-		$sql->bindParam(":email", $email);
-		$sql->bindValue(":senha", MD5($senha));
-		
-		// se eu mudar o $nome = 'outroNome' por exemplo
-		// o bindParam garante que ele vai executar com o valor pela referência
-		// lógico, antes de executar o ->execute();
-		$sql->execute();
-	}
-
-	public function atualizar($nome, $email, $senha, $id){
-
-		$sql = $this->db->prepare("UPDATE usuarios SET nome = ?, email = ?, senha = ? WHERE id = ?");
-		$sql->execute(array(
-			$nome, $email, md5($senha), $id
-		));
-	}
-
-	public function deletar($id){
-
-		$sql = $this->db->prepare("DELETE FROM usuarios WHERE id = ?");
-		$sql->bindValue(1, $id);
-		$sql->execute();
-	}
-}
-```
-
-- index.php
-```php
-<?php
-require 'usuarios.php';
-
-$u = new Usuarios();
-$res = $u->selecionar(1);
-$atualizado = $u->atualizar("Galhardo", "galhardo@gmail.com", "123456", 4);
-$u->deletar(3);
-$u->deletar(2);
-print_r($res); // retorna um array com os dados da linha selecionada do banco
-```
+      - mysqldump -u [usuario] –p --no-create-info [banco] > [arquivo.sql]
+   - EXPORTAR DIVERSOS BANCOS PARA UM ÚNICO ARQUIVO
+   - Você pode passar como parâmetro diversos bancos de dados para serem exportados para um único arquivo:
+      - mysqldump -u [usuario] –p [banco1, banco2, ...] > [arquivo.sql]
+      - mysqldump -u [usuario] –p --all-databases > [arquivo.sql]
