@@ -1,0 +1,29 @@
+<cidade>
+<nome>Rio de Janeiro</nome>
+<uf>RJ</uf>
+<atualizacao>18-10-2018</atualizacao>
+<manha>
+<dia>18-10-2018 12h Z</dia>
+<agitacao>Fraco</agitacao>
+<altura>1.0</altura>
+<direcao>SSE</direcao>
+<vento>7.4</vento>
+<vento_dir>NE</vento_dir>
+</manha>
+<tarde>
+<dia>18-10-2018 18h Z</dia>
+<agitacao>Fraco</agitacao>
+<altura>1.0</altura>
+<direcao>SSE</direcao>
+<vento>7.4</vento>
+<vento_dir>NE</vento_dir>
+</tarde>
+<noite>
+<dia>18-10-2018 21h Z</dia>
+<agitacao>Fraco</agitacao>
+<altura>0.9</altura>
+<direcao>SSE</direcao>
+<vento>7.4</vento>
+<vento_dir>NE</vento_dir>
+</noite>
+</cidade>

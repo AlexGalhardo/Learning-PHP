@@ -1,0 +1,27 @@
+body {
+	background-color: #eee;
+}
+
+header, section, footer {
+	max-width: 800px;
+	background-color: #fff;
+	margin:auto;
+}
+
+header {
+	height: 100px;
+	text-align:center;
+}
+
+footer {
+	height: 100px;
+	text-align: center;
+}
+
+.aviso {
+	padding: 10px;
+	background-color: red;
+	color: white;
+	border: 2px solid white;
+	margin: 10px;
+}

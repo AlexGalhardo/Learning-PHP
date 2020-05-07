@@ -1,0 +1,5 @@
+{
+    "require": {
+        "csanquer/pdo-service-provider": "~1.1dev"
+    }
+}
