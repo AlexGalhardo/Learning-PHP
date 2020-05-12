@@ -3,12 +3,13 @@
     $ php -S localhost:8000
 
 ## Referências 
-- [https://www.php.net/](https://www.php.net/)
-- [https://php.com.br](https://php.com.br)
-- [https://thephp.website/](https://thephp.website/)
-- [https://phpinternals.news/](https://phpinternals.news/)
+- https://www.php.net/
+- https://php.com.br
+- https://thephp.website/
+- https://phpinternals.news/
 - https://imasters.com.br/php
-- [https://www.tutorialrepublic.com/php-tutorial/](https://www.tutorialrepublic.com/php-tutorial/)
+- https://phpsp.org.br/
+- https://www.tutorialrepublic.com/php-tutorial/
 - [Livro PHP Programando Orientado a Objetos 4 Edição - Pablo Dall’Oglio](https://www.amazon.com.br/Php-Programando-com-Orienta%C3%A7%C3%A3o-Objetos/dp/8575226916/ref=pd_cp_14_1/135-0612714-8828249?_encoding=UTF8&pd_rd_i=8575226916&pd_rd_r=8a07c6aa-d481-4aa7-90dd-091df6d0efa7&pd_rd_w=aCGTP&pd_rd_wg=Rmgqp&pf_rd_p=77453d05-f992-4c68-90bd-4bd32fc86a60&pf_rd_r=HY27PBJKFGJ5TW4R7K3S&psc=1&refRID=HY27PBJKFGJ5TW4R7K3S)
 
 ## Install PHP Ubuntu 18.04
@@ -293,8 +294,8 @@
     EXEMPLO:
     $limit = 10; // 10 postagens por página
     $offset = intval($_GET['page']) * $limit - $limit;
-    
- ## Todas as Funções Nativas do PHP
+
+## Todas as Funções Nativas do PHP
 - https://www.php.net/manual/pt_BR/indexes.functions.php
 
 ## STOP PHP SCRIPT
@@ -318,6 +319,24 @@
 ### PRINT
 - print "Olá mundo";
 - echo "Seja vem vindo, {$string}. Você tem " . $inteiro . " anos!";
+
+## COOKIE
+- index.php
+   - Verificar se usuário já clicou em "Lembrar Senha"
+```php
+$email = (isset($_COOKIE['CookieEmail'])) ? base64_decode($_COOKIE['CookieEmail']) : '';
+$senha = (isset($_COOKIE['CookieSenha'])) ? base64_decode($_COOKIE['CookieSenha']) : '';
+$lembrete = (isset($_COOKIE['CookieLembrete'])) ? base64_decode($_COOKIE['CookieLembrete']) : '';
+$checked = ($lembrete == 'SIM') ? 'checked' : '';
+```
+- login.php
+   - setar cookie no browser do usuário com duração de 30 dias
+```php
+$expira = time() + 60*60*24*30; // cookie expira depois de 30 dias
+setCookie('CookieLembrete', base64_encode('SIM'), $expira);
+setCookie('CookieEmail', base64_encode($email), $expira);
+setCookie('CookieSenha', base64_encode($senha), $expira);
+```
 
 ## STRINGS
 - Mais Usadas
@@ -857,6 +876,12 @@ foreach ($array as $key => $value) {
       - mostra todas as configurações atuais do php/servidor
    - $ php -v
       - mostra versão do php na CLI
+   - $ php -m
+      - mostra todos os modulos ativos do php
+   - retornar 1 row do sql em forma de objeto
+      - $response = $pdo->fetch(PDO::FETCH_OBJ);
+   - retornar várias row do sql em forma de array com objetos dentro
+      - $response = $pdo->fetchAll(PDO::FETCH_OBJ);
    - require __DIR__ . "/vendor/autoload.php";
       - importar vendor/autoload.php para dentro do arquivo
    - session_start()
@@ -876,6 +901,23 @@ foreach ($array as $key => $value) {
       - apenas retorna o conteúdo do buffer.
    - new stdClass();
       - uma classe padrão/nativa do PHP
+
+## $_SESSION
+- verifica se usuário está logado
+   - session_start();
+   - if(!isset($_SESSION['logado'])):
+      - header("Location: index.php");
+   - endif;
+- fazer logout do usuário
+   - session_start();
+   - session_destroy();
+   - header("Location: index.php");
+   
+## VALIDAR DADOS $_POST
+- condição ternária
+   - $email = (isset($_POST['email'])) ? $_POST['email'] : '' ;
+- validar email
+   - if (!filter_var($email, FILTER_VALIDATE_EMAIL)):
 
 ## DATETIME & TIMESTAMPS
 - A maior diferença entre datetime e timestamp é a seguinte:
