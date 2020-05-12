@@ -899,6 +899,8 @@ s	Segundos (2 dígitos)
 a	am ou pm
 A	AM ou PM
 ```
+- ![tabela-date](https://user-images.githubusercontent.com/19540357/81638691-4f4b7200-93f0-11ea-8bff-96c8d1ed8ad9.jpg)
+
 - date()
    - A função date() é uma verdadeira mão na roda, por padrão ela recebe um parâmetro string com formato que queremos formatar data e hora local e retorna uma string.
    - Mas se passarmos um segundo parâmetro com valor timestamp, esse valor será formatado.
@@ -1091,6 +1093,103 @@ $json = '[{"nome":"Jo\u00e3o","idade":20},{"nome":"Glaucio","idade":25}]';
 $data = json_decode($json, true);
 
 var_dump($data);
+```
+
+## NAVBAR SEARCH AJAX
+- index.php
+```html
+<form>
+    <input type="text" size="30" onkeyup="showResult(this.value)">
+    <div id="livesearch"></div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+function showResult(search) {
+
+    if (search.length == 0) {
+        document.getElementById("livesearch").innerHTML="";
+        document.getElementById("livesearch").style.border="0px";
+        return;
+    }
+
+    let url = 'livesearch.php?search=' + search;
+    
+    axios.get(url)
+        .then(function (response) {
+            divResponse = document.getElementById("livesearch")
+            divResponse.querySelectorAll('*').forEach(n => n.remove());
+            
+            for(i=0; i<response.data.length; i++){
+                anchorElement = document.createElement("a");
+                anchorElement.setAttribute("href", response.data[i].url);
+                textAnchor = document.createTextNode(response.data[i].country)
+                anchorElement.appendChild(textAnchor);
+                console.log(anchorElement)
+                divResponse.appendChild(anchorElement);
+                br = document.createElement("br");
+                divResponse.appendChild(br);
+            }
+            document.getElementById("livesearch").appendChild(divResponse)
+            document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+}
+</script>
+```
+- cities.json
+```json
+[
+  	{
+    	"country": "FRANCA",
+    	"url": "success.php?city=franca"
+  	},
+	{
+  		"country": "BRASIL",
+    	"url": "success.php?city=brasil"
+  	},
+  	{
+  		"country": "ESTADOS UNIDOS",
+    	"url": "success.php?city=estados%20unidos"
+  	},
+    {
+        "country": "BRASIL2",
+        "url": "success.php?city=brasil2"
+    },
+    {
+        "country": "BRASIL3",
+        "url": "success.php?city=brasil3"
+    },
+    {
+        "country": "BRASILEIRO",
+        "url": "success.php?city=brasileiro"
+    }
+]
+```
+- livesearch.php
+```php
+$json = json_decode(file_get_contents(__DIR__ . "/cities.json"));
+
+$search = $_GET["search"];
+
+if (strlen($search) > 0) {
+    $response = [];
+    
+    // poderia ser count($json) também
+    for($i=0; $i < sizeof($json); $i++) {
+        
+        if(stristr($json[$i]->country, $search)){
+        	$hint = new stdClass();
+        	$hint->country = $json[$i]->country;
+        	$hint->url = $json[$i]->url;
+        	$response[] = $hint;
+        }
+    }
+}
+
+echo json_encode($response);
 ```
 
 ## FILES
@@ -1337,6 +1436,33 @@ curl_close($curl);
         echo $response->getBody();
     }
    ```
+## http_build_query()
+- A função http_build_query()  gera uma url idêntico a uma “QUERY_STRING” a partir do array() passado como primeiro parâmetro.
+- O segundo parâmetro é opcional e serve para prefixar índices e valores numéricos em casos onde o array() passado como parâmetro possui índices numéricos.
+- O terceiro parâmetro também é opcional, se informado identifica qual será o caracter separador de argumentos na string, por padrão é “&”.
+- string http_build_query ( array $formdata [, string $numeric_prefix [, string $arg_separator ]] )
+```php
+$minhaArray = [
+	'nome'   => 'william',
+	'codigo' => '1000'
+];
+
+$url = http_build_query($minhaArray);
+
+echo $url;
+// Imprime nome=william&codigo=1000
+
+$minhaArray = [
+	'nome'   => 'william',
+	'codigo' => '1000'
+];
+ 
+$url = http_build_query($minhaArray);
+ 
+echo $url;
+// Imprime nome=william&codigo=1000
+```
+
 ## CLASSES
 ```php
 /**
@@ -1609,4 +1735,3 @@ class ClassWithLogger
     use LoggerAwareTrait;
 }
 ```
-
