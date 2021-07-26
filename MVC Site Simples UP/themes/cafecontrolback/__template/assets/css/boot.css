@@ -1,0 +1,162 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*VARIABLES*/
+:root {
+    --font-small: 0.875em;
+    --font-normal: 1em;
+    --font-medium: 1.2em;
+    --font-large: 1.4em;
+
+    --color-default: #555555;
+    --color-green: #36BA9B;
+    --color-blue: #39AED9;
+    --color-yellow: #F5B946;
+    --color-red: #D94352;
+
+    --weight-light: 300;
+    --weight-normal: 400;
+    --weight-bold: 700;
+    --weight-black: 900;
+
+    --hover-color-green: #61DDBC;
+    --hover-color-blue: #66D4F1;
+    --hover-color-yellow: #FCD277;
+    --hover-color-red: #F76C82;
+    --hover-duration: 0.3s;
+
+    --gradient-green: linear-gradient(to right, #42E695 0%, #3BB2B8 50%, #42E695 100%);
+    --gradient-blue: linear-gradient(to right, #17EAD9 0%, #6078EA 50%, #17EAD9 100%);
+    --gradient-red: linear-gradient(to right, #622744 0%, #C53364 50%, #622744 100%);
+    --gradient-yellow: linear-gradient(to right, #FCE38A 0%, #F38181 50%, #FCE38A 100%);
+
+    --radius-normal: 5px;
+    --radius-medium: 10px;
+    --radius-large: 20px;
+    --radius-round: 50%;
+
+    --index-back: -1;
+    --index-fold: 2;
+    --index-menu: 3;
+    --index-modal: 4;
+}
+
+/*ELEMENTS*/
+img {
+    max-width: 100%;
+}
+
+img a {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 20px 0 0 0;
+}
+
+embed,
+video,
+iframe,
+iframe[style] {
+    max-width: 100%;
+    height: auto;
+}
+
+.embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed iframe, .embed object, .embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    -webkit-text-fill-color: #555555 !important;
+}
+
+/*ICONS NORMALIZE*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    position: relative !important;
+    top: .125em !Important;
+    margin-right: .4em !Important;
+}
+
+.icon-notext:before {
+    top: 0;
+    margin-right: 0 !important;;
+}
+
+/*CONTAINER*/
+.content,
+.container {
+    display: block;
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 60px 0;
+}
+
+/*EFFECTS*/
+.transition {
+    transition-duration: var(--hover-duration);
+}
+
+.radius {
+    -webkit-border-radius: var(--radius-normal);
+    -moz-border-radius: var(--radius-normal);
+    border-radius: var(--radius-normal);
+}
+
+/*GRADIENTS*/
+.gradient {
+    background-size: 200% auto;
+    transition-duration: 0.5s;
+}
+
+.gradient-green {
+    background-image: var(--gradient-green);
+}
+
+.gradient-blue {
+    background-image: var(--gradient-blue);
+}
+
+.gradient-yellow {
+    background-image: var(--gradient-yellow);
+}
+
+.gradient-red {
+    background-image: var(--gradient-red);
+}
+
+.gradient-hover:hover {
+    background-position: right center;
+}

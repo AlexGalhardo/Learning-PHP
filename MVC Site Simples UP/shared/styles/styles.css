@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fsphp";
+  src:url("fonts/fsphp.eot");
+  src:url("fonts/fsphp.eot?#iefix") format("embedded-opentype"),
+    url("fonts/fsphp.woff") format("woff"),
+    url("fonts/fsphp.ttf") format("truetype"),
+    url("fonts/fsphp.svg#fsphp") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "fsphp" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fsphp" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-coffee:before {
+  content: "\62";
+}
+.icon-facebook:before {
+  content: "\63";
+}
+.icon-twitter:before {
+  content: "\64";
+}
+.icon-instagram:before {
+  content: "\65";
+}
+.icon-youtube:before {
+  content: "\66";
+}
+.icon-phone:before {
+  content: "\67";
+}
+.icon-envelope:before {
+  content: "\68";
+}
+.icon-map-marker:before {
+  content: "\69";
+}
+.icon-menu:before {
+  content: "\61";
+}
+.icon-error:before {
+  content: "\6a";
+}
+.icon-check-square-o:before {
+  content: "\6b";
+}
+.icon-sign-in:before {
+  content: "\6c";
+}
+.icon-sign-out:before {
+  content: "\6d";
+}
+.icon-clock-o:before {
+  content: "\6e";
+}
+.icon-heartbeat:before {
+  content: "\6f";
+}
+.icon-bar-chart:before {
+  content: "\70";
+}
+.icon-suitcase:before {
+  content: "\71";
+}
+.icon-play-circle-o:before {
+  content: "\72";
+}
+.icon-link-broken:before {
+  content: "\73";
+}
+.icon-link:before {
+  content: "\74";
+}
+.icon-check:before {
+  content: "\77";
+}
+.icon-exclamation:before {
+  content: "\75";
+}
+.icon-info:before {
+  content: "\76";
+}
+.icon-graduation-cap:before {
+  content: "\78";
+}
+.icon-life-ring:before {
+  content: "\79";
+}
+.icon-leanpub:before {
+  content: "\7a";
+}
+.icon-plus:before {
+  content: "\41";
+}
+.icon-minus:before {
+  content: "\42";
+}
+.icon-search:before {
+  content: "\43";
+}
+.icon-unlock-alt:before {
+  content: "\44";
+}
+.icon-user:before {
+  content: "\45";
+}
+.icon-user-plus:before {
+  content: "\46";
+}
