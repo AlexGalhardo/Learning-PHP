@@ -1,0 +1,55 @@
+## Estrutura MVC para estudos
+- app/
+   - Controllers/ 
+      - Controllers.php
+      - UserController.php
+         - namespace App\Controllers;
+         - use App\Models\User;
+         - use Cocur\Slugify\Slugify;
+         - class UserController extends Controllers
+   - Models/
+      - User.php
+         - namespace App\Models;
+   - Support/
+      - Email.php
+      - JWT.php
+      - TelegramLog.php
+      - Error.php
+         - namespace App\Support;
+   - Config.php
+   - Helpers.php
+   - Minify.php
+- assets/
+   - css/
+      - styles.css
+      - bootstrap.bundle.css
+   - js/
+      - scripts.js
+   - vuejs/
+   - images/
+- tests/
+   - unit/
+      - TestEmail.php
+         - declare(strict_types=1);
+         - use PHPUnit\Framework\TestCase;
+         - final class TestEmail extends TestCase
+   - integration/
+- vendor/
+- views/
+   - profile/
+   - admin/
+   - auth/
+   - payments/
+   - error.php
+   - home.php
+   - contact.php
+   - blog.php
+- .editorconfig
+- .htaccess
+- .gitignore
+- .env
+- referencias_para_estudo.md
+- referencias_comandos_sql.sql
+- composer.json
+- index.php
+- README.md
